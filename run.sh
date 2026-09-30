@@ -24,4 +24,5 @@ fi
 "$python_bin" src/build_database.py
 "$python_bin" -m src.analyze
 "$python_bin" -m src.export_tableau
+"$python_bin" -m src.ml_benchmark
 "$python_bin" -m pytest -q

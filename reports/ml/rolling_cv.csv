@@ -1,0 +1,25 @@
+model,candidate,validation_year,train_max_year,n_train,n_validation,mae,rmse,parameters,selected
+lightgbm,0,2021,2018,348,354,12.6384460632,17.1131223787,"{""min_child_samples"": 30, ""n_estimators"": 100, ""num_leaves"": 7}",False
+lightgbm,0,2022,2021,702,355,11.3966032911,14.7856417012,"{""min_child_samples"": 30, ""n_estimators"": 100, ""num_leaves"": 7}",False
+lightgbm,0,2023,2022,1057,356,10.8724685786,14.1109926430,"{""min_child_samples"": 30, ""n_estimators"": 100, ""num_leaves"": 7}",False
+lightgbm,1,2021,2018,348,354,13.0337876474,17.5793207968,"{""min_child_samples"": 30, ""n_estimators"": 250, ""num_leaves"": 7}",False
+lightgbm,1,2022,2021,702,355,11.5815932310,15.0739162567,"{""min_child_samples"": 30, ""n_estimators"": 250, ""num_leaves"": 7}",False
+lightgbm,1,2023,2022,1057,356,11.0024246351,14.2636672565,"{""min_child_samples"": 30, ""n_estimators"": 250, ""num_leaves"": 7}",False
+lightgbm,2,2021,2018,348,354,12.5302029617,17.0086053393,"{""min_child_samples"": 40, ""n_estimators"": 100, ""num_leaves"": 15}",True
+lightgbm,2,2022,2021,702,355,11.5479227182,14.9440432977,"{""min_child_samples"": 40, ""n_estimators"": 100, ""num_leaves"": 15}",True
+lightgbm,2,2023,2022,1057,356,10.8235638728,14.0704979835,"{""min_child_samples"": 40, ""n_estimators"": 100, ""num_leaves"": 15}",True
+lightgbm,3,2021,2018,348,354,12.8735707515,17.3351084852,"{""min_child_samples"": 40, ""n_estimators"": 250, ""num_leaves"": 15}",False
+lightgbm,3,2022,2021,702,355,11.8886297116,15.3559093035,"{""min_child_samples"": 40, ""n_estimators"": 250, ""num_leaves"": 15}",False
+lightgbm,3,2023,2022,1057,356,10.9017426489,14.2307325966,"{""min_child_samples"": 40, ""n_estimators"": 250, ""num_leaves"": 15}",False
+lightgbm_no_brand,0,2021,2018,348,354,12.6384460632,17.1131223787,"{""min_child_samples"": 30, ""n_estimators"": 100, ""num_leaves"": 7}",False
+lightgbm_no_brand,0,2022,2021,702,355,11.3966032911,14.7856417012,"{""min_child_samples"": 30, ""n_estimators"": 100, ""num_leaves"": 7}",False
+lightgbm_no_brand,0,2023,2022,1057,356,10.8724685786,14.1109926430,"{""min_child_samples"": 30, ""n_estimators"": 100, ""num_leaves"": 7}",False
+lightgbm_no_brand,1,2021,2018,348,354,13.0337876474,17.5793207968,"{""min_child_samples"": 30, ""n_estimators"": 250, ""num_leaves"": 7}",False
+lightgbm_no_brand,1,2022,2021,702,355,11.5815932310,15.0739162567,"{""min_child_samples"": 30, ""n_estimators"": 250, ""num_leaves"": 7}",False
+lightgbm_no_brand,1,2023,2022,1057,356,11.0192447025,14.2511919762,"{""min_child_samples"": 30, ""n_estimators"": 250, ""num_leaves"": 7}",False
+lightgbm_no_brand,2,2021,2018,348,354,12.5302029617,17.0086053393,"{""min_child_samples"": 40, ""n_estimators"": 100, ""num_leaves"": 15}",True
+lightgbm_no_brand,2,2022,2021,702,355,11.5479227182,14.9440432977,"{""min_child_samples"": 40, ""n_estimators"": 100, ""num_leaves"": 15}",True
+lightgbm_no_brand,2,2023,2022,1057,356,10.8235638728,14.0704979835,"{""min_child_samples"": 40, ""n_estimators"": 100, ""num_leaves"": 15}",True
+lightgbm_no_brand,3,2021,2018,348,354,12.8735707515,17.3351084852,"{""min_child_samples"": 40, ""n_estimators"": 250, ""num_leaves"": 15}",False
+lightgbm_no_brand,3,2022,2021,702,355,11.8886297116,15.3559093035,"{""min_child_samples"": 40, ""n_estimators"": 250, ""num_leaves"": 15}",False
+lightgbm_no_brand,3,2023,2022,1057,356,10.9017426489,14.2307325966,"{""min_child_samples"": 40, ""n_estimators"": 250, ""num_leaves"": 15}",False

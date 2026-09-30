@@ -1,0 +1,22 @@
+sample,brand,brand_evidence_tier,n
+train,Nike,A,51
+train,Nike,B,1
+train,Under Armour,A,12
+train,Unknown,unknown,1316
+train,adidas,A,30
+train,other,A,3
+holdout,Nike,A,32
+holdout,Under Armour,A,5
+holdout,Unknown,unknown,661
+holdout,adidas,A,12
+holdout,other,A,2
+2024-25,Nike,A,15
+2024-25,Under Armour,A,2
+2024-25,Unknown,unknown,332
+2024-25,adidas,A,6
+2024-25,other,A,1
+2025-26,Nike,A,17
+2025-26,Under Armour,A,3
+2025-26,Unknown,unknown,329
+2025-26,adidas,A,6
+2025-26,other,A,1

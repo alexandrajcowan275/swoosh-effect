@@ -38,3 +38,9 @@ six==1.17.0
 statsmodels==0.14.6
 tzdata==2026.4
 virtualenv==21.14.1
+
+# Forecast benchmark (CPU gradient-boosted trees and preprocessing).
+joblib==1.5.2
+lightgbm==4.6.0
+scikit-learn==1.7.2
+threadpoolctl==3.6.0

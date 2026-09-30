@@ -60,9 +60,25 @@ Cincinnati's percentile fell from **59.50 in 2022-23 to 27.53 in 2023-24** (one 
 
 [All switch charts](reports/switch_case_studies.html) · [Usability and n per brand](reports/switch_case_summary.csv) · [Underlying observations](reports/switch_case_observations.csv)
 
+## Machine-learning benchmark
+
+Can a CPU gradient-boosted tree model forecast the next season better than persistence? The [LightGBM benchmark](reports/ml/README.md) trains on **1,413 school-seasons** and holds out **2024-25 and 2025-26: 712 school-seasons across 356 schools**. Four small configurations are tuned only through rolling-origin validation on earlier seasons. Features include exact-calendar percentile lags, prior-season sport scores and conference, pre-season dated brand evidence, and a known season trend. No same-season performance enters the predictors.
+
+| Held-out model | MAE [95% CI] | RMSE [95% CI] |
+|---|---:|---:|
+| Last-season percentile | **11.08** [10.17, 12.01] | 15.66 [14.56, 16.72] |
+| Predictive lagged OLS | 11.12 [10.38, 11.86] | **14.40** [13.52, 15.25] |
+| LightGBM | 11.18 [10.42, 11.95] | 14.58 [13.67, 15.47] |
+
+Errors are percentile points; CIs use 2,000 paired school-cluster bootstrap resamples. LightGBM improves RMSE over the naive baseline by **1.08 points** (paired difference −1.08, 95% CI [−1.64, −0.49]), but does **not** improve MAE (difference +0.10, CI [−0.40, 0.61]). OLS has the lowest RMSE; the naive baseline has the lowest MAE. The tree ensemble does not dominate these simpler models.
+
+Prior-season percentile ranks **1st of 43 features** by within-season held-out permutation importance; the two-season lag ranks 2nd. Brand is tied at **22nd**, with zero measured importance, and the independently tuned no-brand model produces identical predictions. This limited brand test uses only **51 dated pre-season assignments** in the holdout (Nike 32, adidas 12, Under Armour 5, other 2; all Tier A); **661 rows have masked/unknown brand**. It does not show that brands generally have no effect. Tier C and late/undated evidence are excluded from ML brand inputs while the original research analyses retain their stated A+B+C/A+B samples.
+
+The predictive OLS replaces retrospective season fixed effects with a linear calendar trend, since an unseen future season has no estimable fixed effect. The model is frozen before both test seasons, while each one-step prediction can use observed prior-season results. Historical source values and URL-derived publication dates are proxies, not a fully versioned as-of archive. [Full methods and limitations](reports/ml/README.md) · [Metrics and CIs](reports/ml/metrics.csv) · [Permutation importance](reports/ml/permutation_importance.csv) · [Rolling validation](reports/ml/rolling_cv.csv)
+
 ## How to run
 
-Requires **Python 3.12**, a shell, and internet access for the first PDF download. From the repository root, run these three commands:
+Requires **Python 3.12**, a shell, internet access for the first PDF download, and an OpenMP runtime for LightGBM (`libomp` on macOS or `libgomp1` on Linux; the Docker image includes it). From the repository root, run these three commands:
 
 ```bash
 python3.12 -m venv .venv
@@ -70,9 +86,11 @@ python3.12 -m venv .venv
 PYTHON=.venv/bin/python ./run.sh
 ```
 
-`run.sh` downloads missing Directors' Cup PDFs from the recorded source URLs, verifies their SHA-256 checksums, rebuilds the tables and local DuckDB database, regenerates the analysis and Tableau exports, and runs the full pytest suite. No API key is needed. PDF files, the database, caches, and virtual environments stay outside Git. If a source cannot be downloaded, use its `source_url` or `landing_url` in the manifests below, save it to the listed `file` path, and rerun; the checksum must match the recorded source version.
+`run.sh` downloads missing Directors' Cup PDFs from the recorded source URLs, verifies their SHA-256 checksums, rebuilds the tables and local DuckDB database, regenerates the analysis, Tableau exports and ML benchmark, and runs the full pytest suite. No API key is needed. PDF files, the database, caches, and virtual environments stay outside Git. If a source cannot be downloaded, use its `source_url` or `landing_url` in the manifests below, save it to the listed `file` path, and rerun; the checksum must match the recorded source version.
 
 CI runs the full test suite on Python 3.12.14 using committed synthetic PDF fixtures and audited CSVs, with network calls blocked during tests. It never downloads the 24 source PDFs. Both the pre-commit checks and a full-history secret scan run on every push and pull request.
+
+To rerun only the ML experiment after installing dependencies, run `.venv/bin/python -m src.ml_benchmark`.
 
 To enable the publication checks for future commits, run `.venv/bin/pre-commit install`. The pinned hooks scan for secrets and tokenized URLs; pytest also checks tracked files for tokenized URLs.
 
@@ -85,7 +103,7 @@ docker build -t swoosh-effect .
 docker run --rm --network none swoosh-effect
 ```
 
-The pinned Python 3.12.14 slim image installs exact dependency versions and runs as UID 10001. The default `--offline` mode rebuilds combined sport tables, DuckDB, statistical reports, and Tableau exports from the committed audited CSVs, then runs all tests. Network access is disabled during the run; the 24 source PDFs are not downloaded or included in the image. Outputs stay inside the disposable container. The host Git history, credentials, caches, virtualenvs, and `/site` are excluded from the build context. A fresh container-only Git index lets publication checks inspect the packaged files without carrying host history.
+The pinned Python 3.12.14 slim image installs exact dependency versions and runs as UID 10001. The default `--offline` mode rebuilds combined sport tables, DuckDB, statistical reports, Tableau exports and the ML benchmark from the committed audited CSVs, then runs all tests. Network access is disabled during the run; the 24 source PDFs are not downloaded or included in the image. Outputs stay inside the disposable container. The host Git history, credentials, caches, virtualenvs, and `/site` are excluded from the build context. A fresh container-only Git index lets publication checks inspect the packaged files without carrying host history.
 
 For a full raw-source rebuild, run the image with `./run.sh` and network access, or use the Python instructions above. On this Mac's isolated Colima profile, add `--context colima-swoosh` after `docker` in both commands. The same offline mode is available locally as `PYTHON=.venv/bin/python ./run.sh --offline`.
 
