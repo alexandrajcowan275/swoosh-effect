@@ -1,5 +1,7 @@
 # The Swoosh Effect
 
+[![CI](https://github.com/alexandrajcowan275/swoosh-effect/actions/workflows/ci.yml/badge.svg)](https://github.com/alexandrajcowan275/swoosh-effect/actions/workflows/ci.yml)
+
 A reproducible study of apparel providers and all-sport NCAA Division I athletic-department performance: does Nike pick winners or make them?
 
 ## TL;DR
@@ -69,6 +71,8 @@ PYTHON=.venv/bin/python ./run.sh
 ```
 
 `run.sh` downloads missing Directors' Cup PDFs from the recorded source URLs, verifies their SHA-256 checksums, rebuilds the tables and local DuckDB database, regenerates the analysis and Tableau exports, and runs the full pytest suite. No API key is needed. PDF files, the database, caches, and virtual environments stay outside Git. If a source cannot be downloaded, use its `source_url` or `landing_url` in the manifests below, save it to the listed `file` path, and rerun; the checksum must match the recorded source version.
+
+CI runs the full test suite on Python 3.12.14 using committed synthetic PDF fixtures and audited CSVs, with network calls blocked during tests. It never downloads the 24 source PDFs. Both the pre-commit checks and a full-history secret scan run on every push and pull request.
 
 To enable the publication checks for future commits, run `.venv/bin/pre-commit install`. The pinned hooks scan for secrets and tokenized URLs; pytest also checks tracked files for tokenized URLs.
 

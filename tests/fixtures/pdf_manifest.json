@@ -1,0 +1,16 @@
+[
+  {
+    "file": "tests/fixtures/synthetic_final.pdf",
+    "season": "2024-25",
+    "period": "final",
+    "source_url": "https://example.org/synthetic_final.pdf",
+    "sha256": "c65d2badd65d45840d5a4f796eb0cdd48516a6fa140ba1b6112d5867325e4991"
+  },
+  {
+    "file": "tests/fixtures/synthetic_fall.pdf",
+    "season": "2024-25",
+    "period": "fall",
+    "source_url": "https://example.org/synthetic_fall.pdf",
+    "sha256": "39b2bebfe9a24d60abfa32d2c530e729db8d981322eb03d2742c9d18959046e5"
+  }
+]

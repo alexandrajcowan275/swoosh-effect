@@ -49,15 +49,22 @@ def test_excluded_values_not_fabricated(actual):
 
 
 def test_real_pdf_parser_and_realignments(actual):
-    manifest = json.loads((ROOT/'data/sources.json').read_text())
-    source = next(s for s in manifest if s['season']=='2024-25')
+    # Real institution realignments remain checked against the audited tables.
+    season = actual[0][actual[0].season == '2024-25'].set_index('school')
+    assert season.loc['USC', 'conference'] == 'Big Ten'
+    assert season.loc['Stanford', 'conference'] == 'ACC'
+    source = json.loads((ROOT/'tests/fixtures/pdf_manifest.json').read_text())[0]
     schools, sports = parse_pdf(ROOT/source['file'], source['season'], source['source_url'])
-    assert len(schools) == len(actual[0][actual[0].season=='2024-25'])
-    assert schools.set_index('school').loc['USC','conference'] == 'Big Ten'
-    assert schools.set_index('school').loc['Stanford','conference'] == 'ACC'
-    row = sports[(sports.school=='Stanford') & (sports.sport=="Women's Rowing")].iloc[0]
-    assert row.sport_points == 100
-    assert row.source_page == 1
+    assert schools.school.tolist() == ['Example State', 'Example College']
+    assert schools.conference.tolist() == ['Example East', 'Example West']
+    assert schools.total_points.tolist() == [150, 75]
+    assert schools.spring_points.tolist() == [100, 25]
+    assert len(sports) == 28
+    row = sports[(sports.school=='Example State') & (sports.sport=="Women's Rowing")].iloc[0]
+    assert row.sport_points == 100 and row.source_page == 1
+    excluded = sports[sports.excluded]
+    assert len(excluded) == 1 and excluded.sport_points.isna().all()
+    assert excluded.counted_points.eq(0).all()
 
 
 def test_published_subtotal_reconciliation(actual):

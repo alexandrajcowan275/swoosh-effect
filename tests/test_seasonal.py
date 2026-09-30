@@ -70,11 +70,30 @@ def test_overflow_cells_are_auditable_derivations(tables):
     assert overflow.value_method.eq('derived_from_published_subtotal_single_overflow_cell').all()
 
 
-def test_source_checksums():
-    manifest=json.loads((ROOT/'data/seasonal_sources.json').read_text())
-    assert len(manifest)==16
-    for s in manifest:
-        assert hashlib.sha256((ROOT/s['file']).read_bytes()).hexdigest()==s['sha256']
+def test_source_manifests_and_fixture_checksums():
+    from src.download_sources import _verify_pdf
+    sources = json.loads((ROOT/'data/sources.json').read_text())
+    seasonal = json.loads((ROOT/'data/seasonal_sources.json').read_text())
+    assert len(sources) == 8 and len(seasonal) == 16
+    for source in sources + seasonal:
+        assert source['file'].startswith('data/raw/')
+        assert len(source['sha256']) == 64
+        assert source['source_url'].startswith('https://')
+    for source in json.loads((ROOT/'tests/fixtures/pdf_manifest.json').read_text()):
+        content = (ROOT/source['file']).read_bytes()
+        assert _verify_pdf(content, source['sha256']) is None
+        assert _verify_pdf(content + b'changed', source['sha256']).startswith('SHA-256 mismatch')
+
+
+def test_seasonal_pdf_parser_offline_fixture():
+    from src.parse_seasonal import parse_source
+    source = json.loads((ROOT/'tests/fixtures/pdf_manifest.json').read_text())[1]
+    rows, summary = parse_source(source, ['Example State', 'Example College'])
+    assert len(rows) == 18 and len(summary) == 2
+    assert summary.published_period_points.tolist() == [80, 25]
+    assert rows[rows.excluded_at_publication].sport_points.isna().all()
+    assert rows.groupby('school').published_counted_points.sum().to_dict() == {
+        'Example College': 25, 'Example State': 80}
 
 
 def test_new_winter_sports_match_visually_reviewed_header(tables):
