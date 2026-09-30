@@ -23,6 +23,12 @@ The pattern is **consistent with Nike signing already-elite programs and perform
 
 Numbers come from [brand_summary.csv](reports/brand_summary.csv) and [model_coefficients.csv](reports/model_coefficients.csv). All outcomes are department-level Directors' Cup performance across sports; rowing is an optional supporting cut.
 
+## Interactive dashboard
+
+[Explore the published Tableau Public dashboard](https://public.tableau.com/views/TheSwooshEffect/TheSwooshEffect) for top-10 finish rates, performance trends by brand, and nine descriptive switch case studies. The dashboard uses direct evidence (A+B).
+
+[![Published Tableau dashboard showing top-10 finish rates and performance trends by brand](docs/images/tableau-dashboard.jpg)](https://public.tableau.com/views/TheSwooshEffect/TheSwooshEffect)
+
 ## Models and sample sizes
 
 The plain model controls for conference and season. The lagged model additionally controls for the previous calendar season's percentile. Standard errors cluster by school; 95% confidence intervals use a small-sample correction and cluster-based t degrees of freedom. Nike is the reference brand, so coefficients below are percentile-point differences relative to Nike.
@@ -104,7 +110,7 @@ The underlying performance panel contains **2,833 school-seasons**: 2,395 publis
 
 ## Links
 
-- Tableau Public dashboard: `TABLEAU_PUBLIC_URL` — placeholder until the dashboard is published.
+- [Tableau Public dashboard](https://public.tableau.com/views/TheSwooshEffect/TheSwooshEffect)
 - Vercel showcase: `VERCEL_SITE_URL` — placeholder for the planned site.
 - [Analysis report](reports/phase3_analysis.html)
 - [Provider evidence audit](reports/sponsor_research.html)
