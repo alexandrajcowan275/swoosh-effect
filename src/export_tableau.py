@@ -1,12 +1,16 @@
 """Export the audited analysis without changing values or hiding missingness."""
+import argparse
 import json
 from pathlib import Path
 import pandas as pd
 
 ROOT=Path(__file__).resolve().parents[1]
+SEASON_ORDER={season:order for order,season in enumerate(
+    ['2017-18','2018-19','2020-21','2021-22','2022-23','2023-24','2024-25','2025-26'],start=1)}
+BRAND_DISPLAY={'Nike':'Nike','adidas':'adidas','Under Armour':'Under Armour','other':'Other'}
 
 
-def export_tableau(root=ROOT):
+def export_tableau(root=ROOT, *, write_validation=True):
     root=Path(root)
     panel=pd.read_csv(root/'data/processed/analysis_panel.csv')
     summary=pd.read_csv(root/'reports/brand_summary.csv')
@@ -18,6 +22,13 @@ def export_tableau(root=ROOT):
     school['rank']=school['rank'].astype('Int64')
     school['primary_included']=school.in_research_scope & school.evidence_tier.isin(['A','B','C'])
     school['sensitivity_included']=school.in_research_scope & school.evidence_tier.isin(['A','B'])
+    # Missing published ranks are non-finishes, not missing rate denominators.
+    school['top10']=school['rank'].le(10).fillna(False).astype('int64')
+    school['top25']=school['rank'].le(25).fillna(False).astype('int64')
+    assert school.season.isin(SEASON_ORDER).all(), 'Update the study season order before exporting.'
+    assert school.brand.dropna().isin(BRAND_DISPLAY).all(), 'Unrecognized provider display category.'
+    school['season_order']=school.season.map(SEASON_ORDER).astype('int64')
+    school['brand_display']=school.brand.map(BRAND_DISPLAY)
     school.loc[school.conference.isna(),'conference_basis']='not available; imputed zero year'
     school=school.sort_values(['school','season']).reset_index(drop=True)
     summary=summary.rename(columns={'mean_percentile':'mean_points_pctile','median_percentile':'median_points_pctile'})
@@ -41,7 +52,8 @@ def export_tableau(root=ROOT):
         missing_switch_outcomes=int(switches.points_pctile.isna().sum()),primary_rows=int(school.primary_included.sum()),
         sensitivity_rows=int(school.sensitivity_included.sum()),missing_conferences=int(school.conference.isna().sum()))
     (folder/'README.md').write_text(dictionary(counts))
-    (root/'reports/tableau_export_validation.json').write_text(json.dumps(counts,indent=2)+'\n')
+    if write_validation:
+        (root/'reports/tableau_export_validation.json').write_text(json.dumps(counts,indent=2)+'\n')
     print(json.dumps(counts,indent=2))
     return counts
 
@@ -53,8 +65,12 @@ Three UTF-8 CSVs, in tidy long format. Files are local; nothing has been publish
 to Tableau Public. Rebuild from the project directory:
 
 ```bash
-python -m src.export_tableau
+python -m src.export_tableau --exports-only
 ```
+
+`--exports-only` limits generated files to this folder. Omit it to also refresh
+`reports/tableau_export_validation.json`. Follow the [web-authoring guide](../../docs/tableau_build_guide.md)
+and check charts against the [expected values](../../docs/tableau_expected_values.md).
 
 Run `python src/build_database.py` and `python -m src.analyze` first if inputs
 changed. `run.sh` rebuilds the complete pipeline, exports, and tests.
@@ -77,7 +93,8 @@ Do not describe 90.7% as coverage of the entire D1 panel.
 
 1. Connect `school_season.csv` as a text data source. Treat `season` as text,
    `school`, `brand`, `evidence_tier` and `conference` as dimensions, flags as
-   booleans, and numeric columns as measures. Sort seasons by the first four digits.
+   booleans, and numeric columns as measures. Sort text `season` ascending by
+   MIN(`season_order`). Use `brand_display` for labels; blank brands remain blank.
 2. For the primary comparison, filter `primary_included = True` (A+B+C, n=537).
    For sensitivity, use `sensitivity_included = True` (A+B, n=467). Never convert
    a blank brand to `other`: that label is reserved for known smaller providers.
@@ -94,6 +111,8 @@ Do not describe 90.7% as coverage of the entire D1 panel.
    slots visible; do not connect a line across the cancelled 2019-20 season.
    Use the inclusion/usability flags for comparisons. t=0 is the first post
    season: the −2 through +2 window allows two pre and three post seasons.
+   For web authoring, Circle marks on fixed −2 to +2 axes preserve empty slots
+   without connecting across a missing year. Do not filter away null rows.
    These are descriptive case studies, not causal effects.
 
 ## school_season.csv
@@ -118,6 +137,10 @@ NULL/unknown, not zero. Booleans are written as `True`/`False`.
 | sponsor_source_url | Text, nullable | Direct evidence URL; for C, the left anchor URL. Both anchors and all provenance are in the season evidence audit linked below. |
 | primary_included | Boolean | Research-scope row with tier A, B, or C. |
 | sensitivity_included | Boolean | Research-scope row with tier A or B. |
+| top10 | Integer, 0 or 1 | 1 when published rank ≤10, otherwise 0, including blank rank. AVG(top10), formatted as a percentage, is the within-brand top-10 rate. |
+| top25 | Integer, 0 or 1 | 1 when published rank ≤25, otherwise 0, including blank rank. AVG(top25) is the within-brand top-25 rate. |
+| season_order | Integer, 1–8 | Chronological study-season order; canceled 2019-20 has no row. Use MIN(season_order) to sort season. |
+| brand_display | Text, nullable | Nike / adidas / Under Armour / Other; only known `other` is relabeled Other. Blank brand stays blank. |
 
 `points_pctile = 100 × average ascending rank(total_points) / eligible panel
 schools that season`. Ties receive their average rank. A zero may therefore have
@@ -196,4 +219,7 @@ coefficients; use the linked analysis outputs for those results.
 
 
 if __name__=='__main__':
-    export_tableau()
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--exports-only',action='store_true',help='Write only exports/tableau; leave reports unchanged.')
+    args=parser.parse_args()
+    export_tableau(write_validation=not args.exports_only)
