@@ -1,0 +1,13 @@
+{
+  "school_season_rows": 2833,
+  "schools": 358,
+  "brand_summary_rows": 8,
+  "switch_event_rows": 50,
+  "switches": 10,
+  "unknown_provider_rows": 2296,
+  "retained_zero_rows": 438,
+  "missing_switch_outcomes": 12,
+  "primary_rows": 537,
+  "sensitivity_rows": 467,
+  "missing_conferences": 436
+}

@@ -1,0 +1,75 @@
+school,power4_2025_26,top50_any_season,priority,research_status
+Alabama,True,True,1,reviewed_full_coverage
+Arizona,True,True,1,reviewed_full_coverage
+Arizona State,True,True,1,reviewed_partial_coverage
+Arkansas,True,True,1,reviewed_no_verified_interval
+Auburn,True,True,1,reviewed_full_coverage
+BYU,True,True,1,reviewed_full_coverage
+Baylor,True,True,1,reviewed_partial_coverage
+Boston College,True,False,1,reviewed_partial_coverage
+California,True,True,1,reviewed_full_coverage
+Cincinnati,True,False,1,reviewed_full_coverage
+Clemson,True,True,1,reviewed_full_coverage
+Colorado,True,True,1,reviewed_partial_coverage
+Cornell,False,True,2,reviewed_no_verified_interval
+Denver,False,True,2,reviewed_partial_coverage
+Duke,True,True,1,reviewed_full_coverage
+Florida,True,True,1,reviewed_partial_coverage
+Florida State,True,True,1,reviewed_full_coverage
+Georgia,True,True,1,reviewed_partial_coverage
+Georgia Tech,True,True,1,reviewed_full_coverage
+Harvard,False,True,2,reviewed_no_verified_interval
+Houston,True,False,1,reviewed_partial_coverage
+Illinois,True,True,1,reviewed_full_coverage
+Indiana,True,True,1,reviewed_full_coverage
+Iowa,True,True,1,reviewed_partial_coverage
+Iowa State,True,True,1,reviewed_partial_coverage
+Kansas,True,True,1,reviewed_full_coverage
+Kansas State,True,False,1,reviewed_full_coverage
+Kentucky,True,True,1,reviewed_full_coverage
+LSU,True,True,1,reviewed_full_coverage
+Louisville,True,True,1,reviewed_full_coverage
+Maryland,True,True,1,reviewed_full_coverage
+Miami (FL),True,True,1,reviewed_full_coverage
+Michigan,True,True,1,reviewed_full_coverage
+Michigan State,True,True,1,reviewed_full_coverage
+Minnesota,True,True,1,reviewed_partial_coverage
+Mississippi State,True,True,1,reviewed_partial_coverage
+Missouri,True,True,1,reviewed_partial_coverage
+Nebraska,True,True,1,reviewed_full_coverage
+New Mexico,False,True,2,reviewed_full_coverage
+North Carolina,True,True,1,reviewed_full_coverage
+North Carolina State,True,True,1,reviewed_partial_coverage
+Northwestern,True,True,1,reviewed_full_coverage
+Notre Dame,True,True,1,reviewed_full_coverage
+Ohio State,True,True,1,reviewed_full_coverage
+Oklahoma,True,True,1,reviewed_full_coverage
+Oklahoma State,True,True,1,reviewed_partial_coverage
+Ole Miss,True,True,1,reviewed_full_coverage
+Oregon,True,True,1,reviewed_full_coverage
+Penn State,True,True,1,reviewed_full_coverage
+Pittsburgh,True,False,1,reviewed_full_coverage
+Princeton,False,True,2,reviewed_partial_coverage
+Purdue,True,True,1,reviewed_partial_coverage
+Rutgers,True,True,1,reviewed_full_coverage
+SMU,True,False,1,reviewed_no_verified_interval
+South Carolina,True,True,1,reviewed_full_coverage
+Stanford,True,True,1,reviewed_partial_coverage
+Syracuse,True,True,1,reviewed_no_verified_interval
+TCU,True,True,1,reviewed_partial_coverage
+Tennessee,True,True,1,reviewed_full_coverage
+Texas,True,True,1,reviewed_full_coverage
+Texas A&M,True,True,1,reviewed_full_coverage
+Texas Tech,True,True,1,reviewed_full_coverage
+UCF,True,False,1,reviewed_full_coverage
+UCLA,True,True,1,reviewed_full_coverage
+USC,True,True,1,reviewed_full_coverage
+Utah,True,True,1,reviewed_full_coverage
+Vanderbilt,True,True,1,reviewed_partial_coverage
+Virginia,True,True,1,reviewed_partial_coverage
+Virginia Tech,True,True,1,reviewed_partial_coverage
+Wake Forest,True,True,1,reviewed_partial_coverage
+Washington,True,True,1,reviewed_full_coverage
+West Virginia,True,True,1,reviewed_full_coverage
+Wisconsin,True,True,1,reviewed_full_coverage
+Yale,False,True,2,reviewed_full_coverage

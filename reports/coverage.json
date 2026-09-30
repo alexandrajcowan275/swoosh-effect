@@ -1,0 +1,19 @@
+{
+  "school_seasons": 2395,
+  "sport_observations": 79234,
+  "seasonal_observations": 45704,
+  "source_documents": 24,
+  "source_overflow_cells_derived": 3,
+  "status_counts": {
+    "matches_final_subtotal": 3513,
+    "no_period_row_zero_final_subtotal": 1126,
+    "year_end_reduction_requires_exclusion_detail": 81,
+    "small_published_precision_or_source_difference": 61,
+    "final_exceeds_observed_requires_updated_source": 5,
+    "missing_period_row_nonzero_final_subtotal": 4
+  },
+  "missing_or_increased_school_periods": 9,
+  "year_end_contribution_uncertain_school_periods": 151,
+  "complete_year_end_sport_breakdown": false,
+  "note": "All available seasonal sport rows extracted. Source omissions and revisions remain explicit; no missing sport scores are fabricated."
+}

@@ -1,0 +1,12 @@
+{
+  "capture_stage": "After Phase 3; before algorithm refactor",
+  "sponsor_rows": 2864,
+  "raw_name_matches": 367,
+  "files": {
+    "phase3_name_matches.csv": "eff92a96b9f1b0a7dccdf5d1f912a2dcc325575b17fb9faff8598c486c8980ba",
+    "phase3_sponsor_assignments.csv": "6d6cd574f6116693c3d989bd98d4cbb87c2a8699838e803aa3b20b1dc9ef8117",
+    "phase3_model_coefficients.csv": "ae40c1d86e45836324137fb514bf2293b11689eaa61424bd7db721e7c3b669b1"
+  },
+  "baseline_id": "phase3-pre-algorithm-refactor",
+  "publication_note": "Frozen original Phase 3 assignments, name matches and coefficients. Publication-only provenance wording and canonical-URL sanitation are applied consistently to evidence and fixtures; numeric results and provider assignments are unchanged. This public repository starts with fresh history."
+}

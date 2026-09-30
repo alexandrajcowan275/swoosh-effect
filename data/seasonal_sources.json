@@ -1,0 +1,146 @@
+[
+  {
+    "season": "2017-18",
+    "period": "fall",
+    "landing_url": "https://nacda.com/documents/2018/7/18/Jan11overallDI.pdf",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2018/7/18/Jan11overallDI.pdf",
+    "file": "data/raw/2017-18-fall.pdf",
+    "sha256": "306c5e921e15195d279913c9a50a9073ed7739d1338b1de5e68227c53ed019fe",
+    "retrieved_at": "2026-09-30T04:44:09.984984+00:00"
+  },
+  {
+    "season": "2017-18",
+    "period": "winter",
+    "landing_url": "https://nacda.com/documents/2018/7/18/April26overallDI.pdf",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2018/7/18/April26overallDI.pdf",
+    "file": "data/raw/2017-18-winter.pdf",
+    "sha256": "dff7cb3faa5c2c0e1d11fdc4b06f0a071fc95cdc33f80b46480d93de01f17d6c",
+    "retrieved_at": "2026-09-30T04:44:11.153577+00:00"
+  },
+  {
+    "season": "2018-19",
+    "period": "fall",
+    "landing_url": "https://nacda.com/documents/2019/1/9/JAN10Overall.pdf",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2019/1/9/JAN10Overall.pdf",
+    "file": "data/raw/2018-19-fall.pdf",
+    "sha256": "85eb051ba4952a4f10fa569fd2b67a730e562182bcaf5542cee5d6fc45435f49",
+    "retrieved_at": "2026-09-30T04:44:12.533071+00:00"
+  },
+  {
+    "season": "2018-19",
+    "period": "winter",
+    "landing_url": "https://nacda.com/documents/2019/4/23/April25DIOverall.pdf",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2019/4/23/April25DIOverall.pdf",
+    "file": "data/raw/2018-19-winter.pdf",
+    "sha256": "31f62532b86d412b229f80f3d38a415e47c6796429b6e6792b99b7bff2d3b869",
+    "retrieved_at": "2026-09-30T04:44:13.916444+00:00"
+  },
+  {
+    "season": "2020-21",
+    "period": "fall",
+    "landing_url": "https://nacda.com/documents/2021/6/1/June3OverallDI.pdf",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2021/6/1/June3OverallDI.pdf",
+    "file": "data/raw/2020-21-fall.pdf",
+    "sha256": "3156dbf85130910e2e59dab7b5aa43c49432e2eb86271e3756012b6b9efd8842",
+    "retrieved_at": "2026-09-30T04:44:15.160560+00:00"
+  },
+  {
+    "season": "2020-21",
+    "period": "winter",
+    "landing_url": "https://nacda.com/documents/2021/6/1/June3OverallWinterDI.pdf",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2021/6/1/June3OverallWinterDI.pdf",
+    "file": "data/raw/2020-21-winter.pdf",
+    "sha256": "d96cf0a2845f71af6f598355723d619759c4f8cf8c54d89edd6e242be877ccf6",
+    "retrieved_at": "2026-09-30T04:44:16.387373+00:00"
+  },
+  {
+    "season": "2021-22",
+    "period": "fall",
+    "landing_url": "https://nacda.com/documents/2022/1/12/Jan_13OverallStandings.pdf",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2022/1/12/Jan_13OverallStandings.pdf",
+    "file": "data/raw/2021-22-fall.pdf",
+    "sha256": "cbf14fab6fed656f3907f5d97ed9f69987a56587579cf6d617289988798ee69d",
+    "retrieved_at": "2026-09-30T04:44:17.625506+00:00"
+  },
+  {
+    "season": "2021-22",
+    "period": "winter",
+    "landing_url": "https://nacda.com/documents/2022/4/21/April21Overall.pdf",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2022/4/21/April21Overall.pdf",
+    "file": "data/raw/2021-22-winter.pdf",
+    "sha256": "b090c1c671ca23fb31f381e9060adee43eec52ac3b3e4ffc072e2954e8aeb077",
+    "retrieved_at": "2026-09-30T04:44:18.865245+00:00"
+  },
+  {
+    "season": "2022-23",
+    "period": "fall",
+    "landing_url": "https://nacda.com/documents/2023/1/13/Jan_12OverallStandings_Update.pdf",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2023/1/13/Jan_12OverallStandings_Update.pdf",
+    "file": "data/raw/2022-23-fall.pdf",
+    "sha256": "862c66ff934ed3f69acfcfa37ee2cf085ad2f0c21a65267f4279c6a448765135",
+    "retrieved_at": "2026-09-30T04:44:20.048336+00:00"
+  },
+  {
+    "season": "2022-23",
+    "period": "winter",
+    "landing_url": "https://nacda.com/documents/2023/4/21/April21Overall.pdf",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2023/4/21/April21Overall.pdf",
+    "file": "data/raw/2022-23-winter.pdf",
+    "sha256": "a12d804c19771592d00116a24506bc143e7f8546245b7344566bd8be566c1853",
+    "retrieved_at": "2026-09-30T04:44:21.325912+00:00"
+  },
+  {
+    "season": "2023-24",
+    "period": "fall",
+    "landing_url": "https://nacda.com/documents/2024/1/9/23.24DI_FinalFallOverall.pdf",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2024/1/9/23.24DI_FinalFallOverall.pdf",
+    "file": "data/raw/2023-24-fall.pdf",
+    "sha256": "ecfa7517dfd6f5c4f5da3d0befb696c1685c835f147d3a0a9eb23dad90dc5a2d",
+    "retrieved_at": "2026-09-30T04:44:22.898199+00:00"
+  },
+  {
+    "season": "2023-24",
+    "period": "winter",
+    "landing_url": "https://nacda.com/documents/2024/4/22/23.24DI_WinterOverall_4.25.pdf",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2024/4/22/23.24DI_WinterOverall_4.25.pdf",
+    "file": "data/raw/2023-24-winter.pdf",
+    "sha256": "2003a561d7571eaabe312df5eda804088486f00786f27e5e9c14447f9063b750",
+    "retrieved_at": "2026-09-30T04:44:24.193505+00:00"
+  },
+  {
+    "season": "2024-25",
+    "period": "fall",
+    "landing_url": "https://nacda.com/documents/2025/1/21/24.25DI_FinalFallOverall.pdf",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2025/1/21/24.25DI_FinalFallOverall.pdf",
+    "file": "data/raw/2024-25-fall.pdf",
+    "sha256": "8150f2635bfafa55218412a4d8d82602cb9814506e557ffaa3713a1246f1e5d6",
+    "retrieved_at": "2026-09-30T04:44:25.393986+00:00"
+  },
+  {
+    "season": "2024-25",
+    "period": "winter",
+    "landing_url": "https://nacda.com/documents/2025/4/22/24.25DI_WinterOverall_4.24.pdf",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2025/4/22/24.25DI_WinterOverall_4.24.pdf",
+    "file": "data/raw/2024-25-winter.pdf",
+    "sha256": "87d7e9e88d5d0a7172bd48111ccc91bd1b9c202277f87cdfabd25b203144ac47",
+    "retrieved_at": "2026-09-30T04:44:27.531876+00:00"
+  },
+  {
+    "season": "2025-26",
+    "period": "fall",
+    "landing_url": "https://nacda.com/documents/2026/1/20/25.26DI_FinalFallOverall.pdf",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2026/1/20/25.26DI_FinalFallOverall.pdf",
+    "file": "data/raw/2025-26-fall.pdf",
+    "sha256": "7d0fac90bd0c4248fb7572ba2d4ed0a4db149dd9079a6a779f5606cc4d1b2bb4",
+    "retrieved_at": "2026-09-30T04:44:29.216823+00:00"
+  },
+  {
+    "season": "2025-26",
+    "period": "winter",
+    "landing_url": "https://nacda.com/documents/2026/4/20/25.26DI_WinterOverall_4.23.pdf",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2026/4/20/25.26DI_WinterOverall_4.23.pdf",
+    "file": "data/raw/2025-26-winter.pdf",
+    "sha256": "f44c9544f76f3c3e9980dfe4c54edad92fa617c7420970d7cde9342a312e8dfd",
+    "retrieved_at": "2026-09-30T04:44:30.482063+00:00"
+  }
+]

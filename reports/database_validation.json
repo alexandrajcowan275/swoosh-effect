@@ -1,0 +1,26 @@
+{
+  "canonical_schools": 358,
+  "mapped_source_names": 367,
+  "observed_school_seasons": 2395,
+  "panel_rows": 2833,
+  "zero_rows_reviewed": 469,
+  "zero_rows_kept": 438,
+  "zero_rows_dropped": 31,
+  "priority_schools": 74,
+  "priority_school_seasons": 592,
+  "evidence_tier_counts": {
+    "A": 445,
+    "C": 70,
+    "unknown": 55,
+    "B": 22
+  },
+  "covered_priority_school_seasons": 537,
+  "coverage_percent": 90.71,
+  "direct_priority_school_seasons": 467,
+  "fully_covered_priority_schools": 63,
+  "unknown_priority_school_seasons": 55,
+  "verified_brand_switches": 8,
+  "status": "90% evidence threshold reached; sponsorship research stopped; ready for Phase 3",
+  "reviewed_priority_schools": 74,
+  "documented_switch_events": 10
+}

@@ -1,0 +1,295 @@
+evidence_tiers,universe,season,brand,n,denominator,share_pct,n_schools
+A+B+C,Ranked D1,All seasons,Nike,350,2395,14.613778705636744,53
+A+B+C,Ranked D1,All seasons,Unassigned,1859,2395,77.62004175365344,295
+A+B+C,Ranked D1,All seasons,Under Armour,85,2395,3.549060542797495,14
+A+B+C,Ranked D1,All seasons,adidas,94,2395,3.9248434237995826,13
+A+B+C,Ranked D1,All seasons,other,7,2395,0.29227557411273486,3
+A+B+C,Ranked D1,2017-18,Nike,44,292,15.068493150684931,44
+A+B+C,Ranked D1,2017-18,Unassigned,224,292,76.71232876712328,224
+A+B+C,Ranked D1,2017-18,Under Armour,13,292,4.4520547945205475,13
+A+B+C,Ranked D1,2017-18,adidas,10,292,3.4246575342465753,10
+A+B+C,Ranked D1,2017-18,other,1,292,0.3424657534246575,1
+A+B+C,Ranked D1,2018-19,Nike,43,295,14.576271186440678,43
+A+B+C,Ranked D1,2018-19,Unassigned,228,295,77.28813559322033,228
+A+B+C,Ranked D1,2018-19,Under Armour,13,295,4.406779661016949,13
+A+B+C,Ranked D1,2018-19,adidas,11,295,3.7288135593220337,11
+A+B+C,Ranked D1,2020-21,Nike,42,293,14.334470989761092,42
+A+B+C,Ranked D1,2020-21,Unassigned,226,293,77.13310580204778,226
+A+B+C,Ranked D1,2020-21,Under Armour,12,293,4.09556313993174,12
+A+B+C,Ranked D1,2020-21,adidas,12,293,4.09556313993174,12
+A+B+C,Ranked D1,2020-21,other,1,293,0.3412969283276451,1
+A+B+C,Ranked D1,2021-22,Nike,45,295,15.254237288135593,45
+A+B+C,Ranked D1,2021-22,Unassigned,226,295,76.61016949152543,226
+A+B+C,Ranked D1,2021-22,Under Armour,11,295,3.7288135593220337,11
+A+B+C,Ranked D1,2021-22,adidas,12,295,4.067796610169491,12
+A+B+C,Ranked D1,2021-22,other,1,295,0.3389830508474576,1
+A+B+C,Ranked D1,2022-23,Nike,45,305,14.754098360655737,45
+A+B+C,Ranked D1,2022-23,Unassigned,236,305,77.37704918032787,236
+A+B+C,Ranked D1,2022-23,Under Armour,11,305,3.6065573770491803,11
+A+B+C,Ranked D1,2022-23,adidas,12,305,3.9344262295081966,12
+A+B+C,Ranked D1,2022-23,other,1,305,0.32786885245901637,1
+A+B+C,Ranked D1,2023-24,Nike,44,311,14.14790996784566,44
+A+B+C,Ranked D1,2023-24,Unassigned,245,311,78.7781350482315,245
+A+B+C,Ranked D1,2023-24,Under Armour,9,311,2.8938906752411575,9
+A+B+C,Ranked D1,2023-24,adidas,12,311,3.8585209003215435,12
+A+B+C,Ranked D1,2023-24,other,1,311,0.3215434083601286,1
+A+B+C,Ranked D1,2024-25,Nike,43,303,14.191419141914192,43
+A+B+C,Ranked D1,2024-25,Unassigned,238,303,78.54785478547855,238
+A+B+C,Ranked D1,2024-25,Under Armour,8,303,2.6402640264026402,8
+A+B+C,Ranked D1,2024-25,adidas,13,303,4.29042904290429,13
+A+B+C,Ranked D1,2024-25,other,1,303,0.33003300330033003,1
+A+B+C,Ranked D1,2025-26,Nike,44,301,14.617940199335548,44
+A+B+C,Ranked D1,2025-26,Unassigned,236,301,78.40531561461793,236
+A+B+C,Ranked D1,2025-26,Under Armour,8,301,2.6578073089700998,8
+A+B+C,Ranked D1,2025-26,adidas,12,301,3.9867109634551494,12
+A+B+C,Ranked D1,2025-26,other,1,301,0.33222591362126247,1
+A+B+C,Current Power 4 cohort,All seasons,Nike,339,544,62.31617647058823,50
+A+B+C,Current Power 4 cohort,All seasons,Unassigned,28,544,5.147058823529412,7
+A+B+C,Current Power 4 cohort,All seasons,Under Armour,77,544,14.154411764705882,12
+A+B+C,Current Power 4 cohort,All seasons,adidas,94,544,17.279411764705884,13
+A+B+C,Current Power 4 cohort,All seasons,other,6,544,1.1029411764705883,2
+A+B+C,Current Power 4 cohort,2017-18,Nike,43,68,63.23529411764706,43
+A+B+C,Current Power 4 cohort,2017-18,Unassigned,2,68,2.9411764705882355,2
+A+B+C,Current Power 4 cohort,2017-18,Under Armour,12,68,17.647058823529413,12
+A+B+C,Current Power 4 cohort,2017-18,adidas,10,68,14.705882352941176,10
+A+B+C,Current Power 4 cohort,2017-18,other,1,68,1.4705882352941178,1
+A+B+C,Current Power 4 cohort,2018-19,Nike,42,68,61.76470588235294,42
+A+B+C,Current Power 4 cohort,2018-19,Unassigned,3,68,4.411764705882353,3
+A+B+C,Current Power 4 cohort,2018-19,Under Armour,12,68,17.647058823529413,12
+A+B+C,Current Power 4 cohort,2018-19,adidas,11,68,16.176470588235293,11
+A+B+C,Current Power 4 cohort,2020-21,Nike,41,68,60.294117647058826,41
+A+B+C,Current Power 4 cohort,2020-21,Unassigned,3,68,4.411764705882353,3
+A+B+C,Current Power 4 cohort,2020-21,Under Armour,12,68,17.647058823529413,12
+A+B+C,Current Power 4 cohort,2020-21,adidas,12,68,17.647058823529413,12
+A+B+C,Current Power 4 cohort,2021-22,Nike,43,68,63.23529411764706,43
+A+B+C,Current Power 4 cohort,2021-22,Unassigned,2,68,2.9411764705882355,2
+A+B+C,Current Power 4 cohort,2021-22,Under Armour,10,68,14.705882352941176,10
+A+B+C,Current Power 4 cohort,2021-22,adidas,12,68,17.647058823529413,12
+A+B+C,Current Power 4 cohort,2021-22,other,1,68,1.4705882352941178,1
+A+B+C,Current Power 4 cohort,2022-23,Nike,43,68,63.23529411764706,43
+A+B+C,Current Power 4 cohort,2022-23,Unassigned,2,68,2.9411764705882355,2
+A+B+C,Current Power 4 cohort,2022-23,Under Armour,10,68,14.705882352941176,10
+A+B+C,Current Power 4 cohort,2022-23,adidas,12,68,17.647058823529413,12
+A+B+C,Current Power 4 cohort,2022-23,other,1,68,1.4705882352941178,1
+A+B+C,Current Power 4 cohort,2023-24,Nike,43,68,63.23529411764706,43
+A+B+C,Current Power 4 cohort,2023-24,Unassigned,4,68,5.882352941176471,4
+A+B+C,Current Power 4 cohort,2023-24,Under Armour,8,68,11.764705882352942,8
+A+B+C,Current Power 4 cohort,2023-24,adidas,12,68,17.647058823529413,12
+A+B+C,Current Power 4 cohort,2023-24,other,1,68,1.4705882352941178,1
+A+B+C,Current Power 4 cohort,2024-25,Nike,42,68,61.76470588235294,42
+A+B+C,Current Power 4 cohort,2024-25,Unassigned,5,68,7.352941176470588,5
+A+B+C,Current Power 4 cohort,2024-25,Under Armour,7,68,10.294117647058824,7
+A+B+C,Current Power 4 cohort,2024-25,adidas,13,68,19.11764705882353,13
+A+B+C,Current Power 4 cohort,2024-25,other,1,68,1.4705882352941178,1
+A+B+C,Current Power 4 cohort,2025-26,Nike,42,68,61.76470588235294,42
+A+B+C,Current Power 4 cohort,2025-26,Unassigned,7,68,10.294117647058824,7
+A+B+C,Current Power 4 cohort,2025-26,Under Armour,6,68,8.823529411764707,6
+A+B+C,Current Power 4 cohort,2025-26,adidas,12,68,17.647058823529413,12
+A+B+C,Current Power 4 cohort,2025-26,other,1,68,1.4705882352941178,1
+A+B+C,Top 10 finishes,All seasons,Nike,67,80,83.75,18
+A+B+C,Top 10 finishes,All seasons,Unassigned,8,80,10.0,2
+A+B+C,Top 10 finishes,All seasons,Under Armour,3,80,3.75,2
+A+B+C,Top 10 finishes,All seasons,adidas,2,80,2.5,1
+A+B+C,Top 10 finishes,2017-18,Nike,7,10,70.0,7
+A+B+C,Top 10 finishes,2017-18,Unassigned,1,10,10.0,1
+A+B+C,Top 10 finishes,2017-18,Under Armour,1,10,10.0,1
+A+B+C,Top 10 finishes,2017-18,adidas,1,10,10.0,1
+A+B+C,Top 10 finishes,2018-19,Nike,8,10,80.0,8
+A+B+C,Top 10 finishes,2018-19,Unassigned,1,10,10.0,1
+A+B+C,Top 10 finishes,2018-19,Under Armour,1,10,10.0,1
+A+B+C,Top 10 finishes,2020-21,Nike,9,10,90.0,9
+A+B+C,Top 10 finishes,2020-21,Unassigned,1,10,10.0,1
+A+B+C,Top 10 finishes,2021-22,Nike,8,10,80.0,8
+A+B+C,Top 10 finishes,2021-22,Unassigned,1,10,10.0,1
+A+B+C,Top 10 finishes,2021-22,Under Armour,1,10,10.0,1
+A+B+C,Top 10 finishes,2022-23,Nike,10,10,100.0,10
+A+B+C,Top 10 finishes,2023-24,Nike,8,10,80.0,8
+A+B+C,Top 10 finishes,2023-24,Unassigned,1,10,10.0,1
+A+B+C,Top 10 finishes,2023-24,adidas,1,10,10.0,1
+A+B+C,Top 10 finishes,2024-25,Nike,9,10,90.0,9
+A+B+C,Top 10 finishes,2024-25,Unassigned,1,10,10.0,1
+A+B+C,Top 10 finishes,2025-26,Nike,8,10,80.0,8
+A+B+C,Top 10 finishes,2025-26,Unassigned,2,10,20.0,2
+A+B+C,Top 25 finishes,All seasons,Nike,147,200,73.5,27
+A+B+C,Top 25 finishes,All seasons,Unassigned,10,200,5.0,3
+A+B+C,Top 25 finishes,All seasons,Under Armour,22,200,11.0,6
+A+B+C,Top 25 finishes,All seasons,adidas,21,200,10.5,5
+A+B+C,Top 25 finishes,2017-18,Nike,17,25,68.0,17
+A+B+C,Top 25 finishes,2017-18,Unassigned,1,25,4.0,1
+A+B+C,Top 25 finishes,2017-18,Under Armour,5,25,20.0,5
+A+B+C,Top 25 finishes,2017-18,adidas,2,25,8.0,2
+A+B+C,Top 25 finishes,2018-19,Nike,17,25,68.0,17
+A+B+C,Top 25 finishes,2018-19,Unassigned,1,25,4.0,1
+A+B+C,Top 25 finishes,2018-19,Under Armour,5,25,20.0,5
+A+B+C,Top 25 finishes,2018-19,adidas,2,25,8.0,2
+A+B+C,Top 25 finishes,2020-21,Nike,19,25,76.0,19
+A+B+C,Top 25 finishes,2020-21,Unassigned,1,25,4.0,1
+A+B+C,Top 25 finishes,2020-21,Under Armour,2,25,8.0,2
+A+B+C,Top 25 finishes,2020-21,adidas,3,25,12.0,3
+A+B+C,Top 25 finishes,2021-22,Nike,20,25,80.0,20
+A+B+C,Top 25 finishes,2021-22,Unassigned,1,25,4.0,1
+A+B+C,Top 25 finishes,2021-22,Under Armour,2,25,8.0,2
+A+B+C,Top 25 finishes,2021-22,adidas,2,25,8.0,2
+A+B+C,Top 25 finishes,2022-23,Nike,20,25,80.0,20
+A+B+C,Top 25 finishes,2022-23,Under Armour,2,25,8.0,2
+A+B+C,Top 25 finishes,2022-23,adidas,3,25,12.0,3
+A+B+C,Top 25 finishes,2023-24,Nike,19,25,76.0,19
+A+B+C,Top 25 finishes,2023-24,Unassigned,1,25,4.0,1
+A+B+C,Top 25 finishes,2023-24,Under Armour,2,25,8.0,2
+A+B+C,Top 25 finishes,2023-24,adidas,3,25,12.0,3
+A+B+C,Top 25 finishes,2024-25,Nike,18,25,72.0,18
+A+B+C,Top 25 finishes,2024-25,Unassigned,2,25,8.0,2
+A+B+C,Top 25 finishes,2024-25,Under Armour,2,25,8.0,2
+A+B+C,Top 25 finishes,2024-25,adidas,3,25,12.0,3
+A+B+C,Top 25 finishes,2025-26,Nike,17,25,68.0,17
+A+B+C,Top 25 finishes,2025-26,Unassigned,3,25,12.0,3
+A+B+C,Top 25 finishes,2025-26,Under Armour,2,25,8.0,2
+A+B+C,Top 25 finishes,2025-26,adidas,3,25,12.0,3
+A+B,Ranked D1,All seasons,Nike,289,2395,12.066805845511482,53
+A+B,Ranked D1,All seasons,Unassigned,1929,2395,80.5427974947808,311
+A+B,Ranked D1,All seasons,Under Armour,85,2395,3.549060542797495,14
+A+B,Ranked D1,All seasons,adidas,85,2395,3.549060542797495,13
+A+B,Ranked D1,All seasons,other,7,2395,0.29227557411273486,3
+A+B,Ranked D1,2017-18,Nike,44,292,15.068493150684931,44
+A+B,Ranked D1,2017-18,Unassigned,224,292,76.71232876712328,224
+A+B,Ranked D1,2017-18,Under Armour,13,292,4.4520547945205475,13
+A+B,Ranked D1,2017-18,adidas,10,292,3.4246575342465753,10
+A+B,Ranked D1,2017-18,other,1,292,0.3424657534246575,1
+A+B,Ranked D1,2018-19,Nike,34,295,11.525423728813559,34
+A+B,Ranked D1,2018-19,Unassigned,237,295,80.33898305084746,237
+A+B,Ranked D1,2018-19,Under Armour,13,295,4.406779661016949,13
+A+B,Ranked D1,2018-19,adidas,11,295,3.7288135593220337,11
+A+B,Ranked D1,2020-21,Nike,32,293,10.921501706484642,32
+A+B,Ranked D1,2020-21,Unassigned,236,293,80.54607508532423,236
+A+B,Ranked D1,2020-21,Under Armour,12,293,4.09556313993174,12
+A+B,Ranked D1,2020-21,adidas,12,293,4.09556313993174,12
+A+B,Ranked D1,2020-21,other,1,293,0.3412969283276451,1
+A+B,Ranked D1,2021-22,Nike,36,295,12.203389830508474,36
+A+B,Ranked D1,2021-22,Unassigned,236,295,80.0,236
+A+B,Ranked D1,2021-22,Under Armour,11,295,3.7288135593220337,11
+A+B,Ranked D1,2021-22,adidas,11,295,3.7288135593220337,11
+A+B,Ranked D1,2021-22,other,1,295,0.3389830508474576,1
+A+B,Ranked D1,2022-23,Nike,35,305,11.475409836065573,35
+A+B,Ranked D1,2022-23,Unassigned,248,305,81.31147540983606,248
+A+B,Ranked D1,2022-23,Under Armour,11,305,3.6065573770491803,11
+A+B,Ranked D1,2022-23,adidas,10,305,3.278688524590164,10
+A+B,Ranked D1,2022-23,other,1,305,0.32786885245901637,1
+A+B,Ranked D1,2023-24,Nike,33,311,10.610932475884244,33
+A+B,Ranked D1,2023-24,Unassigned,259,311,83.27974276527331,259
+A+B,Ranked D1,2023-24,Under Armour,9,311,2.8938906752411575,9
+A+B,Ranked D1,2023-24,adidas,9,311,2.8938906752411575,9
+A+B,Ranked D1,2023-24,other,1,311,0.3215434083601286,1
+A+B,Ranked D1,2024-25,Nike,31,303,10.231023102310232,31
+A+B,Ranked D1,2024-25,Unassigned,253,303,83.4983498349835,253
+A+B,Ranked D1,2024-25,Under Armour,8,303,2.6402640264026402,8
+A+B,Ranked D1,2024-25,adidas,10,303,3.3003300330033003,10
+A+B,Ranked D1,2024-25,other,1,303,0.33003300330033003,1
+A+B,Ranked D1,2025-26,Nike,44,301,14.617940199335548,44
+A+B,Ranked D1,2025-26,Unassigned,236,301,78.40531561461793,236
+A+B,Ranked D1,2025-26,Under Armour,8,301,2.6578073089700998,8
+A+B,Ranked D1,2025-26,adidas,12,301,3.9867109634551494,12
+A+B,Ranked D1,2025-26,other,1,301,0.33222591362126247,1
+A+B,Current Power 4 cohort,All seasons,Nike,278,544,51.10294117647059,50
+A+B,Current Power 4 cohort,All seasons,Unassigned,98,544,18.014705882352942,23
+A+B,Current Power 4 cohort,All seasons,Under Armour,77,544,14.154411764705882,12
+A+B,Current Power 4 cohort,All seasons,adidas,85,544,15.625,13
+A+B,Current Power 4 cohort,All seasons,other,6,544,1.1029411764705883,2
+A+B,Current Power 4 cohort,2017-18,Nike,43,68,63.23529411764706,43
+A+B,Current Power 4 cohort,2017-18,Unassigned,2,68,2.9411764705882355,2
+A+B,Current Power 4 cohort,2017-18,Under Armour,12,68,17.647058823529413,12
+A+B,Current Power 4 cohort,2017-18,adidas,10,68,14.705882352941176,10
+A+B,Current Power 4 cohort,2017-18,other,1,68,1.4705882352941178,1
+A+B,Current Power 4 cohort,2018-19,Nike,33,68,48.529411764705884,33
+A+B,Current Power 4 cohort,2018-19,Unassigned,12,68,17.647058823529413,12
+A+B,Current Power 4 cohort,2018-19,Under Armour,12,68,17.647058823529413,12
+A+B,Current Power 4 cohort,2018-19,adidas,11,68,16.176470588235293,11
+A+B,Current Power 4 cohort,2020-21,Nike,31,68,45.588235294117645,31
+A+B,Current Power 4 cohort,2020-21,Unassigned,13,68,19.11764705882353,13
+A+B,Current Power 4 cohort,2020-21,Under Armour,12,68,17.647058823529413,12
+A+B,Current Power 4 cohort,2020-21,adidas,12,68,17.647058823529413,12
+A+B,Current Power 4 cohort,2021-22,Nike,34,68,50.0,34
+A+B,Current Power 4 cohort,2021-22,Unassigned,12,68,17.647058823529413,12
+A+B,Current Power 4 cohort,2021-22,Under Armour,10,68,14.705882352941176,10
+A+B,Current Power 4 cohort,2021-22,adidas,11,68,16.176470588235293,11
+A+B,Current Power 4 cohort,2021-22,other,1,68,1.4705882352941178,1
+A+B,Current Power 4 cohort,2022-23,Nike,33,68,48.529411764705884,33
+A+B,Current Power 4 cohort,2022-23,Unassigned,14,68,20.58823529411765,14
+A+B,Current Power 4 cohort,2022-23,Under Armour,10,68,14.705882352941176,10
+A+B,Current Power 4 cohort,2022-23,adidas,10,68,14.705882352941176,10
+A+B,Current Power 4 cohort,2022-23,other,1,68,1.4705882352941178,1
+A+B,Current Power 4 cohort,2023-24,Nike,32,68,47.05882352941177,32
+A+B,Current Power 4 cohort,2023-24,Unassigned,18,68,26.470588235294116,18
+A+B,Current Power 4 cohort,2023-24,Under Armour,8,68,11.764705882352942,8
+A+B,Current Power 4 cohort,2023-24,adidas,9,68,13.235294117647058,9
+A+B,Current Power 4 cohort,2023-24,other,1,68,1.4705882352941178,1
+A+B,Current Power 4 cohort,2024-25,Nike,30,68,44.11764705882353,30
+A+B,Current Power 4 cohort,2024-25,Unassigned,20,68,29.41176470588235,20
+A+B,Current Power 4 cohort,2024-25,Under Armour,7,68,10.294117647058824,7
+A+B,Current Power 4 cohort,2024-25,adidas,10,68,14.705882352941176,10
+A+B,Current Power 4 cohort,2024-25,other,1,68,1.4705882352941178,1
+A+B,Current Power 4 cohort,2025-26,Nike,42,68,61.76470588235294,42
+A+B,Current Power 4 cohort,2025-26,Unassigned,7,68,10.294117647058824,7
+A+B,Current Power 4 cohort,2025-26,Under Armour,6,68,8.823529411764707,6
+A+B,Current Power 4 cohort,2025-26,adidas,12,68,17.647058823529413,12
+A+B,Current Power 4 cohort,2025-26,other,1,68,1.4705882352941178,1
+A+B,Top 10 finishes,All seasons,Nike,61,80,76.25,17
+A+B,Top 10 finishes,All seasons,Unassigned,14,80,17.5,5
+A+B,Top 10 finishes,All seasons,Under Armour,3,80,3.75,2
+A+B,Top 10 finishes,All seasons,adidas,2,80,2.5,1
+A+B,Top 10 finishes,2017-18,Nike,7,10,70.0,7
+A+B,Top 10 finishes,2017-18,Unassigned,1,10,10.0,1
+A+B,Top 10 finishes,2017-18,Under Armour,1,10,10.0,1
+A+B,Top 10 finishes,2017-18,adidas,1,10,10.0,1
+A+B,Top 10 finishes,2018-19,Nike,7,10,70.0,7
+A+B,Top 10 finishes,2018-19,Unassigned,2,10,20.0,2
+A+B,Top 10 finishes,2018-19,Under Armour,1,10,10.0,1
+A+B,Top 10 finishes,2020-21,Nike,8,10,80.0,8
+A+B,Top 10 finishes,2020-21,Unassigned,2,10,20.0,2
+A+B,Top 10 finishes,2021-22,Nike,7,10,70.0,7
+A+B,Top 10 finishes,2021-22,Unassigned,2,10,20.0,2
+A+B,Top 10 finishes,2021-22,Under Armour,1,10,10.0,1
+A+B,Top 10 finishes,2022-23,Nike,9,10,90.0,9
+A+B,Top 10 finishes,2022-23,Unassigned,1,10,10.0,1
+A+B,Top 10 finishes,2023-24,Nike,7,10,70.0,7
+A+B,Top 10 finishes,2023-24,Unassigned,2,10,20.0,2
+A+B,Top 10 finishes,2023-24,adidas,1,10,10.0,1
+A+B,Top 10 finishes,2024-25,Nike,8,10,80.0,8
+A+B,Top 10 finishes,2024-25,Unassigned,2,10,20.0,2
+A+B,Top 10 finishes,2025-26,Nike,8,10,80.0,8
+A+B,Top 10 finishes,2025-26,Unassigned,2,10,20.0,2
+A+B,Top 25 finishes,All seasons,Nike,133,200,66.5,27
+A+B,Top 25 finishes,All seasons,Unassigned,27,200,13.5,8
+A+B,Top 25 finishes,All seasons,Under Armour,22,200,11.0,6
+A+B,Top 25 finishes,All seasons,adidas,18,200,9.0,5
+A+B,Top 25 finishes,2017-18,Nike,17,25,68.0,17
+A+B,Top 25 finishes,2017-18,Unassigned,1,25,4.0,1
+A+B,Top 25 finishes,2017-18,Under Armour,5,25,20.0,5
+A+B,Top 25 finishes,2017-18,adidas,2,25,8.0,2
+A+B,Top 25 finishes,2018-19,Nike,14,25,56.0,14
+A+B,Top 25 finishes,2018-19,Unassigned,4,25,16.0,4
+A+B,Top 25 finishes,2018-19,Under Armour,5,25,20.0,5
+A+B,Top 25 finishes,2018-19,adidas,2,25,8.0,2
+A+B,Top 25 finishes,2020-21,Nike,17,25,68.0,17
+A+B,Top 25 finishes,2020-21,Unassigned,3,25,12.0,3
+A+B,Top 25 finishes,2020-21,Under Armour,2,25,8.0,2
+A+B,Top 25 finishes,2020-21,adidas,3,25,12.0,3
+A+B,Top 25 finishes,2021-22,Nike,18,25,72.0,18
+A+B,Top 25 finishes,2021-22,Unassigned,3,25,12.0,3
+A+B,Top 25 finishes,2021-22,Under Armour,2,25,8.0,2
+A+B,Top 25 finishes,2021-22,adidas,2,25,8.0,2
+A+B,Top 25 finishes,2022-23,Nike,18,25,72.0,18
+A+B,Top 25 finishes,2022-23,Unassigned,3,25,12.0,3
+A+B,Top 25 finishes,2022-23,Under Armour,2,25,8.0,2
+A+B,Top 25 finishes,2022-23,adidas,2,25,8.0,2
+A+B,Top 25 finishes,2023-24,Nike,17,25,68.0,17
+A+B,Top 25 finishes,2023-24,Unassigned,4,25,16.0,4
+A+B,Top 25 finishes,2023-24,Under Armour,2,25,8.0,2
+A+B,Top 25 finishes,2023-24,adidas,2,25,8.0,2
+A+B,Top 25 finishes,2024-25,Nike,15,25,60.0,15
+A+B,Top 25 finishes,2024-25,Unassigned,6,25,24.0,6
+A+B,Top 25 finishes,2024-25,Under Armour,2,25,8.0,2
+A+B,Top 25 finishes,2024-25,adidas,2,25,8.0,2
+A+B,Top 25 finishes,2025-26,Nike,17,25,68.0,17
+A+B,Top 25 finishes,2025-26,Unassigned,3,25,12.0,3
+A+B,Top 25 finishes,2025-26,Under Armour,2,25,8.0,2
+A+B,Top 25 finishes,2025-26,adidas,3,25,12.0,3

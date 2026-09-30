@@ -1,0 +1,290 @@
+[
+  {
+    "season": "2017-18",
+    "school_rows": 292,
+    "sport_rows": 4088,
+    "max_spring_sum_error": 0.0,
+    "max_total_sum_error": 0.0,
+    "spring_mismatches": [],
+    "top5": [
+      {
+        "rank": 1,
+        "school": "Stanford",
+        "total_points": 1442.0
+      },
+      {
+        "rank": 2,
+        "school": "UCLA",
+        "total_points": 1326.0
+      },
+      {
+        "rank": 3,
+        "school": "Florida",
+        "total_points": 1216.0
+      },
+      {
+        "rank": 4,
+        "school": "USC",
+        "total_points": 1147.0
+      },
+      {
+        "rank": 5,
+        "school": "Texas",
+        "total_points": 1143.25
+      }
+    ],
+    "coverage": "14 spring sports; fall/winter subtotals only"
+  },
+  {
+    "season": "2018-19",
+    "school_rows": 295,
+    "sport_rows": 4130,
+    "max_spring_sum_error": 0.0,
+    "max_total_sum_error": 1.1368683772161603e-13,
+    "spring_mismatches": [],
+    "top5": [
+      {
+        "rank": 1,
+        "school": "Stanford",
+        "total_points": 1503.75
+      },
+      {
+        "rank": 2,
+        "school": "Michigan",
+        "total_points": 1272.25
+      },
+      {
+        "rank": 3,
+        "school": "Florida",
+        "total_points": 1156.75
+      },
+      {
+        "rank": 4,
+        "school": "Texas",
+        "total_points": 1148.5
+      },
+      {
+        "rank": 5,
+        "school": "USC",
+        "total_points": 1075.75
+      }
+    ],
+    "coverage": "14 spring sports; fall/winter subtotals only"
+  },
+  {
+    "season": "2020-21",
+    "school_rows": 293,
+    "sport_rows": 4102,
+    "max_spring_sum_error": 0.0,
+    "max_total_sum_error": 0.0,
+    "spring_mismatches": [],
+    "top5": [
+      {
+        "rank": 1,
+        "school": "Texas",
+        "total_points": 1252.0
+      },
+      {
+        "rank": 2,
+        "school": "Stanford",
+        "total_points": 1195.75
+      },
+      {
+        "rank": 3,
+        "school": "Michigan",
+        "total_points": 1126.5
+      },
+      {
+        "rank": 4,
+        "school": "North Carolina",
+        "total_points": 1126.25
+      },
+      {
+        "rank": 5,
+        "school": "Florida",
+        "total_points": 1121.75
+      }
+    ],
+    "coverage": "14 spring sports; fall/winter subtotals only"
+  },
+  {
+    "season": "2021-22",
+    "school_rows": 295,
+    "sport_rows": 4130,
+    "max_spring_sum_error": 0.0,
+    "max_total_sum_error": 0.0,
+    "spring_mismatches": [],
+    "top5": [
+      {
+        "rank": 1,
+        "school": "Texas",
+        "total_points": 1449.5
+      },
+      {
+        "rank": 2,
+        "school": "Stanford",
+        "total_points": 1352.25
+      },
+      {
+        "rank": 3,
+        "school": "Michigan",
+        "total_points": 1245.25
+      },
+      {
+        "rank": 4,
+        "school": "Ohio State",
+        "total_points": 1184.5
+      },
+      {
+        "rank": 5,
+        "school": "Florida",
+        "total_points": 1180.75
+      }
+    ],
+    "coverage": "14 spring sports; fall/winter subtotals only"
+  },
+  {
+    "season": "2022-23",
+    "school_rows": 305,
+    "sport_rows": 4270,
+    "max_spring_sum_error": 0.0,
+    "max_total_sum_error": 0.0,
+    "spring_mismatches": [],
+    "top5": [
+      {
+        "rank": 1,
+        "school": "Stanford",
+        "total_points": 1412.0
+      },
+      {
+        "rank": 2,
+        "school": "Texas",
+        "total_points": 1370.5
+      },
+      {
+        "rank": 3,
+        "school": "Ohio State",
+        "total_points": 1170.75
+      },
+      {
+        "rank": 4,
+        "school": "Virginia",
+        "total_points": 1105.5
+      },
+      {
+        "rank": 5,
+        "school": "Florida",
+        "total_points": 1091.5
+      }
+    ],
+    "coverage": "14 spring sports; fall/winter subtotals only"
+  },
+  {
+    "season": "2023-24",
+    "school_rows": 311,
+    "sport_rows": 4354,
+    "max_spring_sum_error": 0.0,
+    "max_total_sum_error": 0.0,
+    "spring_mismatches": [],
+    "top5": [
+      {
+        "rank": 1,
+        "school": "Texas",
+        "total_points": 1377.0
+      },
+      {
+        "rank": 2,
+        "school": "Stanford",
+        "total_points": 1312.75
+      },
+      {
+        "rank": 3,
+        "school": "Tennessee",
+        "total_points": 1217.0
+      },
+      {
+        "rank": 4,
+        "school": "Florida",
+        "total_points": 1189.0
+      },
+      {
+        "rank": 5,
+        "school": "Virginia",
+        "total_points": 1066.25
+      }
+    ],
+    "coverage": "14 spring sports; fall/winter subtotals only"
+  },
+  {
+    "season": "2024-25",
+    "school_rows": 303,
+    "sport_rows": 4242,
+    "max_spring_sum_error": 0.0,
+    "max_total_sum_error": 0.0,
+    "spring_mismatches": [],
+    "top5": [
+      {
+        "rank": 1,
+        "school": "Texas",
+        "total_points": 1255.25
+      },
+      {
+        "rank": 2,
+        "school": "USC",
+        "total_points": 1253.75
+      },
+      {
+        "rank": 3,
+        "school": "Stanford",
+        "total_points": 1251.0
+      },
+      {
+        "rank": 4,
+        "school": "North Carolina",
+        "total_points": 1195.25
+      },
+      {
+        "rank": 5,
+        "school": "UCLA",
+        "total_points": 1149.0
+      }
+    ],
+    "coverage": "14 spring sports; fall/winter subtotals only"
+  },
+  {
+    "season": "2025-26",
+    "school_rows": 301,
+    "sport_rows": 4214,
+    "max_spring_sum_error": 0.0,
+    "max_total_sum_error": 0.0,
+    "spring_mismatches": [],
+    "top5": [
+      {
+        "rank": 1,
+        "school": "Texas",
+        "total_points": 1322.0
+      },
+      {
+        "rank": 2,
+        "school": "Stanford",
+        "total_points": 1263.5
+      },
+      {
+        "rank": 3,
+        "school": "UCLA",
+        "total_points": 1199.25
+      },
+      {
+        "rank": 4,
+        "school": "North Carolina",
+        "total_points": 1166.75
+      },
+      {
+        "rank": 5,
+        "school": "Virginia",
+        "total_points": 1148.75
+      }
+    ],
+    "coverage": "14 spring sports; fall/winter subtotals only"
+  }
+]

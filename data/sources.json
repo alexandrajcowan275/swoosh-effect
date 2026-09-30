@@ -1,0 +1,66 @@
+[
+  {
+    "season": "2017-18",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2018/7/18/June29overallDI.pdf",
+    "landing_url": "https://nacda.com/documents/2018/7/18//June29overallDI.pdf?id=1799",
+    "file": "data/raw/2017-18.pdf",
+    "sha256": "767de8b7abab6a3391d9843d56297c9eb1cc0a29b6ecfe98ff7b1a42093ba80f",
+    "retrieved_at": "2026-09-30T04:36:04.083088+00:00"
+  },
+  {
+    "season": "2018-19",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2019/6/27/June28DIOverall.pdf",
+    "landing_url": "https://nacda.com/documents/2019/6/27//June28DIOverall.pdf?id=3678",
+    "file": "data/raw/2018-19.pdf",
+    "sha256": "9f339d3432a11510c002e554b37283d67d8f7b06d359a00bd698b85563f9f4cf",
+    "retrieved_at": "2026-09-30T04:36:05.369822+00:00"
+  },
+  {
+    "season": "2020-21",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2021/7/1/July2OverallDI.pdf",
+    "landing_url": "https://nacda.com/documents/2021/7/1//July2OverallDI.pdf?id=4339",
+    "file": "data/raw/2020-21.pdf",
+    "sha256": "ea8b67f47f3cf264882bcf334517075a535182df0cd47aa12818388731542ea4",
+    "retrieved_at": "2026-09-30T04:36:07.078350+00:00"
+  },
+  {
+    "season": "2021-22",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2022/6/30/FinalDIstandings.pdf",
+    "landing_url": "https://nacda.com/documents/2022/6/30/FinalDIstandings.pdf",
+    "file": "data/raw/2021-22.pdf",
+    "sha256": "dee0ecf995630cb7ae7197e7cbaae9b0aa2028140f0b2e0ec2035235a6db549c",
+    "retrieved_at": "2026-09-30T04:36:08.318465+00:00"
+  },
+  {
+    "season": "2022-23",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2023/6/27/Final22.23Standings.pdf",
+    "landing_url": "https://nacda.com/documents/2023/6/27/Final22.23Standings.pdf",
+    "file": "data/raw/2022-23.pdf",
+    "sha256": "1c49e977817649c35d510a74e7a0ab6e2b05b04ed9424f2727e8a640ee724d30",
+    "retrieved_at": "2026-09-30T04:36:09.641043+00:00"
+  },
+  {
+    "season": "2023-24",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2024/6/26/23.24FinalDI.pdf",
+    "landing_url": "https://nacda.com/documents/2024/6/26/23.24FinalDI.pdf",
+    "file": "data/raw/2023-24.pdf",
+    "sha256": "126f811bfbd84aa17b581b46c380e986838a4960545ef2065bac281b9ca9f686",
+    "retrieved_at": "2026-09-30T04:36:10.931525+00:00"
+  },
+  {
+    "season": "2024-25",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2025/6/23/24.25DivIStandingsFinal.pdf",
+    "landing_url": "https://nacda.com/documents/2025/6/23/24.25DivIStandingsFinal.pdf",
+    "file": "data/raw/2024-25.pdf",
+    "sha256": "cda566766fe2c16ca34f409417a5efaafc9fa956270651b9b4608aa8d6ecff14",
+    "retrieved_at": "2026-09-30T04:36:12.295164+00:00"
+  },
+  {
+    "season": "2025-26",
+    "source_url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2026/6/24/25.26DI_Final.pdf",
+    "landing_url": "https://nacda.com/documents/2026/6/24/25.26DI_Final.pdf",
+    "file": "data/raw/2025-26.pdf",
+    "sha256": "340ed2db8e56b33677ba480f3e1f40c9f3b6f5c51f63236a99666e70fd42f51d",
+    "retrieved_at": "2026-09-30T04:36:13.902526+00:00"
+  }
+]

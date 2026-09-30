@@ -1,0 +1,18 @@
+{
+  "sponsor_rows_compared": 2864,
+  "name_matches_compared": 367,
+  "sponsor_assignment_changes": 0,
+  "name_match_changes": 0,
+  "model_result_changes": 0,
+  "brand_periods": 149,
+  "gap_groups": 89,
+  "gap_reasons": {
+    "excluded_seasons_only": 56,
+    "bounded_same_brand": 18,
+    "unbounded": 14,
+    "different_brands": 1
+  },
+  "manual_review_rows": 0,
+  "note": "Frozen-baseline regression tests passed; model numeric comparison tolerance 1e-12.",
+  "baseline_id": "phase3-pre-algorithm-refactor"
+}

@@ -1,0 +1,31 @@
+# Local data and third-party originals are downloaded, never published.
+data/raw/
+*sponsor_search_log*.json
+*retrieval_log*.json
+*.duckdb
+*.duckdb.*
+# Credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Environments, caches, checkpoints and local build output
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.matplotlib-cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+.DS_Store

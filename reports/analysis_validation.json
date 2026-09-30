@@ -1,0 +1,13 @@
+{
+  "status": "Phase 3 complete; descriptive associations, not causal effects",
+  "evidence_versions": [
+    "A+B+C",
+    "A+B"
+  ],
+  "primary_n": 537,
+  "sensitivity_n": 467,
+  "lag_rule": "exact previous calendar season; 2019-20 excluded and never bridged",
+  "statsmodels_version": "0.14.6",
+  "numpy_version": "2.3.5",
+  "pandas_version": "2.2.3"
+}

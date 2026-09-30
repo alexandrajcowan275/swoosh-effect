@@ -1,0 +1,11 @@
+season,school,conference,rank,total_points,sport,sport_points,sport_place,source_place,excluded,counted_points,source_value,source_url,source_page,points_pctile
+2017-18,Stanford,Pac 12,1,1442.0,Baseball,50.0,17.0,17,False,50.0,50,https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2018/7/18/June29overallDI.pdf,1,100.0
+2017-18,Stanford,Pac 12,1,1442.0,Women's Golf,82.5,3.0,3,False,82.5,82.5,https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2018/7/18/June29overallDI.pdf,1,100.0
+2017-18,Stanford,Pac 12,1,1442.0,Men's Golf,57.75,16.0,16,False,57.75,57.75,https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2018/7/18/June29overallDI.pdf,1,100.0
+2017-18,Stanford,Pac 12,1,1442.0,Women's Lacrosse,,17.0,17,True,0.0,x,https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2018/7/18/June29overallDI.pdf,1,100.0
+2017-18,Stanford,Pac 12,1,1442.0,Men's Lacrosse,0.0,0.0,0,False,0.0,0,https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2018/7/18/June29overallDI.pdf,1,100.0
+2017-18,Stanford,Pac 12,1,1442.0,Women's Rowing,77.5,4.0,4,False,77.5,77.5,https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2018/7/18/June29overallDI.pdf,1,100.0
+2017-18,Stanford,Pac 12,1,1442.0,Softball,0.0,0.0,0,False,0.0,0,https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2018/7/18/June29overallDI.pdf,1,100.0
+2017-18,Stanford,Pac 12,1,1442.0,Women's Tennis,100.0,1.0,1,False,100.0,100,https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2018/7/18/June29overallDI.pdf,1,100.0
+2017-18,Stanford,Pac 12,1,1442.0,Men's Tennis,,17.0,17,True,0.0,x,https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2018/7/18/June29overallDI.pdf,1,100.0
+2017-18,Stanford,Pac 12,1,1442.0,Women's Outdoor Track and Field,85.0,3.0,3,False,85.0,85,https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/nacda.com/documents/2018/7/18/June29overallDI.pdf,1,100.0

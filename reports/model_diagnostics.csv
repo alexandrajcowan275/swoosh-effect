@@ -1,0 +1,7 @@
+evidence_tiers,model,n,n_schools,r_squared,formula,cluster_df,excluded_missing_lag
+A+B+C,plain,537,73,0.2955758170261381,"panel_points_pctile ~ C(brand, Treatment(reference=""Nike"")) + C(conference_model) + C(season)",72,0
+A+B+C,plain_matched,401,72,0.27914435558032047,"panel_points_pctile ~ C(brand, Treatment(reference=""Nike"")) + C(conference_model) + C(season)",71,136
+A+B+C,lagged,401,72,0.6034984146391484,"panel_points_pctile ~ C(brand, Treatment(reference=""Nike"")) + C(conference_model) + C(season) + lag_points_pctile",71,136
+A+B,plain,467,73,0.2988568034318688,"panel_points_pctile ~ C(brand, Treatment(reference=""Nike"")) + C(conference_model) + C(season)",72,0
+A+B,plain_matched,341,72,0.28960484363713923,"panel_points_pctile ~ C(brand, Treatment(reference=""Nike"")) + C(conference_model) + C(season)",71,126
+A+B,lagged,341,72,0.5940950078144698,"panel_points_pctile ~ C(brand, Treatment(reference=""Nike"")) + C(conference_model) + C(season) + lag_points_pctile",71,126

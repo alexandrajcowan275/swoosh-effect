@@ -1,0 +1,25 @@
+evidence_tiers,model,brand,n,n_schools,n_A,n_B,n_C
+A+B+C,plain,Nike,350,53,269,20,61
+A+B+C,plain,Under Armour,86,14,86,0,0
+A+B+C,plain,adidas,94,13,83,2,9
+A+B+C,plain,other,7,3,7,0,0
+A+B+C,plain_matched,Nike,264,52,195,18,51
+A+B+C,plain_matched,Under Armour,60,14,60,0,0
+A+B+C,plain_matched,adidas,72,13,61,2,9
+A+B+C,plain_matched,other,5,1,5,0,0
+A+B+C,lagged,Nike,264,52,195,18,51
+A+B+C,lagged,Under Armour,60,14,60,0,0
+A+B+C,lagged,adidas,72,13,61,2,9
+A+B+C,lagged,other,5,1,5,0,0
+A+B,plain,Nike,289,53,269,20,0
+A+B,plain,Under Armour,86,14,86,0,0
+A+B,plain,adidas,85,13,83,2,0
+A+B,plain,other,7,3,7,0,0
+A+B,plain_matched,Nike,213,52,195,18,0
+A+B,plain_matched,Under Armour,60,14,60,0,0
+A+B,plain_matched,adidas,63,13,61,2,0
+A+B,plain_matched,other,5,1,5,0,0
+A+B,lagged,Nike,213,52,195,18,0
+A+B,lagged,Under Armour,60,14,60,0,0
+A+B,lagged,adidas,63,13,61,2,0
+A+B,lagged,other,5,1,5,0,0

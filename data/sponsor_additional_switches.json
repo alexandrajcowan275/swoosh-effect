@@ -1,0 +1,29 @@
+[
+  {
+    "school": "Washington",
+    "previous_brand": "Nike",
+    "brand": "adidas",
+    "season": "2019-20",
+    "source_url": "https://gohuskies.com/news/2018/4/10/general-university-of-washington-agrees-to-terms-on-10-year-partnership-with-adidas",
+    "event_basis": "dated announcement; not necessarily eligible for adjacent-season comparison",
+    "notes": "Effective July 2019. Cancelled 2019-20 outcome excluded; do not shift event to 2020-21."
+  },
+  {
+    "school": "Boston College",
+    "previous_brand": "Under Armour",
+    "brand": "other",
+    "season": "2021-22",
+    "source_url": "https://bceagles.com/news/2021/4/13/boston-college-athletics-announces-10-year-agreement-with-new-balance",
+    "event_basis": "dated announcement; not necessarily eligible for adjacent-season comparison",
+    "notes": "First full academic season; starts June 2021 for 30 of 31 teams. 2020-21 transition excluded; football initially excepted."
+  },
+  {
+    "school": "Denver",
+    "previous_brand": "other",
+    "brand": "Under Armour",
+    "season": "2025-26",
+    "source_url": "https://denverpioneers.com/news/2025/6/3/athletics-denver-and-under-armour-begin-new-official-athletic-apparel-partnership",
+    "event_basis": "dated announcement; not necessarily eligible for adjacent-season comparison",
+    "notes": "First full academic season after June 2025 launch. Prior New Balance agreement has unresolved seasonal coverage."
+  }
+]

@@ -1,0 +1,91 @@
+{
+  "reviewed_on": "2026-09-30",
+  "scope": "Targeted screen of football and basketball leadership changes and main-conference changes; not an exhaustive coaching census across every sport. No identified change is not evidence of no change.",
+  "schools": [
+    {
+      "school": "Washington",
+      "coaching_status": "identified",
+      "coaching_change": "Chris Petersen stepped down and Jimmy Lake was named football head coach in December 2019, within the case window.",
+      "coaching_date": "2019-12-02",
+      "coaching_source_url": "https://gohuskies.com/news/2019/12/2/football-petersen-to-step-down-lake-named-new-huskies-head-coach",
+      "realignment_note": "No main-conference change in the observed 2017-18 through 2021-22 case seasons. Later Big Ten move is outside this window."
+    },
+    {
+      "school": "Boston College",
+      "coaching_status": "identified",
+      "coaching_change": "Earl Grant was named men's basketball head coach in March 2021, shortly before the provider transition.",
+      "coaching_date": "2021-03-15",
+      "coaching_source_url": "https://bceagles.com/news/2021/3/15/mens-basketball-boston-college-names-earl-grant-head-mens-basketball-coach",
+      "realignment_note": "No main-conference change in the available case seasons."
+    },
+    {
+      "school": "Denver",
+      "coaching_status": "identified",
+      "coaching_change": "Tim Bergstraser was named men's basketball head coach on April 14, 2025; his first season was 2025-26.",
+      "coaching_date": "2025-04-14",
+      "coaching_source_url": "https://denverpioneers.com/staff-directory/tim-bergstraser/595",
+      "realignment_note": "Summit League throughout observed case seasons. A 2026-27 West Coast Conference move is noted by the official coach biography but falls beyond the available outcomes.",
+      "realignment_source_url": "https://denverpioneers.com/staff-directory/tim-bergstraser/595"
+    },
+    {
+      "school": "California",
+      "coaching_status": "identified",
+      "coaching_change": "Mark Madsen was named men's basketball head coach in March 2023, before the 2023-24 Nike season.",
+      "coaching_date": "2023-03-29",
+      "coaching_source_url": "https://calbears.com/news/2023/3/29/mens-basketball-mark-madsen-named-cal-mens-basketball-head-coach",
+      "realignment_note": "Pac-12 to ACC in 2024-25; official ACC membership began August 2, 2024, within the post-switch window.",
+      "realignment_date": "2024-08-02",
+      "realignment_source_url": "https://calbears.com/news/2024/8/2/athletics-news-its-home"
+    },
+    {
+      "school": "Rutgers",
+      "coaching_status": "not established in window",
+      "coaching_change": "The targeted source documents Coquese Washington's women's basketball appointment in May 2022, outside this 2023-24 through 2027-28 window. No claim that all coaching staffs were unchanged.",
+      "coaching_date": "2022-05-23",
+      "coaching_source_url": "https://scarletknights.com/news/2022/5/23/coquese-washington-named-rutgers-head-womens-basketball-coach",
+      "realignment_note": "No main-conference change in the available case seasons."
+    },
+    {
+      "school": "UCLA",
+      "coaching_status": "identified",
+      "coaching_change": "Mick Cronin was hired as men's basketball head coach in April 2019; his first season was the excluded 2019-20 season at the start of this case window.",
+      "coaching_date": "2019-04-09",
+      "coaching_source_url": "https://uclabruins.com/sports/mens-basketball/roster/season/2020-21/staff/mick-cronin",
+      "realignment_note": "Pac-12 throughout the observed case window, which ends in 2023-24. The subsequent 2024-25 Big Ten move is outside the window."
+    },
+    {
+      "school": "Cincinnati",
+      "coaching_status": "identified",
+      "coaching_change": "Scott Satterfield was named football head coach in December 2022 and began the 2023 season during the provider and conference changes.",
+      "coaching_date": "2022-12-05",
+      "coaching_source_url": "https://gobearcats.com/news/2022/12/05/cincinnati-announces-scott-satterfield-as-43rd-head-football-coach",
+      "realignment_note": "American Athletic Conference to Big 12 on July 1, 2023, coincident with the Nike transition.",
+      "realignment_date": "2023-07-01",
+      "realignment_source_url": "https://gobearcats.com/news/2022/06/10/cincinnati-to-enter-big-12-on-july-1-2023"
+    },
+    {
+      "school": "Auburn",
+      "coaching_status": "identified",
+      "coaching_change": "Steven Pearl was named men's basketball head coach in September 2025 during the first Nike season.",
+      "coaching_date": "2025-09-22",
+      "coaching_source_url": "https://auburntigers.com/news/2025/9/22/steven-pearl-named-auburn-mens-basketball-head-coach",
+      "realignment_note": "No main-conference change in the available case seasons."
+    },
+    {
+      "school": "Texas Tech",
+      "coaching_status": "identified",
+      "coaching_change": "Grant McCasland was named men's basketball head coach in March 2023 and began in 2023-24, within the pre-switch window.",
+      "coaching_date": "2023-03-31",
+      "coaching_source_url": "https://texastech.com/news/2023/3/31/mens-basketball-grant-mccasland-named-texas-tech-head-coach",
+      "realignment_note": "Texas Tech remains in the Big 12; changes in Big 12 membership during the window may still alter competition."
+    },
+    {
+      "school": "Georgia Tech",
+      "coaching_status": "identified",
+      "coaching_change": "Paul Johnson announced he would step down as football head coach in November 2018, during the first adidas season.",
+      "coaching_date": "2018-11-28",
+      "coaching_source_url": "https://ramblinwreck.com/news/2018/11/28/johnson-steps-down-as-head-coach",
+      "realignment_note": "No main-conference change in the available case seasons."
+    }
+  ]
+}

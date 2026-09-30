@@ -1,0 +1,926 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Swoosh Effect — Phase 3</title><style>body{font:16px/1.55 system-ui,sans-serif;color:#172322;background:#f6f7f4;margin:0}main{max-width:1200px;padding:40px 24px;margin:auto}h1{font-size:clamp(30px,5vw,52px);line-height:1.1}h2{margin-top:36px}a{color:#00645b}p{max-width:980px}.cards{display:flex;gap:16px;flex-wrap:wrap}.cards div{background:white;padding:20px;flex:1;min-width:140px}.cards strong{display:block;font-size:34px}.cards span{font-size:14px}.scroll{overflow:auto}table{border-collapse:collapse;background:white;width:100%;font-size:14px}td,th{padding:12px;text-align:left;vertical-align:top;border-bottom:1px solid #d9dfda}td p{margin:8px 0 0}td a{margin-right:10px}.note{border-left:4px solid #be7516;padding:14px 18px;background:#fff4dc}.muted{color:#59665f}img{max-width:100%;height:auto;background:white}code{background:#e7ece8;padding:2px 4px}.scroll{margin:18px 0}details{margin:20px 0}</style><main>
+<p>THE SWOOSH EFFECT · PHASE 3 · 30 SEPTEMBER 2026</p><h1>Winning persists.<br>The brand gap shrinks.</h1>
+<p>Nike schools have the highest average performance in the covered research cohort. Once prior-season performance is included, their adjusted advantage over adidas and Under Armour becomes smaller under both evidence standards. These associations are consistent with persistent strength and selection into sponsorship; they do not establish who caused that strength.</p>
+<p class="note"><b>Primary: A+B+C, 537 school-seasons / 73 schools. Sensitivity: A+B, 467 / 73.</b> Lagged models use 401 and 341 school-seasons, respectively, across 72 schools. All schools with usable provider evidence are included, not only switchers. Unknown-brand rows are not guessed into a brand group. The broader performance panel contains 358 institutions, but sponsorship coverage remains focused on 74.</p>
+<h2>Brand comparison</h2><img src="figures/brand_comparison.png" alt="Average performance by brand under both evidence standards, with sample counts">
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>evidence_tiers</th>
+      <th>brand</th>
+      <th>n_school_seasons</th>
+      <th>n_schools</th>
+      <th>mean_percentile</th>
+      <th>median_percentile</th>
+      <th>mean_points</th>
+      <th>median_points</th>
+      <th>n_tier_A</th>
+      <th>n_tier_B</th>
+      <th>n_tier_C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A+B</td>
+      <td>Nike</td>
+      <td>289</td>
+      <td>53</td>
+      <td>90.36</td>
+      <td>92.37</td>
+      <td>725.17</td>
+      <td>738.50</td>
+      <td>269</td>
+      <td>20</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Under Armour</td>
+      <td>86</td>
+      <td>14</td>
+      <td>86.64</td>
+      <td>89.09</td>
+      <td>588.17</td>
+      <td>588.50</td>
+      <td>86</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>adidas</td>
+      <td>85</td>
+      <td>13</td>
+      <td>87.69</td>
+      <td>88.76</td>
+      <td>581.25</td>
+      <td>564.50</td>
+      <td>83</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>other</td>
+      <td>7</td>
+      <td>3</td>
+      <td>75.97</td>
+      <td>76.97</td>
+      <td>272.61</td>
+      <td>276.00</td>
+      <td>7</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Nike</td>
+      <td>350</td>
+      <td>53</td>
+      <td>89.72</td>
+      <td>91.29</td>
+      <td>696.19</td>
+      <td>676.38</td>
+      <td>269</td>
+      <td>20</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Under Armour</td>
+      <td>86</td>
+      <td>14</td>
+      <td>86.64</td>
+      <td>89.09</td>
+      <td>588.17</td>
+      <td>588.50</td>
+      <td>86</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>adidas</td>
+      <td>94</td>
+      <td>13</td>
+      <td>87.82</td>
+      <td>88.80</td>
+      <td>585.46</td>
+      <td>566.25</td>
+      <td>83</td>
+      <td>2</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>other</td>
+      <td>7</td>
+      <td>3</td>
+      <td>75.97</td>
+      <td>76.97</td>
+      <td>272.61</td>
+      <td>276.00</td>
+      <td>7</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>Each row is an athletic-department season. Percentile is 100 × average ascending rank of total points / eligible programs in that season’s observed-ever universe, including 438 reviewed zeros and excluding 31 invalid zeros. It is not an all-D1 census. The mean raw points are supplementary; percentiles are used for comparisons across seasons. Nike includes Jordan; “other” groups known smaller providers and is not a missing-value category.</p>
+<h2>Plain and lagged models, side by side</h2>
+<p>Coefficients below are <b>percentile-point differences relative to Nike</b>; negative means a lower predicted percentile than Nike, conditional on the included controls. Brackets show 95% confidence intervals. Standard errors cluster by school, with a small-sample covariance correction and t inference using school clusters minus one degrees of freedom.</p>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Brand</th>
+      <th>A+B+C · plain</th>
+      <th>A+B+C · lagged</th>
+      <th>A+B · plain</th>
+      <th>A+B · lagged</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nike</td>
+      <td>Reference; n=350</td>
+      <td>Reference; n=264</td>
+      <td>Reference; n=289</td>
+      <td>Reference; n=213</td>
+    </tr>
+    <tr>
+      <td>adidas</td>
+      <td>-3.09 [-6.58, +0.40]; n=94</td>
+      <td>-0.92 [-2.65, +0.80]; n=72</td>
+      <td>-3.48 [-6.98, +0.02]; n=85</td>
+      <td>-1.26 [-3.18, +0.66]; n=63</td>
+    </tr>
+    <tr>
+      <td>Under Armour</td>
+      <td>-2.53 [-5.67, +0.60]; n=86</td>
+      <td>-0.66 [-2.38, +1.07]; n=60</td>
+      <td>-2.95 [-6.18, +0.28]; n=86</td>
+      <td>-0.99 [-2.90, +0.92]; n=60</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>-14.75 [-20.05, -9.44]; n=7</td>
+      <td>-5.91 [-9.89, -1.94]; n=5</td>
+      <td>-14.85 [-20.32, -9.39]; n=7</td>
+      <td>-6.33 [-10.68, -1.97]; n=5</td>
+    </tr>
+  </tbody>
+</table></div>
+<img src="figures/controlled_models.png" alt="Plain, matched-sample plain, and lagged regression estimates with 95 percent intervals and per-brand sample counts">
+<p><code>percentile(t) ~ brand + conference(t) + season</code><br><code>percentile(t) ~ brand + percentile(t−1) + conference(t) + season</code></p>
+<p>The lag is the previous <b>calendar</b> season. There is no 2016–17 input, and cancelled 2019–20 is excluded; therefore 2017–18 and 2020–21 cannot enter the lagged model. A prior outcome may be used even when that prior season’s provider is unknown. Source conferences are season-specific; Pac 12/Pac-12 spelling is normalized. Yale’s 2020–21 zero uses the Ivy League classification supported on both sides; its source conference stays blank and the modeling assumption is labeled.</p>
+<p><b>“Other” is a sparse group:</b> seven seasons from three schools in the plain model, and five seasons from Boston College alone in the lagged model. Its mechanically computed interval is not reliable evidence about a general category of smaller brands. Repeated observations do not create independent schools.</p>
+<h2>The pick-versus-make check</h2><p>The fair shrinkage comparison holds the rows constant. The additional <code>plain_matched</code> fit uses exactly the lagged model’s sample, without the lag predictor.</p>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Evidence</th>
+      <th>Brand versus Nike</th>
+      <th>Plain, matched rows</th>
+      <th>Lagged, same rows</th>
+      <th>Magnitude shrinkage %</th>
+      <th>Model n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A+B+C</td>
+      <td>adidas</td>
+      <td>-2.86</td>
+      <td>-0.92</td>
+      <td>67.69</td>
+      <td>401</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Under Armour</td>
+      <td>-1.75</td>
+      <td>-0.66</td>
+      <td>62.30</td>
+      <td>401</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>adidas</td>
+      <td>-3.29</td>
+      <td>-1.26</td>
+      <td>61.65</td>
+      <td>341</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Under Armour</td>
+      <td>-2.26</td>
+      <td>-0.99</td>
+      <td>56.15</td>
+      <td>341</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>On matched rows, the Nike-relative adidas and Under Armour coefficient magnitudes shrink by about <b>62–68% with A+B+C</b> and <b>56–62% with A+B</b>. Both brands’ lagged-model intervals include zero in both versions. Prior-performance coefficients are 0.59 [0.35, 0.83] and 0.56 [0.30, 0.81], respectively. The continuity inference changes estimates modestly without changing this conclusion.</p>
+<p>This supports a cautious <b>“pick / persistence” interpretation</b>, rather than evidence that a provider makes departments improve. It is not proof of Nike’s selection strategy. Athletic budgets, sport offerings, coaching, recruitment and institutional advantages remain omitted; prior performance may itself reflect earlier sponsor exposure. A nonzero coefficient would still be an association, and an interval containing zero does not prove no effect. These models have conference and season effects, not school fixed effects, and are not validated forecasting models.</p>
+<h2>Provider shares and top finishes</h2><p>Denominators include all rows in the stated universe, including unassigned providers. “Ranked D1” means published final-standings rows, not the full D1 membership. “Current Power 4 cohort” follows the same 68 schools identified in 2025–26 back through the window; it is not a claim those schools were always in those conferences. Top-10 and top-25 shares use all official finishes at those ranks, including unassigned brands. n is school-seasons or finishes.</p>
+<details><summary>Expand brand shares, sample sizes and denominators</summary><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>evidence_tiers</th>
+      <th>universe</th>
+      <th>brand</th>
+      <th>n</th>
+      <th>denominator</th>
+      <th>share_pct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A+B+C</td>
+      <td>Ranked D1</td>
+      <td>Nike</td>
+      <td>350</td>
+      <td>2395</td>
+      <td>14.61</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Ranked D1</td>
+      <td>Unassigned</td>
+      <td>1859</td>
+      <td>2395</td>
+      <td>77.62</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Ranked D1</td>
+      <td>Under Armour</td>
+      <td>85</td>
+      <td>2395</td>
+      <td>3.55</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Ranked D1</td>
+      <td>adidas</td>
+      <td>94</td>
+      <td>2395</td>
+      <td>3.92</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Ranked D1</td>
+      <td>other</td>
+      <td>7</td>
+      <td>2395</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Current Power 4 cohort</td>
+      <td>Nike</td>
+      <td>339</td>
+      <td>544</td>
+      <td>62.32</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Current Power 4 cohort</td>
+      <td>Unassigned</td>
+      <td>28</td>
+      <td>544</td>
+      <td>5.15</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Current Power 4 cohort</td>
+      <td>Under Armour</td>
+      <td>77</td>
+      <td>544</td>
+      <td>14.15</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Current Power 4 cohort</td>
+      <td>adidas</td>
+      <td>94</td>
+      <td>544</td>
+      <td>17.28</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Current Power 4 cohort</td>
+      <td>other</td>
+      <td>6</td>
+      <td>544</td>
+      <td>1.10</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Top 10 finishes</td>
+      <td>Nike</td>
+      <td>67</td>
+      <td>80</td>
+      <td>83.75</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Top 10 finishes</td>
+      <td>Unassigned</td>
+      <td>8</td>
+      <td>80</td>
+      <td>10.00</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Top 10 finishes</td>
+      <td>Under Armour</td>
+      <td>3</td>
+      <td>80</td>
+      <td>3.75</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Top 10 finishes</td>
+      <td>adidas</td>
+      <td>2</td>
+      <td>80</td>
+      <td>2.50</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Top 25 finishes</td>
+      <td>Nike</td>
+      <td>147</td>
+      <td>200</td>
+      <td>73.50</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Top 25 finishes</td>
+      <td>Unassigned</td>
+      <td>10</td>
+      <td>200</td>
+      <td>5.00</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Top 25 finishes</td>
+      <td>Under Armour</td>
+      <td>22</td>
+      <td>200</td>
+      <td>11.00</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Top 25 finishes</td>
+      <td>adidas</td>
+      <td>21</td>
+      <td>200</td>
+      <td>10.50</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Ranked D1</td>
+      <td>Nike</td>
+      <td>289</td>
+      <td>2395</td>
+      <td>12.07</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Ranked D1</td>
+      <td>Unassigned</td>
+      <td>1929</td>
+      <td>2395</td>
+      <td>80.54</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Ranked D1</td>
+      <td>Under Armour</td>
+      <td>85</td>
+      <td>2395</td>
+      <td>3.55</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Ranked D1</td>
+      <td>adidas</td>
+      <td>85</td>
+      <td>2395</td>
+      <td>3.55</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Ranked D1</td>
+      <td>other</td>
+      <td>7</td>
+      <td>2395</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Current Power 4 cohort</td>
+      <td>Nike</td>
+      <td>278</td>
+      <td>544</td>
+      <td>51.10</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Current Power 4 cohort</td>
+      <td>Unassigned</td>
+      <td>98</td>
+      <td>544</td>
+      <td>18.01</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Current Power 4 cohort</td>
+      <td>Under Armour</td>
+      <td>77</td>
+      <td>544</td>
+      <td>14.15</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Current Power 4 cohort</td>
+      <td>adidas</td>
+      <td>85</td>
+      <td>544</td>
+      <td>15.62</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Current Power 4 cohort</td>
+      <td>other</td>
+      <td>6</td>
+      <td>544</td>
+      <td>1.10</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Top 10 finishes</td>
+      <td>Nike</td>
+      <td>61</td>
+      <td>80</td>
+      <td>76.25</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Top 10 finishes</td>
+      <td>Unassigned</td>
+      <td>14</td>
+      <td>80</td>
+      <td>17.50</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Top 10 finishes</td>
+      <td>Under Armour</td>
+      <td>3</td>
+      <td>80</td>
+      <td>3.75</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Top 10 finishes</td>
+      <td>adidas</td>
+      <td>2</td>
+      <td>80</td>
+      <td>2.50</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Top 25 finishes</td>
+      <td>Nike</td>
+      <td>133</td>
+      <td>200</td>
+      <td>66.50</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Top 25 finishes</td>
+      <td>Unassigned</td>
+      <td>27</td>
+      <td>200</td>
+      <td>13.50</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Top 25 finishes</td>
+      <td>Under Armour</td>
+      <td>22</td>
+      <td>200</td>
+      <td>11.00</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Top 25 finishes</td>
+      <td>adidas</td>
+      <td>18</td>
+      <td>200</td>
+      <td>9.00</td>
+    </tr>
+  </tbody>
+</table></div></details>
+<h2>Switches are supporting case studies</h2><p>Use up to two calendar seasons before and two after each first new-provider season; t=0 is the first post-switch season. Require at least one covered pre and one covered post observation for a before/after description. No outcome is manufactured for 2019–20, and no switch date is moved to hide a missing year. These are descriptive histories, with no causal claims or difference-in-differences estimates.</p>
+<p><a href="switch_case_studies.html">Open all ten school charts, eligibility decisions, sample counts and confounders</a></p>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>school</th>
+      <th>tiers_used</th>
+      <th>usable</th>
+      <th>n_pre</th>
+      <th>n_post</th>
+      <th>descriptive_change</th>
+      <th>n_per_brand</th>
+      <th>reason</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Washington</td>
+      <td>A+B+C</td>
+      <td>True</td>
+      <td>2</td>
+      <td>2</td>
+      <td>-1.30</td>
+      <td>Nike: 2; adidas: 2; Under Armour: 0; other: 0</td>
+      <td>At least one covered season on each side; descriptive only.</td>
+    </tr>
+    <tr>
+      <td>Washington</td>
+      <td>A+B</td>
+      <td>True</td>
+      <td>2</td>
+      <td>2</td>
+      <td>-1.30</td>
+      <td>Nike: 2; adidas: 2; Under Armour: 0; other: 0</td>
+      <td>At least one covered season on each side; descriptive only.</td>
+    </tr>
+    <tr>
+      <td>Boston College</td>
+      <td>A+B+C</td>
+      <td>True</td>
+      <td>1</td>
+      <td>3</td>
+      <td>-5.48</td>
+      <td>Nike: 0; adidas: 0; Under Armour: 1; other: 3</td>
+      <td>At least one covered season on each side; descriptive only.</td>
+    </tr>
+    <tr>
+      <td>Boston College</td>
+      <td>A+B</td>
+      <td>True</td>
+      <td>1</td>
+      <td>3</td>
+      <td>-5.48</td>
+      <td>Nike: 0; adidas: 0; Under Armour: 1; other: 3</td>
+      <td>At least one covered season on each side; descriptive only.</td>
+    </tr>
+    <tr>
+      <td>Denver</td>
+      <td>A+B+C</td>
+      <td>False</td>
+      <td>0</td>
+      <td>1</td>
+      <td>—</td>
+      <td>Nike: 0; adidas: 0; Under Armour: 1; other: 0</td>
+      <td>No covered pre-switch season under the documented former provider within ±2 seasons.</td>
+    </tr>
+    <tr>
+      <td>Denver</td>
+      <td>A+B</td>
+      <td>False</td>
+      <td>0</td>
+      <td>1</td>
+      <td>—</td>
+      <td>Nike: 0; adidas: 0; Under Armour: 1; other: 0</td>
+      <td>No covered pre-switch season under the documented former provider within ±2 seasons.</td>
+    </tr>
+    <tr>
+      <td>California</td>
+      <td>A+B+C</td>
+      <td>True</td>
+      <td>2</td>
+      <td>3</td>
+      <td>-0.90</td>
+      <td>Nike: 3; adidas: 0; Under Armour: 2; other: 0</td>
+      <td>At least one covered season on each side; descriptive only.</td>
+    </tr>
+    <tr>
+      <td>California</td>
+      <td>A+B</td>
+      <td>True</td>
+      <td>2</td>
+      <td>3</td>
+      <td>-0.90</td>
+      <td>Nike: 3; adidas: 0; Under Armour: 2; other: 0</td>
+      <td>At least one covered season on each side; descriptive only.</td>
+    </tr>
+    <tr>
+      <td>Rutgers</td>
+      <td>A+B+C</td>
+      <td>True</td>
+      <td>2</td>
+      <td>1</td>
+      <td>-5.76</td>
+      <td>Nike: 1; adidas: 2; Under Armour: 0; other: 0</td>
+      <td>At least one covered season on each side; descriptive only.</td>
+    </tr>
+    <tr>
+      <td>Rutgers</td>
+      <td>A+B</td>
+      <td>True</td>
+      <td>2</td>
+      <td>1</td>
+      <td>-5.76</td>
+      <td>Nike: 1; adidas: 2; Under Armour: 0; other: 0</td>
+      <td>At least one covered season on each side; descriptive only.</td>
+    </tr>
+    <tr>
+      <td>UCLA</td>
+      <td>A+B+C</td>
+      <td>True</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.02</td>
+      <td>Nike: 3; adidas: 0; Under Armour: 1; other: 0</td>
+      <td>At least one covered season on each side; descriptive only.</td>
+    </tr>
+    <tr>
+      <td>UCLA</td>
+      <td>A+B</td>
+      <td>True</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.02</td>
+      <td>Nike: 3; adidas: 0; Under Armour: 1; other: 0</td>
+      <td>At least one covered season on each side; descriptive only.</td>
+    </tr>
+    <tr>
+      <td>Cincinnati</td>
+      <td>A+B+C</td>
+      <td>True</td>
+      <td>2</td>
+      <td>3</td>
+      <td>-4.53</td>
+      <td>Nike: 3; adidas: 0; Under Armour: 2; other: 0</td>
+      <td>At least one covered season on each side; descriptive only.</td>
+    </tr>
+    <tr>
+      <td>Cincinnati</td>
+      <td>A+B</td>
+      <td>True</td>
+      <td>2</td>
+      <td>3</td>
+      <td>-4.53</td>
+      <td>Nike: 3; adidas: 0; Under Armour: 2; other: 0</td>
+      <td>At least one covered season on each side; descriptive only.</td>
+    </tr>
+    <tr>
+      <td>Auburn</td>
+      <td>A+B+C</td>
+      <td>True</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.00</td>
+      <td>Nike: 1; adidas: 0; Under Armour: 2; other: 0</td>
+      <td>At least one covered season on each side; descriptive only.</td>
+    </tr>
+    <tr>
+      <td>Auburn</td>
+      <td>A+B</td>
+      <td>True</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.00</td>
+      <td>Nike: 1; adidas: 0; Under Armour: 2; other: 0</td>
+      <td>At least one covered season on each side; descriptive only.</td>
+    </tr>
+    <tr>
+      <td>Texas Tech</td>
+      <td>A+B+C</td>
+      <td>True</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2.35</td>
+      <td>Nike: 0; adidas: 2; Under Armour: 2; other: 0</td>
+      <td>At least one covered season on each side; descriptive only.</td>
+    </tr>
+    <tr>
+      <td>Texas Tech</td>
+      <td>A+B</td>
+      <td>True</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2.35</td>
+      <td>Nike: 0; adidas: 2; Under Armour: 2; other: 0</td>
+      <td>At least one covered season on each side; descriptive only.</td>
+    </tr>
+    <tr>
+      <td>Georgia Tech</td>
+      <td>A+B+C</td>
+      <td>True</td>
+      <td>1</td>
+      <td>2</td>
+      <td>19.12</td>
+      <td>Nike: 0; adidas: 2; Under Armour: 0; other: 1</td>
+      <td>At least one covered season on each side; descriptive only.</td>
+    </tr>
+    <tr>
+      <td>Georgia Tech</td>
+      <td>A+B</td>
+      <td>True</td>
+      <td>1</td>
+      <td>2</td>
+      <td>19.12</td>
+      <td>Nike: 0; adidas: 2; Under Armour: 0; other: 1</td>
+      <td>At least one covered season on each side; descriptive only.</td>
+    </tr>
+  </tbody>
+</table></div>
+<h2>Women’s rowing: a limited supporting cut</h2><p>Only positive published NCAA rowing scores enter this table. It compares scoring school-seasons, not all rowing programs or a team’s probability of qualifying. The provider is the department’s primary brand; individual team exceptions are not modeled. Unassigned rows remain visible, and are not included in the brand coefficients above.</p>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>evidence_tiers</th>
+      <th>brand</th>
+      <th>n</th>
+      <th>n_schools</th>
+      <th>mean_rowing_points</th>
+      <th>median_rowing_points</th>
+      <th>total_rowing_points</th>
+      <th>n_A</th>
+      <th>n_B</th>
+      <th>n_C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A+B+C</td>
+      <td>Nike</td>
+      <td>70</td>
+      <td>17</td>
+      <td>64.01</td>
+      <td>60.00</td>
+      <td>4480.50</td>
+      <td>50</td>
+      <td>4</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Unassigned</td>
+      <td>73</td>
+      <td>19</td>
+      <td>48.32</td>
+      <td>38.00</td>
+      <td>3527.50</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>Under Armour</td>
+      <td>15</td>
+      <td>3</td>
+      <td>68.27</td>
+      <td>66.00</td>
+      <td>1024.00</td>
+      <td>15</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A+B+C</td>
+      <td>adidas</td>
+      <td>18</td>
+      <td>4</td>
+      <td>61.33</td>
+      <td>55.50</td>
+      <td>1104.00</td>
+      <td>18</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Nike</td>
+      <td>54</td>
+      <td>16</td>
+      <td>66.53</td>
+      <td>64.50</td>
+      <td>3592.50</td>
+      <td>50</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Unassigned</td>
+      <td>89</td>
+      <td>23</td>
+      <td>49.61</td>
+      <td>42.00</td>
+      <td>4415.50</td>
+      <td>0</td>
+      <td>0</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>Under Armour</td>
+      <td>15</td>
+      <td>3</td>
+      <td>68.27</td>
+      <td>66.00</td>
+      <td>1024.00</td>
+      <td>15</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A+B</td>
+      <td>adidas</td>
+      <td>18</td>
+      <td>4</td>
+      <td>61.33</td>
+      <td>55.50</td>
+      <td>1104.00</td>
+      <td>18</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table></div>
+<h2>Unverified or assumed</h2><ul>
+<li>55 priority school-seasons remain unknown; sponsorship outside the 74-school research scope was not completed. The cohort is selective, and “all covered schools” is not all D1.</li>
+<li>70 Tier C seasons are continuity inferences. Tier A retains labeled secondary contract reporting; Tier B uses dated official use. Neither establishes all amendments or actual payment amounts.</li>
+<li>Team exceptions and provider-payment disputes are documented but are not separate exposure variables. Continued use is not continuing payment.</li>
+<li>The 438 zeros use reviewed D1 program intervals. Some reflect COVID cancellations or postseason restrictions. Institutions never appearing in any input final standings are outside the panel.</li>
+<li>Switch coaching flags are a limited screen, not an audit of every sport or staff change. Realignment and COVID affect interpretation.</li>
+<li>Revenue and other department resources are not controlled. Private-school revenue gaps remain; the optional Knight–Newhouse robustness check was not run.</li>
+<li>Earlier per-sport reconciliation limitations remain; all-sports analysis uses official annual totals, not a reconstruction from incomplete sport contributions.</li></ul>
+<details><summary>Unknown priority seasons by school</summary><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>school</th>
+      <th>missing_seasons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Colorado</td>
+      <td>2025-26</td>
+    </tr>
+    <tr>
+      <td>Cornell</td>
+      <td>2017-18, 2018-19, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25</td>
+    </tr>
+    <tr>
+      <td>Denver</td>
+      <td>2017-18, 2018-19, 2021-22, 2022-23, 2023-24, 2024-25</td>
+    </tr>
+    <tr>
+      <td>Georgia</td>
+      <td>2024-25, 2025-26</td>
+    </tr>
+    <tr>
+      <td>Harvard</td>
+      <td>2017-18, 2018-19, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26</td>
+    </tr>
+    <tr>
+      <td>Iowa State</td>
+      <td>2018-19, 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26</td>
+    </tr>
+    <tr>
+      <td>Oklahoma State</td>
+      <td>2025-26</td>
+    </tr>
+    <tr>
+      <td>Princeton</td>
+      <td>2017-18, 2018-19, 2020-21, 2023-24, 2024-25, 2025-26</td>
+    </tr>
+    <tr>
+      <td>Stanford</td>
+      <td>2017-18, 2018-19, 2020-21, 2021-22, 2023-24, 2024-25, 2025-26</td>
+    </tr>
+    <tr>
+      <td>Vanderbilt</td>
+      <td>2023-24, 2024-25, 2025-26</td>
+    </tr>
+    <tr>
+      <td>Wake Forest</td>
+      <td>2017-18, 2018-19, 2020-21, 2022-23, 2023-24, 2024-25, 2025-26</td>
+    </tr>
+  </tbody>
+</table></div></details>
+<h2>Reproduce and inspect</h2><p>Run <code>python -m src.analyze</code> after building the database. The notebook <code>notebooks/analysis.ipynb</code> runs the same analysis and displays its tables. Every result CSV carries evidence tiers and sample counts. Source lineage lives in the <a href="sponsor_research.html">research audit</a>.</p>
+<p><a href="model_coefficients.csv">All coefficients and intervals</a> · <a href="model_sample_sizes.csv">Per-brand sample sizes and tiers</a> · <a href="model_diagnostics.csv">Model specifications</a> · <a href="brand_summary.csv">Brand summaries</a> · <a href="brand_shares.csv">Shares by season</a> · <a href="rowing_scoring_rows.csv">Rowing source rows</a></p>
+<p class="muted">Method reference: <a href="https://www.statsmodels.org/stable/generated/statsmodels.regression.linear_model.RegressionResults.get_robustcov_results.html">statsmodels clustered covariance documentation</a>. Installed version and numeric-library versions are recorded in analysis_validation.json.</p></main></html>

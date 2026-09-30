@@ -1,0 +1,10 @@
+{
+ "2017-18": [["Stanford",1442],["UCLA",1326],["Florida",1216],["USC",1147],["Texas",1143.25]],
+ "2018-19": [["Stanford",1503.75],["Michigan",1272.25],["Florida",1156.75],["Texas",1148.5],["USC",1075.75]],
+ "2020-21": [["Texas",1252],["Stanford",1195.75],["Michigan",1126.5],["North Carolina",1126.25],["Florida",1121.75]],
+ "2021-22": [["Texas",1449.5],["Stanford",1352.25],["Michigan",1245.25],["Ohio State",1184.5],["Florida",1180.75]],
+ "2022-23": [["Stanford",1412],["Texas",1370.5],["Ohio State",1170.75],["Virginia",1105.5],["Florida",1091.5]],
+ "2023-24": [["Texas",1377],["Stanford",1312.75],["Tennessee",1217],["Florida",1189],["Virginia",1066.25]],
+ "2024-25": [["Texas",1255.25],["USC",1253.75],["Stanford",1251],["North Carolina",1195.25],["UCLA",1149]],
+ "2025-26": [["Texas",1322],["Stanford",1263.5],["UCLA",1199.25],["North Carolina",1166.75],["Virginia",1148.75]]
+}

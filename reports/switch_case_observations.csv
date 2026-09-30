@@ -1,0 +1,51 @@
+year,season,brand,evidence_tier,points_pctile,conference_model,school,relative_season,from_brand,to_brand,switch_season,transition_date,transition_date_precision,outcome_available,expected_brand,provider_matches_event,primary_included,sensitivity_included,usable_primary,usable_sensitivity
+2017,2017-18,Nike,A,91.95402298850574,Pac-12,Washington,-2,Nike,adidas,2019-20,2019-07-01,effective date,True,Nike,True,True,True,True,True
+2018,2018-19,Nike,A,93.42857142857143,Pac-12,Washington,-1,Nike,adidas,2019-20,2019-07-01,effective date,True,Nike,True,True,True,True,True
+2019,2019-20,,unknown,,,Washington,0,Nike,adidas,2019-20,2019-07-01,effective date,False,adidas,False,False,False,True,True
+2020,2020-21,adidas,A,90.96045197740112,Pac-12,Washington,1,Nike,adidas,2019-20,2019-07-01,effective date,True,adidas,True,True,True,True,True
+2021,2021-22,adidas,A,91.83098591549296,Pac-12,Washington,2,Nike,adidas,2019-20,2019-07-01,effective date,True,adidas,True,True,True,True,True
+2019,2019-20,,unknown,,,Boston College,-2,Under Armour,other,2021-22,2021-06-01,effective date,False,Under Armour,False,False,False,True,True
+2020,2020-21,Under Armour,A,79.37853107344633,ACC,Boston College,-1,Under Armour,other,2021-22,2021-06-01,effective date,True,Under Armour,True,True,True,True,True
+2021,2021-22,other,A,69.57746478873239,ACC,Boston College,0,Under Armour,other,2021-22,2021-06-01,effective date,True,other,True,True,True,True,True
+2022,2022-23,other,A,70.94972067039106,ACC,Boston College,1,Under Armour,other,2021-22,2021-06-01,effective date,True,other,True,True,True,True,True
+2023,2023-24,other,A,81.17977528089888,ACC,Boston College,2,Under Armour,other,2021-22,2021-06-01,effective date,True,other,True,True,True,True,True
+2023,2023-24,,unknown,87.35955056179775,Summit,Denver,-2,other,Under Armour,2025-26,2025-06-03,announcement date; exact first competition use not established,True,other,False,False,False,False,False
+2024,2024-25,,unknown,82.86516853932584,Summit,Denver,-1,other,Under Armour,2025-26,2025-06-03,announcement date; exact first competition use not established,True,other,False,False,False,False,False
+2025,2025-26,Under Armour,A,81.74157303370787,Summit,Denver,0,other,Under Armour,2025-26,2025-06-03,announcement date; exact first competition use not established,True,Under Armour,True,True,True,False,False
+2026,2026-27,,unknown,,,Denver,1,other,Under Armour,2025-26,2025-06-03,announcement date; exact first competition use not established,False,Under Armour,False,False,False,False,False
+2027,2027-28,,unknown,,,Denver,2,other,Under Armour,2025-26,2025-06-03,announcement date; exact first competition use not established,False,Under Armour,False,False,False,False,False
+2021,2021-22,Under Armour,A,92.67605633802816,Pac-12,California,-2,Under Armour,Nike,2023-24,2023-07-01,effective date,True,Under Armour,True,True,True,True,True
+2022,2022-23,Under Armour,A,94.1340782122905,Pac-12,California,-1,Under Armour,Nike,2023-24,2023-07-01,effective date,True,Under Armour,True,True,True,True,True
+2023,2023-24,Nike,A,94.66292134831461,Pac-12,California,0,Under Armour,Nike,2023-24,2023-07-01,effective date,True,Nike,True,True,True,True,True
+2024,2024-25,Nike,A,93.53932584269663,ACC,California,1,Under Armour,Nike,2023-24,2023-07-01,effective date,True,Nike,True,True,True,True,True
+2025,2025-26,Nike,A,89.32584269662921,ACC,California,2,Under Armour,Nike,2023-24,2023-07-01,effective date,True,Nike,True,True,True,True,True
+2023,2023-24,adidas,A,81.74157303370787,Big Ten,Rutgers,-2,adidas,Nike,2025-26,2025-07-01,effective date,True,adidas,True,True,True,True,True
+2024,2024-25,adidas,A,77.80898876404494,Big Ten,Rutgers,-1,adidas,Nike,2025-26,2025-07-01,effective date,True,adidas,True,True,True,True,True
+2025,2025-26,Nike,A,74.01685393258427,Big Ten,Rutgers,0,adidas,Nike,2025-26,2025-07-01,effective date,True,Nike,True,True,True,True,True
+2026,2026-27,,unknown,,,Rutgers,1,adidas,Nike,2025-26,2025-07-01,effective date,False,Nike,False,False,False,True,True
+2027,2027-28,,unknown,,,Rutgers,2,adidas,Nike,2025-26,2025-07-01,effective date,False,Nike,False,False,False,True,True
+2019,2019-20,,unknown,,,UCLA,-2,Under Armour,Nike,2021-22,2021-07-01,effective date,False,Under Armour,False,False,False,True,True
+2020,2020-21,Under Armour,A,96.61016949152543,Pac-12,UCLA,-1,Under Armour,Nike,2021-22,2021-07-01,effective date,True,Under Armour,True,True,True,True,True
+2021,2021-22,Nike,A,96.05633802816902,Pac-12,UCLA,0,Under Armour,Nike,2021-22,2021-07-01,effective date,True,Nike,True,True,True,True,True
+2022,2022-23,Nike,A,96.36871508379889,Pac-12,UCLA,1,Under Armour,Nike,2021-22,2021-07-01,effective date,True,Nike,True,True,True,True,True
+2023,2023-24,Nike,A,97.47191011235955,Pac-12,UCLA,2,Under Armour,Nike,2021-22,2021-07-01,effective date,True,Nike,True,True,True,True,True
+2021,2021-22,Under Armour,A,60.985915492957744,American,Cincinnati,-2,Under Armour,Nike,2023-24,2023-07-01,effective date,True,Under Armour,True,True,True,True,True
+2022,2022-23,Under Armour,A,59.49720670391061,American,Cincinnati,-1,Under Armour,Nike,2023-24,2023-07-01,effective date,True,Under Armour,True,True,True,True,True
+2023,2023-24,Nike,A,27.52808988764045,Big 12,Cincinnati,0,Under Armour,Nike,2023-24,2023-07-01,effective date,True,Nike,True,True,True,True,True
+2024,2024-25,Nike,A,64.8876404494382,Big 12,Cincinnati,1,Under Armour,Nike,2023-24,2023-07-01,effective date,True,Nike,True,True,True,True,True
+2025,2025-26,Nike,A,74.71910112359551,Big 12,Cincinnati,2,Under Armour,Nike,2023-24,2023-07-01,effective date,True,Nike,True,True,True,True,True
+2023,2023-24,Under Armour,A,91.01123595505618,SEC,Auburn,-2,Under Armour,Nike,2025-26,2025-07-01,effective date,True,Under Armour,True,True,True,True,True
+2024,2024-25,Under Armour,A,94.9438202247191,SEC,Auburn,-1,Under Armour,Nike,2025-26,2025-07-01,effective date,True,Under Armour,True,True,True,True,True
+2025,2025-26,Nike,A,92.97752808988764,SEC,Auburn,0,Under Armour,Nike,2025-26,2025-07-01,effective date,True,Nike,True,True,True,True,True
+2026,2026-27,,unknown,,,Auburn,1,Under Armour,Nike,2025-26,2025-07-01,effective date,False,Nike,False,False,False,True,True
+2027,2027-28,,unknown,,,Auburn,2,Under Armour,Nike,2025-26,2025-07-01,effective date,False,Nike,False,False,False,True,True
+2022,2022-23,Under Armour,A,87.15083798882681,Big 12,Texas Tech,-2,Under Armour,adidas,2024-25,2024-07-01,effective date,True,Under Armour,True,True,True,True,True
+2023,2023-24,Under Armour,A,87.64044943820225,Big 12,Texas Tech,-1,Under Armour,adidas,2024-25,2024-07-01,effective date,True,Under Armour,True,True,True,True,True
+2024,2024-25,adidas,A,89.04494382022472,Big 12,Texas Tech,0,Under Armour,adidas,2024-25,2024-07-01,effective date,True,adidas,True,True,True,True,True
+2025,2025-26,adidas,A,90.4494382022472,Big 12,Texas Tech,1,Under Armour,adidas,2024-25,2024-07-01,effective date,True,adidas,True,True,True,True,True
+2026,2026-27,,unknown,,,Texas Tech,2,Under Armour,adidas,2024-25,2024-07-01,effective date,False,adidas,False,False,False,True,True
+2016,2016-17,,unknown,,,Georgia Tech,-2,other,adidas,2018-19,2018-07-01,effective date,False,other,False,False,False,True,True
+2017,2017-18,other,A,65.51724137931035,ACC,Georgia Tech,-1,other,adidas,2018-19,2018-07-01,effective date,True,other,True,True,True,True,True
+2018,2018-19,adidas,A,81.42857142857143,ACC,Georgia Tech,0,other,adidas,2018-19,2018-07-01,effective date,True,adidas,True,True,True,True,True
+2019,2019-20,,unknown,,,Georgia Tech,1,other,adidas,2018-19,2018-07-01,effective date,False,adidas,False,False,False,True,True
+2020,2020-21,adidas,A,87.85310734463276,ACC,Georgia Tech,2,other,adidas,2018-19,2018-07-01,effective date,True,adidas,True,True,True,True,True
