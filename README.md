@@ -6,7 +6,7 @@ A reproducible study of apparel providers and all-sport NCAA Division I athletic
 
 ## TL;DR
 
-Nike schools finish in the national top 10 more often **within this study's covered school-seasons**. Using direct evidence only (A+B):
+**The best programs wear Nike.** Descriptive patterns in this covered cohort are consistent with selection and persistence, not proof of causation. Nike schools finish in the national top 10 more often within this study's covered school-seasons. Using direct evidence only (A+B):
 
 | Department provider | Top-10 finishes / school-seasons | Top-10 finish rate | Mean performance percentile |
 |---|---:|---:|---:|
@@ -107,6 +107,10 @@ The pinned Python 3.12.14 slim image installs exact dependency versions and runs
 
 For a full raw-source rebuild, run the image with `./run.sh` and network access, or use the Python instructions above. On this Mac's isolated Colima profile, add `--context colima-swoosh` after `docker` in both commands. The same offline mode is available locally as `PYTHON=.venv/bin/python ./run.sh --offline`.
 
+## Numerical reproducibility
+
+Counts, provider assignments and evidence tiers must agree exactly. Floating-point results are compared with an absolute tolerance of **1e-9** (in the reported units) and zero relative tolerance; this allows harmless serialization and numerical-library differences. Earlier algorithm regression checks retain their tighter 1e-12 threshold. README model values use two decimals, finish rates use one decimal, and Tableau expected values use six decimals. Input hashes describe exact file bytes and can change after an equivalent CSV reserialization; figure timestamps and metadata are not numerical findings.
+
 ## Evidence and coverage
 
 The study includes eight completed seasons from **2017-18 through 2025-26**, excluding canceled 2019-20. Sponsor research prioritizes 74 schools: the 68 appearing in the four power conferences in the 2025-26 standings and six other schools with a top-50 finish during the window. Coverage is **537 of 592 priority school-seasons (90.7%)**.
@@ -146,7 +150,6 @@ The underlying performance panel contains **2,833 school-seasons**: 2,395 publis
 ## Links
 
 - [Tableau Public dashboard](https://public.tableau.com/views/TheSwooshEffect/TheSwooshEffect)
-- Vercel showcase: `VERCEL_SITE_URL` — placeholder for the planned site.
 - [Analysis report](reports/phase3_analysis.html)
 - [Provider evidence audit](reports/sponsor_research.html)
 - [Tableau export dictionary](exports/tableau/README.md)

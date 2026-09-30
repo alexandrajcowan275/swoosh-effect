@@ -1,5 +1,4 @@
 """Audit absent final-standings rows against reviewed Division I program intervals."""
-import pandas as pd
 
 
 def audit_zeros(standings, reviews):

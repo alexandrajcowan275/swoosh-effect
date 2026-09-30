@@ -61,8 +61,9 @@ def export_tableau(root=ROOT, *, write_validation=True):
 def dictionary(c):
     return f'''# Tableau handoff: The Swoosh Effect
 
-Three UTF-8 CSVs, in tidy long format. Files are local; nothing has been published
-to Tableau Public. Rebuild from the project directory:
+Three UTF-8 CSVs, in tidy long format, supporting the
+[published Tableau Public dashboard](https://public.tableau.com/views/TheSwooshEffect/TheSwooshEffect).
+Rebuild from the project directory:
 
 ```bash
 python -m src.export_tableau --exports-only

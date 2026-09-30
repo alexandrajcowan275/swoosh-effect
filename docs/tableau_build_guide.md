@@ -7,7 +7,7 @@ Instructions were checked against official Tableau documentation on September 30
 ## 1. Upload the first CSV and check its fields
 
 1. Sign in at [Tableau Public](https://public.tableau.com/) and open **Create → Web Authoring**. If you are on your profile, **Create a Viz** opens the same connection workflow.
-2. In **Connect to Data**, choose the file-upload option and **Upload from Computer**. On this Mac, press **Command+Shift+G** in the file picker, paste `/Users/alexandracowan/Documents/ChatGPT/swoosh-effect-public/exports/tableau/`, press **Return**, select `school_season.csv`, and click **Open**. (On another computer, choose the same folder inside your clone.) Do not upload `brand_summary.csv` into the same data model.
+2. In **Connect to Data**, choose the file-upload option and **Upload from Computer**. Navigate to `exports/tableau/` inside your local clone, select `school_season.csv`, and click **Open**. Do not upload `brand_summary.csv` into the same data model.
 3. On the **Data Source** page, make sure the first row is used as field names and the preview has separate columns. If the table has not been placed on the canvas automatically, drag the single uploaded table to the empty canvas.
 4. Name this data source `School seasons`. Open **Sheet 1** at the bottom.
 5. Tableau may prettify `points_pctile` into `Points Pctile`. In the Data pane, use each field's menu → **Rename** to restore the exact CSV names used below. Renaming here changes the workbook label, not the CSV.
@@ -124,11 +124,11 @@ Click **New Dashboard** at the bottom. Name the dashboard `The Swoosh Effect`. U
 
 1. Add a **Text** object at the top with this exact title:
 
-   **The Swoosh Effect: Why the best programs wear Nike**
+   **The Swoosh Effect: The best programs wear Nike**
 
 2. Add a subtitle Text object directly below it:
 
-   `An observational study of NCAA Division I all-sport departments, 2017-18–2025-26 (2019-20 canceled). Direct evidence A+B shown by default. Patterns are consistent with selection and persistent strength, not proof that Nike causes success. n = school-seasons.`
+   `Descriptive patterns in this covered cohort are consistent with selection and persistence, not proof of causation. An observational study of NCAA Division I all-sport departments, 2017-18–2025-26 (2019-20 canceled). Direct evidence A+B shown by default. n = school-seasons.`
 
 3. Drag the two brand sheets from the **Sheets** list into the upper part of the dashboard. Put the top-10 bars first and the season lines below them. Keep their titles and a readable brand legend.
 4. Add the switch sheet beneath them, with enough vertical space to read all nine school panels; add the case-count Text block directly underneath. Its x axis is calendar time around each switch, not the categorical season axis of Sheet 2.

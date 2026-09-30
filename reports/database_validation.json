@@ -20,7 +20,7 @@
   "fully_covered_priority_schools": 63,
   "unknown_priority_school_seasons": 55,
   "verified_brand_switches": 8,
-  "status": "90% evidence threshold reached; sponsorship research stopped; ready for Phase 3",
+  "status": "90% evidence threshold reached; evidence audit complete; run.sh rebuilds the analysis outputs",
   "reviewed_priority_schools": 74,
   "documented_switch_events": 10
 }

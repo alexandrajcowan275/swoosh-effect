@@ -1,6 +1,5 @@
 """Render analysis results and a runnable notebook from the same computed tables."""
 import json
-from html import escape
 import pandas as pd
 from .research_report import STYLE
 

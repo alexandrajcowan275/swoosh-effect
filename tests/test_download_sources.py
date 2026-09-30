@@ -2,7 +2,6 @@
 import hashlib
 import io
 import json
-from pathlib import Path
 from urllib.error import HTTPError
 
 import pytest

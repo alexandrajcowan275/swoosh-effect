@@ -13,10 +13,14 @@ if [[ $# -gt 1 || ( -n "$mode" && "$mode" != "--download" && "$mode" != "--offli
   exit 2
 fi
 if [[ "$mode" != "--offline" ]]; then
-  download_args=()
-  if [[ "$mode" == "--download" ]]; then download_args+=(--force); fi
-  "$python_bin" src/fetch_sources.py "${download_args[@]}"
-  "$python_bin" src/fetch_seasonal.py "${download_args[@]}"
+  # Bash 3.2 treats an empty array expansion as unbound under set -u.
+  if [[ "$mode" == "--download" ]]; then
+    "$python_bin" src/fetch_sources.py --force
+    "$python_bin" src/fetch_seasonal.py --force
+  else
+    "$python_bin" src/fetch_sources.py
+    "$python_bin" src/fetch_seasonal.py
+  fi
   "$python_bin" src/parse_standings.py
   "$python_bin" src/parse_seasonal.py
 fi

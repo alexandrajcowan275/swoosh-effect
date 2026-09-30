@@ -1,5 +1,4 @@
 """Validate the expanded dataset without hiding publication inconsistencies."""
-import hashlib
 import json
 from pathlib import Path
 import pandas as pd

@@ -2,7 +2,6 @@
 import hashlib
 import json
 import re
-from pathlib import Path
 import pandas as pd
 import pdfplumber
 from parse_standings import ROOT
