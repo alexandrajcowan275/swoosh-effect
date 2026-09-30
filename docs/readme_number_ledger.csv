@@ -1,35 +1,27 @@
 location,kind,sample,displayed_value,source_file,selector,calculation,source_value,display_precision,status
-README.md:15,finding,A+B,21.1%,reports/brand_summary.csv,evidence_tiers=A+B; brand=Nike,100 * top10_finishes / n_school_seasons,21.10726643598616,1 decimal,PASS
-README.md:15,finding,A+B,61/289,reports/brand_summary.csv,evidence_tiers=A+B; brand=Nike,top10_finishes / n_school_seasons (displayed counts),61/289,exact integers,PASS
-README.md:15,finding,A+B,3.5%,reports/brand_summary.csv,evidence_tiers=A+B; brand=Under Armour,100 * top10_finishes / n_school_seasons,3.488372093023256,1 decimal,PASS
-README.md:15,finding,A+B,3/86,reports/brand_summary.csv,evidence_tiers=A+B; brand=Under Armour,top10_finishes / n_school_seasons (displayed counts),3/86,exact integers,PASS
-README.md:15,finding,A+B,2.4%,reports/brand_summary.csv,evidence_tiers=A+B; brand=adidas,100 * top10_finishes / n_school_seasons,2.3529411764705883,1 decimal,PASS
-README.md:15,finding,A+B,2/85,reports/brand_summary.csv,evidence_tiers=A+B; brand=adidas,top10_finishes / n_school_seasons (displayed counts),2/85,exact integers,PASS
-README.md:15,finding,A+B,0.0%,reports/brand_summary.csv,evidence_tiers=A+B; brand=other,100 * top10_finishes / n_school_seasons,0.0,1 decimal,PASS
-README.md:15,finding,A+B,0/7,reports/brand_summary.csv,evidence_tiers=A+B; brand=other,top10_finishes / n_school_seasons (displayed counts),0/7,exact integers,PASS
-README.md:15,definition,A+B,10,exports/tableau/README.md,school_season.top10 definition,published non-null rank <= 10,10,exact threshold,PASS
-README.md:16,finding,A+B matched regression rows,56–62%,reports/lag_attenuation.csv,Evidence=A+B; adidas and Under Armour,min/max of Magnitude shrinkage %; each compared on identical matched rows,56.15220560985035; 61.654841528216096,integer range,PASS
-README.md:17,finding,all-school holdout,#1,reports/ml/permutation_importance.csv,level=individual; feature=points_pctile_lag1,rank,1,exact integer,PASS
-README.md:17,finding,all-school holdout,43,reports/ml/permutation_importance.csv,level=individual,count of raw feature rows,43,exact integer,PASS
-README.md:17,finding,all-school holdout; pre-season A+B brand evidence,11.08,reports/ml/metrics.csv,season=pooled; model=naive; metric=MAE,estimate,11.0777521778,2 decimals,PASS
-README.md:17,finding,all-school holdout; pre-season A+B brand evidence,11.12,reports/ml/metrics.csv,season=pooled; model=lagged_ols; metric=MAE,estimate,11.1170183724,2 decimals,PASS
-README.md:17,finding,all-school holdout; pre-season A+B brand evidence,11.18,reports/ml/metrics.csv,season=pooled; model=lightgbm; metric=MAE,estimate,11.1825694754,2 decimals,PASS
-README.md:17,finding,all-school holdout,712,reports/ml/metrics.csv,season=pooled; all models,n,712,exact integer,PASS
-README.md:41,configuration,runtime,3.12,.github/workflows/ci.yml,jobs.test.steps.setup-python.python-version,major.minor of pinned interpreter,3.12.14,major.minor,PASS
-README.md:46,configuration,runtime,3.12,.github/workflows/ci.yml,jobs.test.steps.setup-python.python-version,major.minor of pinned interpreter,3.12.14,major.minor,PASS
-reports/figures/brand_comparison.png,hero chart,A+B+C,n=350,reports/brand_summary.csv,evidence_tiers=A+B+C; brand=Nike,n_school_seasons,350,exact integer,PASS
-reports/figures/brand_comparison.png,hero chart,A+B+C,89.7,reports/brand_summary.csv,evidence_tiers=A+B+C; brand=Nike,mean_percentile,89.72227061330786,1 decimal,PASS
-reports/figures/brand_comparison.png,hero chart,A+B+C,n=94,reports/brand_summary.csv,evidence_tiers=A+B+C; brand=adidas,n_school_seasons,94,exact integer,PASS
-reports/figures/brand_comparison.png,hero chart,A+B+C,87.8,reports/brand_summary.csv,evidence_tiers=A+B+C; brand=adidas,mean_percentile,87.8230026187478,1 decimal,PASS
-reports/figures/brand_comparison.png,hero chart,A+B+C,n=86,reports/brand_summary.csv,evidence_tiers=A+B+C; brand=Under Armour,n_school_seasons,86,exact integer,PASS
-reports/figures/brand_comparison.png,hero chart,A+B+C,86.6,reports/brand_summary.csv,evidence_tiers=A+B+C; brand=Under Armour,mean_percentile,86.63695639937761,1 decimal,PASS
-reports/figures/brand_comparison.png,hero chart,A+B+C,n=7,reports/brand_summary.csv,evidence_tiers=A+B+C; brand=other,n_school_seasons,7,exact integer,PASS
-reports/figures/brand_comparison.png,hero chart,A+B+C,76.0,reports/brand_summary.csv,evidence_tiers=A+B+C; brand=other,mean_percentile,75.97253907179447,1 decimal,PASS
-reports/figures/brand_comparison.png,hero chart,A+B,n=289,reports/brand_summary.csv,evidence_tiers=A+B; brand=Nike,n_school_seasons,289,exact integer,PASS
-reports/figures/brand_comparison.png,hero chart,A+B,90.4,reports/brand_summary.csv,evidence_tiers=A+B; brand=Nike,mean_percentile,90.35938836093496,1 decimal,PASS
-reports/figures/brand_comparison.png,hero chart,A+B,n=85,reports/brand_summary.csv,evidence_tiers=A+B; brand=adidas,n_school_seasons,85,exact integer,PASS
-reports/figures/brand_comparison.png,hero chart,A+B,87.7,reports/brand_summary.csv,evidence_tiers=A+B; brand=adidas,mean_percentile,87.69295259789212,1 decimal,PASS
-reports/figures/brand_comparison.png,hero chart,A+B,n=86,reports/brand_summary.csv,evidence_tiers=A+B; brand=Under Armour,n_school_seasons,86,exact integer,PASS
-reports/figures/brand_comparison.png,hero chart,A+B,86.6,reports/brand_summary.csv,evidence_tiers=A+B; brand=Under Armour,mean_percentile,86.63695639937761,1 decimal,PASS
-reports/figures/brand_comparison.png,hero chart,A+B,n=7,reports/brand_summary.csv,evidence_tiers=A+B; brand=other,n_school_seasons,7,exact integer,PASS
-reports/figures/brand_comparison.png,hero chart,A+B,76.0,reports/brand_summary.csv,evidence_tiers=A+B; brand=other,mean_percentile,75.97253907179447,1 decimal,PASS
+README.md:17,finding,A+B,21.1%,reports/brand_summary.csv,evidence_tiers=A+B; brand=Nike,100 * top10_finishes / n_school_seasons,21.10726643598616,1 decimal,PASS
+README.md:17,finding,A+B,61/289,reports/brand_summary.csv,evidence_tiers=A+B; brand=Nike,top10_finishes / n_school_seasons (displayed counts),61/289,exact integers,PASS
+README.md:17,finding,A+B,3.5%,reports/brand_summary.csv,evidence_tiers=A+B; brand=Under Armour,100 * top10_finishes / n_school_seasons,3.488372093023256,1 decimal,PASS
+README.md:17,finding,A+B,3/86,reports/brand_summary.csv,evidence_tiers=A+B; brand=Under Armour,top10_finishes / n_school_seasons (displayed counts),3/86,exact integers,PASS
+README.md:17,finding,A+B,2.4%,reports/brand_summary.csv,evidence_tiers=A+B; brand=adidas,100 * top10_finishes / n_school_seasons,2.3529411764705883,1 decimal,PASS
+README.md:17,finding,A+B,2/85,reports/brand_summary.csv,evidence_tiers=A+B; brand=adidas,top10_finishes / n_school_seasons (displayed counts),2/85,exact integers,PASS
+README.md:17,definition,A+B,10,exports/tableau/README.md,school_season.top10 definition,published non-null rank <= 10,10,exact threshold,PASS
+README.md:18,finding,A+B matched regression rows,56–62%,reports/lag_attenuation.csv,Evidence=A+B; adidas and Under Armour,min/max of Magnitude shrinkage %; each compared on identical matched rows,56.15220560985035; 61.654841528216096,integer range,PASS
+README.md:19,finding,all-school holdout,#1,reports/ml/permutation_importance.csv,level=individual; feature=points_pctile_lag1,rank,1,exact integer,PASS
+README.md:19,finding,all-school holdout,43,reports/ml/permutation_importance.csv,level=individual,count of raw feature rows,43,exact integer,PASS
+README.md:19,finding,all-school holdout; pre-season A+B brand evidence,11.08,reports/ml/metrics.csv,season=pooled; model=naive; metric=MAE,estimate,11.0777521778,2 decimals,PASS
+README.md:19,finding,all-school holdout; pre-season A+B brand evidence,11.12,reports/ml/metrics.csv,season=pooled; model=lagged_ols; metric=MAE,estimate,11.1170183724,2 decimals,PASS
+README.md:19,finding,all-school holdout; pre-season A+B brand evidence,11.18,reports/ml/metrics.csv,season=pooled; model=lightgbm; metric=MAE,estimate,11.1825694754,2 decimals,PASS
+README.md:19,finding,all-school holdout,712,reports/ml/metrics.csv,season=pooled; all models,n,712,exact integer,PASS
+README.md:43,configuration,runtime,3.12,.github/workflows/ci.yml,jobs.test.steps.setup-python.python-version,major.minor of pinned interpreter,3.12.14,major.minor,PASS
+README.md:48,configuration,runtime,3.12,.github/workflows/ci.yml,jobs.test.steps.setup-python.python-version,major.minor of pinned interpreter,3.12.14,major.minor,PASS
+docs/images/top10_finish_rates.png,hero chart,A+B,n = 289,reports/brand_summary.csv,evidence_tiers=A+B; brand=Nike,n_school_seasons,289,exact integer,PASS
+docs/images/top10_finish_rates.png,hero chart,A+B,21.1%,reports/brand_summary.csv,evidence_tiers=A+B; brand=Nike,100 * top10_finishes / n_school_seasons,21.10726643598616,1 decimal,PASS
+docs/images/top10_finish_rates.png,hero chart,A+B,n = 86,reports/brand_summary.csv,evidence_tiers=A+B; brand=Under Armour,n_school_seasons,86,exact integer,PASS
+docs/images/top10_finish_rates.png,hero chart,A+B,3.5%,reports/brand_summary.csv,evidence_tiers=A+B; brand=Under Armour,100 * top10_finishes / n_school_seasons,3.488372093023256,1 decimal,PASS
+docs/images/top10_finish_rates.png,hero chart,A+B,n = 85,reports/brand_summary.csv,evidence_tiers=A+B; brand=adidas,n_school_seasons,85,exact integer,PASS
+docs/images/top10_finish_rates.png,hero chart,A+B,2.4%,reports/brand_summary.csv,evidence_tiers=A+B; brand=adidas,100 * top10_finishes / n_school_seasons,2.3529411764705883,1 decimal,PASS
+docs/images/top10_finish_rates.png,configuration,plot axis,"0%, 5%, 10%, 15%, 20%, 25%",scripts/plot_readme_hero.py,set_xticks; PercentFormatter,display scale; not a finding,"0,5,10,15,20,25",exact axis ticks,PASS
+README.md:18,finding,A+B unadjusted mean gap,2.67,reports/brand_summary.csv,"evidence_tiers=A+B; brands=Nike,adidas",Nike mean_percentile minus comparison mean_percentile,2.6664357630428412,2 decimals,PASS
+README.md:18,finding,A+B unadjusted mean gap,3.72,reports/brand_summary.csv,"evidence_tiers=A+B; brands=Nike,Under Armour",Nike mean_percentile minus comparison mean_percentile,3.722431961557348,2 decimals,PASS
+README.md:3,finding,audited performance panel,8,exports/tableau/school_season.csv,all rows,count distinct season,8,exact integer,PASS

@@ -1,22 +1,24 @@
 # The Swoosh Effect
 
-A reproducible study of apparel sponsorship and all-sport NCAA Division I performance: does Nike pick winners or make them?
+Do Nike-sponsored college athletic departments win more, and did Nike make them winners or just sign them? 8 seasons of NCAA Directors' Cup data, SQL, regression, and machine learning.
+
+Built by [Alexandra Cowan](https://www.linkedin.com/in/alexandra-cowan-24705331b/).
 
 [![CI](https://github.com/alexandrajcowan275/swoosh-effect/actions/workflows/ci.yml/badge.svg)](https://github.com/alexandrajcowan275/swoosh-effect/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-[Tableau dashboard](https://public.tableau.com/views/TheSwooshEffect/TheSwooshEffect) · [LinkedIn](https://www.linkedin.com/in/alexandra-cowan-24705331b/)
+[Tableau dashboard](https://public.tableau.com/views/TheSwooshEffect/TheSwooshEffect)
 
 ## Why I built this
 
-I only wanted to row for a Nike school. That preference made me test whether Nike schools actually win more, using results across entire athletic departments.
+As a former D1 rower, I only wanted to row for a Nike school, so I tested whether Nike schools actually win more.
 
 ## Key findings
 
-- **The best programs wear Nike (A+B):** Top-10 finish rates are **21.1% for Nike (61/289 school-seasons)**, **3.5% for Under Armour (3/86)**, **2.4% for adidas (2/85)** and **0.0% for other verified providers (0/7)**. These are within-brand rates. [Source](reports/brand_summary.csv).
-- **Pick or make (A+B):** Adding prior-season performance shrinks Nike-relative adidas/Under Armour coefficient magnitudes by **56–62%** on identical samples. Consistent with selection/persistence, not proof of causation. [Source](reports/lag_attenuation.csv).
-- **ML benchmark (all-school holdout; pre-season A+B brand evidence):** Prior performance ranks **#1 of 43 features**. No model consistently beats the last-season baseline across MAE and RMSE: MAE is **11.08 baseline**, **11.12 OLS** and **11.18 LightGBM**, across **712 school-seasons**. OLS and LightGBM improve RMSE. [Metrics](reports/ml/metrics.csv) · [Importance](reports/ml/permutation_importance.csv).
+- **The best programs wear Nike** (A+B = seasons with direct sponsor evidence): Top-10 finish rates are **21.1% for Nike (61/289 school-seasons)**, **3.5% for Under Armour (3/86)** and **2.4% for adidas (2/85)**. These are within-brand rates. [Source](reports/brand_summary.csv).
+- **Pick or make (A+B):** Nike schools' average percentile lead is **2.67 points over adidas** and **3.72 over Under Armour**. On the same model sample, accounting for last season's performance shrinks the adjusted lead by **56–62%**: consistent with Nike signing already-strong programs, not proof that Nike makes them better. [Mean gaps and model comparison](docs/methodology.md#brand-comparisons).
+- **Predicting next season:** Last season's performance is the **#1 predictor (of 43 features)**. Across the broader study's **712 held-out school-seasons**, no model, including LightGBM, clearly beat simply predicting last season's result **on mean absolute error** (MAE **11.08 baseline vs 11.12 OLS vs 11.18 LightGBM**). [Results, including RMSE improvements](docs/methodology.md#machine-learning-benchmark) · [Importance](reports/ml/permutation_importance.csv).
 
-![Mean performance percentile by provider for A+B+C and A+B, with school-season counts; descriptive associations](reports/figures/brand_comparison.png)
+![Top-10 finish rates within each major provider's covered school-seasons using direct sponsor evidence A+B, with sample counts](docs/images/top10_finish_rates.png)
 
 ## How it works
 
@@ -58,7 +60,7 @@ docker run --rm --network none swoosh-effect
 ## Methodology & limitations
 
 - The selected department cohort is not a D1 census; brand rates are not national market shares. [Scope and sources](docs/data_sources.md).
-- A+B means direct evidence; the separate A+B+C analysis adds bounded continuity inference. Unknown brands stay unknown. [Evidence rules](docs/methodology.md#evidence-and-coverage).
+- The separate A+B+C analysis adds bounded continuity inference. Unknown brands stay unknown. [Evidence rules](docs/methodology.md#evidence-and-coverage).
 - Observational models cannot establish causation; budgets, sport offerings and prior provider exposure can confound results. [Models](docs/methodology.md#models-and-sample-sizes).
 - Forecasts use time-based splits and pre-season inputs. Masked brands and historical source revisions limit interpretation. [ML methods](docs/methodology.md#machine-learning-benchmark).
 - COVID, realignment and coaching changes complicate switch case studies. [Full limitations](docs/methodology.md#limitations-and-remaining-unknowns) · [Release audit](docs/release_audit.md) · [Number ledger](docs/readme_number_ledger.csv).

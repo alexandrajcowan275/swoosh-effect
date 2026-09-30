@@ -38,6 +38,8 @@ The pattern is **consistent with Nike signing already-elite programs and perform
 
 ![Mean performance percentile by department provider for A+B+C and A+B, with school-season counts](../reports/figures/brand_comparison.png)
 
+The README's top-10 chart shows the three major providers above; the smaller-provider result remains in this full table. Regenerate that chart from the unchanged output CSV with `python scripts/plot_readme_hero.py`; [plot source](../scripts/plot_readme_hero.py). The mean-percentile comparison remains here for the full evidence comparison.
+
 Numbers come from [brand_summary.csv](../reports/brand_summary.csv) and [model_coefficients.csv](../reports/model_coefficients.csv). All outcomes are department-level Directors' Cup performance across sports; rowing is an optional supporting cut.
 
 ## Models and sample sizes
