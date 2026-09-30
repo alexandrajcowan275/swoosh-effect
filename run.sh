@@ -1,22 +1,25 @@
 #!/usr/bin/env bash
-# Download missing audited PDFs, then rebuild every analysis output and run tests.
+# Rebuild the research and run tests; --offline uses committed audited tables.
 set -euo pipefail
 cd "$(dirname "$0")"
 python_bin="${PYTHON:-python3}"
 if [[ -z "${PYTHON:-}" && -x .venv/bin/python ]]; then
   python_bin=".venv/bin/python"
 fi
-if [[ "${1:-}" == "--download" && $# == 1 ]]; then
-  set -- --force
-elif [[ $# != 0 ]]; then
-  echo "Usage: ./run.sh [--download]" >&2
-  echo "By default, download missing/invalid PDFs; --download refreshes every PDF." >&2
+mode="${1:-}"
+if [[ $# -gt 1 || ( -n "$mode" && "$mode" != "--download" && "$mode" != "--offline" ) ]]; then
+  echo "Usage: ./run.sh [--download | --offline]" >&2
+  echo "Default: fetch audited PDFs; --download: refresh; --offline: rebuild from committed CSVs." >&2
   exit 2
 fi
-"$python_bin" src/fetch_sources.py "$@"
-"$python_bin" src/fetch_seasonal.py "$@"
-"$python_bin" src/parse_standings.py
-"$python_bin" src/parse_seasonal.py
+if [[ "$mode" != "--offline" ]]; then
+  download_args=()
+  if [[ "$mode" == "--download" ]]; then download_args+=(--force); fi
+  "$python_bin" src/fetch_sources.py "${download_args[@]}"
+  "$python_bin" src/fetch_seasonal.py "${download_args[@]}"
+  "$python_bin" src/parse_standings.py
+  "$python_bin" src/parse_seasonal.py
+fi
 "$python_bin" src/combine_sports.py
 "$python_bin" src/build_database.py
 "$python_bin" -m src.analyze

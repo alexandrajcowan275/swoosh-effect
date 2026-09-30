@@ -76,6 +76,19 @@ CI runs the full test suite on Python 3.12.14 using committed synthetic PDF fixt
 
 To enable the publication checks for future commits, run `.venv/bin/pre-commit install`. The pinned hooks scan for secrets and tokenized URLs; pytest also checks tracked files for tokenized URLs.
 
+## Run with Docker
+
+Requires a running Docker engine. Build and run the full analysis pipeline and test suite in two commands:
+
+```bash
+docker build -t swoosh-effect .
+docker run --rm --network none swoosh-effect
+```
+
+The pinned Python 3.12.14 slim image installs exact dependency versions and runs as UID 10001. The default `--offline` mode rebuilds combined sport tables, DuckDB, statistical reports, and Tableau exports from the committed audited CSVs, then runs all tests. Network access is disabled during the run; the 24 source PDFs are not downloaded or included in the image. Outputs stay inside the disposable container. The host Git history, credentials, caches, virtualenvs, and `/site` are excluded from the build context. A fresh container-only Git index lets publication checks inspect the packaged files without carrying host history.
+
+For a full raw-source rebuild, run the image with `./run.sh` and network access, or use the Python instructions above. On this Mac's isolated Colima profile, add `--context colima-swoosh` after `docker` in both commands. The same offline mode is available locally as `PYTHON=.venv/bin/python ./run.sh --offline`.
+
 ## Evidence and coverage
 
 The study includes eight completed seasons from **2017-18 through 2025-26**, excluding canceled 2019-20. Sponsor research prioritizes 74 schools: the 68 appearing in the four power conferences in the 2025-26 standings and six other schools with a top-50 finish during the window. Coverage is **537 of 592 priority school-seasons (90.7%)**.
