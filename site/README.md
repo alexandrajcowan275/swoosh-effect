@@ -36,7 +36,7 @@ The author’s exact personal paragraph, caption and alt text live in `content/p
 
 `public/share.png` is generated from the verified headline with the free Barlow Condensed font. Font licensing is in `public/fonts/OFL-Barlow-Condensed.txt`; Google Font web files are supplied by pinned Fontsource packages. Inter is used for body text.
 
-The static export is `out/`. Share metadata derives its absolute host from Vercel’s `VERCEL_PROJECT_PRODUCTION_URL` or `VERCEL_URL` system variables at build time, with localhost used for local previews. No environment secrets are required. A production URL and root README link will be added once the site is live.
+The static export is `out/`. Share metadata derives its absolute host from Vercel’s `VERCEL_PROJECT_PRODUCTION_URL` or `VERCEL_URL` system variables at build time, with localhost used for local previews. No environment secrets are required. The production site is <https://swoosh-effect.vercel.app/> and is linked from the root README.
 
 ## Interpretation
 
@@ -46,4 +46,4 @@ Independent student project by Alexandra Cowan. Not affiliated with or endorsed 
 
 ## Vercel import
 
-Import this GitHub repository as a Next.js project with Root Directory `site`. Enable **Include source files outside of the Root Directory in the Build Step**, because the data build reads the parent repository’s audited reports and CSVs. Use Node.js 24.x, install command `npm ci --include=dev`, build command `npm run build`, and output directory `out`. No environment secrets are required. Deployment steps: <https://vercel.com/docs/monorepos/monorepo-faq>.
+Import this GitHub repository as a Next.js project with Root Directory `site`. Enable **Include source files outside of the Root Directory in the Build Step**, because the data build reads the parent repository’s audited reports and CSVs. Use Node.js 24.x, install command `npm ci --include=dev`, build command `npm run build`, and leave the Output Directory override disabled (Next.js default). The local static export is still generated in `out/`; Vercel’s Next.js adapter reads its manifests from the default `.next/` directory. No environment secrets are required. Deployment steps: <https://vercel.com/docs/monorepos/monorepo-faq>.

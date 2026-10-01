@@ -6,7 +6,7 @@ Built by [Alexandra Cowan](https://www.linkedin.com/in/alexandra-cowan-24705331b
 
 [![CI](https://github.com/alexandrajcowan275/swoosh-effect/actions/workflows/ci.yml/badge.svg)](https://github.com/alexandrajcowan275/swoosh-effect/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-[Tableau dashboard](https://public.tableau.com/views/TheSwooshEffect/TheSwooshEffect)
+[Live data story](https://swoosh-effect.vercel.app/) · [Tableau dashboard](https://public.tableau.com/views/TheSwooshEffect/TheSwooshEffect)
 
 ## Why I built this
 
