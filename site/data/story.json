@@ -1,0 +1,2125 @@
+{
+  "sample": "A+B",
+  "seasons": 8,
+  "brands": [
+    {
+      "brand": "Nike",
+      "n": 289,
+      "finishes": 61,
+      "rate": 21.10726643598616,
+      "mean": 90.35938836093496,
+      "color": "#E9533A"
+    },
+    {
+      "brand": "Under Armour",
+      "n": 86,
+      "finishes": 3,
+      "rate": 3.488372093023256,
+      "mean": 86.63695639937761,
+      "color": "#767676"
+    },
+    {
+      "brand": "adidas",
+      "n": 85,
+      "finishes": 2,
+      "rate": 2.3529411764705883,
+      "mean": 87.69295259789212,
+      "color": "#888888"
+    }
+  ],
+  "comparisons": [
+    {
+      "brand": "adidas",
+      "meanGap": 2.6664357630428412,
+      "estimates": [
+        {
+          "model": "plain_matched",
+          "label": "Without last season",
+          "value": 3.28985496283192,
+          "low": -0.24973948602432916,
+          "high": 6.829449411688169,
+          "n": 341,
+          "color": "#B8B8B8"
+        },
+        {
+          "model": "lagged",
+          "label": "With last season",
+          "value": 1.2615000989897474,
+          "low": -0.6612803649272774,
+          "high": 3.184280562906772,
+          "n": 341,
+          "color": "#E9533A"
+        }
+      ],
+      "shrinkage": 61.654841528216096
+    },
+    {
+      "brand": "Under Armour",
+      "meanGap": 3.722431961557348,
+      "estimates": [
+        {
+          "model": "plain_matched",
+          "label": "Without last season",
+          "value": 2.2577877534433437,
+          "low": -0.8590988802760293,
+          "high": 5.374674387162717,
+          "n": 341,
+          "color": "#B8B8B8"
+        },
+        {
+          "model": "lagged",
+          "label": "With last season",
+          "value": 0.9899901318958162,
+          "low": -0.9230858287759576,
+          "high": 2.90306609256759,
+          "n": 341,
+          "color": "#E9533A"
+        }
+      ],
+      "shrinkage": 56.15220560985035
+    }
+  ],
+  "ml": {
+    "models": [
+      {
+        "model": "naive",
+        "label": "Same as last season",
+        "mae": 11.0777521778,
+        "low": 10.1741217965,
+        "high": 12.0050390181,
+        "rmse": 15.658748284
+      },
+      {
+        "model": "lagged_ols",
+        "label": "Lagged OLS",
+        "mae": 11.1170183724,
+        "low": 10.3844575121,
+        "high": 11.8622275086,
+        "rmse": 14.4004696934
+      },
+      {
+        "model": "lightgbm",
+        "label": "LightGBM",
+        "mae": 11.1825694754,
+        "low": 10.4193018088,
+        "high": 11.9464457773,
+        "rmse": 14.5807007155
+      }
+    ],
+    "features": [
+      {
+        "feature": "points_pctile_lag1",
+        "label": "Last season’s percentile",
+        "importance": 16.9697009939,
+        "rank": 1
+      },
+      {
+        "feature": "points_pctile_lag2",
+        "label": "Two seasons ago",
+        "importance": 0.8356178875,
+        "rank": 2
+      },
+      {
+        "feature": "sport_lag1__baseball",
+        "label": "baseball",
+        "importance": 0.0435821089,
+        "rank": 3
+      },
+      {
+        "feature": "sport_lag1__women_s_basketball",
+        "label": "Women’s basketball",
+        "importance": 0.0303600427,
+        "rank": 4
+      },
+      {
+        "feature": "sport_lag1__women_s_rowing",
+        "label": "Women’s rowing",
+        "importance": 0.0230316042,
+        "rank": 5
+      },
+      {
+        "feature": "sport_lag1__men_s_outdoor_track_and_field",
+        "label": "Men’s outdoor track and field",
+        "importance": 0.0225932738,
+        "rank": 6
+      },
+      {
+        "feature": "sport_lag1__women_s_golf",
+        "label": "Women’s golf",
+        "importance": 0.0153321617,
+        "rank": 7
+      },
+      {
+        "feature": "sport_lag1__men_s_swimming_and_diving",
+        "label": "Men’s swimming and diving",
+        "importance": 0.0141243817,
+        "rank": 8
+      },
+      {
+        "feature": "sport_lag1__men_s_indoor_track_and_field",
+        "label": "Men’s indoor track and field",
+        "importance": 0.0126190053,
+        "rank": 9
+      },
+      {
+        "feature": "sport_lag1__men_s_cross_country",
+        "label": "Men’s cross country",
+        "importance": 0.0094241462,
+        "rank": 10
+      }
+    ],
+    "featureCount": 43,
+    "n": 712,
+    "masked": 661,
+    "known": 51,
+    "testSeasons": [
+      "2024-25",
+      "2025-26"
+    ]
+  },
+  "cases": [
+    {
+      "school": "Auburn",
+      "shortNote": "coaching change identified",
+      "from": "Under Armour",
+      "to": "Nike",
+      "switchSeason": "2025-26",
+      "transitionDate": "2025-07-01",
+      "points": [
+        {
+          "relative": -2,
+          "season": "2023-24",
+          "value": 91.01123595505618,
+          "brand": "Under Armour"
+        },
+        {
+          "relative": -1,
+          "season": "2024-25",
+          "value": 94.9438202247191,
+          "brand": "Under Armour"
+        },
+        {
+          "relative": 0,
+          "season": "2025-26",
+          "value": 92.97752808988764,
+          "brand": "Nike"
+        },
+        {
+          "relative": 1,
+          "season": "2026-27",
+          "value": null,
+          "brand": null
+        },
+        {
+          "relative": 2,
+          "season": "2027-28",
+          "value": null,
+          "brand": null
+        }
+      ],
+      "note": "No main-conference change in the available case seasons. Steven Pearl was named men's basketball head coach in September 2025 during the first Nike season.",
+      "coachingSource": "https://auburntigers.com/news/2025/9/22/steven-pearl-named-auburn-mens-basketball-head-coach",
+      "realignmentSource": "",
+      "covid": false
+    },
+    {
+      "school": "Boston College",
+      "shortNote": "COVID gap · coaching change identified",
+      "from": "Under Armour",
+      "to": "other",
+      "switchSeason": "2021-22",
+      "transitionDate": "2021-06-01",
+      "points": [
+        {
+          "relative": -2,
+          "season": "2019-20",
+          "value": null,
+          "brand": null
+        },
+        {
+          "relative": -1,
+          "season": "2020-21",
+          "value": 79.37853107344633,
+          "brand": "Under Armour"
+        },
+        {
+          "relative": 0,
+          "season": "2021-22",
+          "value": 69.57746478873239,
+          "brand": "other"
+        },
+        {
+          "relative": 1,
+          "season": "2022-23",
+          "value": 70.94972067039106,
+          "brand": "other"
+        },
+        {
+          "relative": 2,
+          "season": "2023-24",
+          "value": 81.17977528089888,
+          "brand": "other"
+        }
+      ],
+      "note": "2019-20 was cancelled and has no annual final; preserve the calendar gap. 2020-21 pandemic disruptions also fall in this window. No main-conference change in the available case seasons. Earl Grant was named men's basketball head coach in March 2021, shortly before the provider transition.",
+      "coachingSource": "https://bceagles.com/news/2021/3/15/mens-basketball-boston-college-names-earl-grant-head-mens-basketball-coach",
+      "realignmentSource": "",
+      "covid": true
+    },
+    {
+      "school": "California",
+      "shortNote": "Pac-12 → ACC realignment · coaching change identified",
+      "from": "Under Armour",
+      "to": "Nike",
+      "switchSeason": "2023-24",
+      "transitionDate": "2023-07-01",
+      "points": [
+        {
+          "relative": -2,
+          "season": "2021-22",
+          "value": 92.67605633802816,
+          "brand": "Under Armour"
+        },
+        {
+          "relative": -1,
+          "season": "2022-23",
+          "value": 94.1340782122905,
+          "brand": "Under Armour"
+        },
+        {
+          "relative": 0,
+          "season": "2023-24",
+          "value": 94.6629213483146,
+          "brand": "Nike"
+        },
+        {
+          "relative": 1,
+          "season": "2024-25",
+          "value": 93.53932584269664,
+          "brand": "Nike"
+        },
+        {
+          "relative": 2,
+          "season": "2025-26",
+          "value": 89.32584269662921,
+          "brand": "Nike"
+        }
+      ],
+      "note": "Pac-12 to ACC in 2024-25; official ACC membership began August 2, 2024, within the post-switch window. Mark Madsen was named men's basketball head coach in March 2023, before the 2023-24 Nike season.",
+      "coachingSource": "https://calbears.com/news/2023/3/29/mens-basketball-mark-madsen-named-cal-mens-basketball-head-coach",
+      "realignmentSource": "https://calbears.com/news/2024/8/2/athletics-news-its-home",
+      "covid": false
+    },
+    {
+      "school": "Cincinnati",
+      "shortNote": "American → Big 12 realignment · coaching change identified",
+      "from": "Under Armour",
+      "to": "Nike",
+      "switchSeason": "2023-24",
+      "transitionDate": "2023-07-01",
+      "points": [
+        {
+          "relative": -2,
+          "season": "2021-22",
+          "value": 60.985915492957744,
+          "brand": "Under Armour"
+        },
+        {
+          "relative": -1,
+          "season": "2022-23",
+          "value": 59.49720670391061,
+          "brand": "Under Armour"
+        },
+        {
+          "relative": 0,
+          "season": "2023-24",
+          "value": 27.52808988764045,
+          "brand": "Nike"
+        },
+        {
+          "relative": 1,
+          "season": "2024-25",
+          "value": 64.8876404494382,
+          "brand": "Nike"
+        },
+        {
+          "relative": 2,
+          "season": "2025-26",
+          "value": 74.71910112359551,
+          "brand": "Nike"
+        }
+      ],
+      "note": "American Athletic Conference to Big 12 on July 1, 2023, coincident with the Nike transition. Scott Satterfield was named football head coach in December 2022 and began the 2023 season during the provider and conference changes.",
+      "coachingSource": "https://gobearcats.com/news/2022/12/05/cincinnati-announces-scott-satterfield-as-43rd-head-football-coach",
+      "realignmentSource": "https://gobearcats.com/news/2022/06/10/cincinnati-to-enter-big-12-on-july-1-2023",
+      "covid": false
+    },
+    {
+      "school": "Georgia Tech",
+      "shortNote": "COVID gap · coaching change identified",
+      "from": "other",
+      "to": "adidas",
+      "switchSeason": "2018-19",
+      "transitionDate": "2018-07-01",
+      "points": [
+        {
+          "relative": -2,
+          "season": "2016-17",
+          "value": null,
+          "brand": null
+        },
+        {
+          "relative": -1,
+          "season": "2017-18",
+          "value": 65.51724137931035,
+          "brand": "other"
+        },
+        {
+          "relative": 0,
+          "season": "2018-19",
+          "value": 81.42857142857143,
+          "brand": "adidas"
+        },
+        {
+          "relative": 1,
+          "season": "2019-20",
+          "value": null,
+          "brand": null
+        },
+        {
+          "relative": 2,
+          "season": "2020-21",
+          "value": 87.85310734463276,
+          "brand": "adidas"
+        }
+      ],
+      "note": "2019-20 was cancelled and has no annual final; preserve the calendar gap. 2020-21 pandemic disruptions also fall in this window. No main-conference change in the available case seasons. Paul Johnson announced he would step down as football head coach in November 2018, during the first adidas season.",
+      "coachingSource": "https://ramblinwreck.com/news/2018/11/28/johnson-steps-down-as-head-coach",
+      "realignmentSource": "",
+      "covid": true
+    },
+    {
+      "school": "Rutgers",
+      "shortNote": "coaching stability not established",
+      "from": "adidas",
+      "to": "Nike",
+      "switchSeason": "2025-26",
+      "transitionDate": "2025-07-01",
+      "points": [
+        {
+          "relative": -2,
+          "season": "2023-24",
+          "value": 81.74157303370787,
+          "brand": "adidas"
+        },
+        {
+          "relative": -1,
+          "season": "2024-25",
+          "value": 77.80898876404494,
+          "brand": "adidas"
+        },
+        {
+          "relative": 0,
+          "season": "2025-26",
+          "value": 74.01685393258427,
+          "brand": "Nike"
+        },
+        {
+          "relative": 1,
+          "season": "2026-27",
+          "value": null,
+          "brand": null
+        },
+        {
+          "relative": 2,
+          "season": "2027-28",
+          "value": null,
+          "brand": null
+        }
+      ],
+      "note": "No main-conference change in the available case seasons. The targeted source documents Coquese Washington's women's basketball appointment in May 2022, outside this 2023-24 through 2027-28 window. No claim that all coaching staffs were unchanged.",
+      "coachingSource": "https://scarletknights.com/news/2022/5/23/coquese-washington-named-rutgers-head-womens-basketball-coach",
+      "realignmentSource": "",
+      "covid": false
+    },
+    {
+      "school": "Texas Tech",
+      "shortNote": "coaching change identified",
+      "from": "Under Armour",
+      "to": "adidas",
+      "switchSeason": "2024-25",
+      "transitionDate": "2024-07-01",
+      "points": [
+        {
+          "relative": -2,
+          "season": "2022-23",
+          "value": 87.15083798882681,
+          "brand": "Under Armour"
+        },
+        {
+          "relative": -1,
+          "season": "2023-24",
+          "value": 87.64044943820225,
+          "brand": "Under Armour"
+        },
+        {
+          "relative": 0,
+          "season": "2024-25",
+          "value": 89.04494382022472,
+          "brand": "adidas"
+        },
+        {
+          "relative": 1,
+          "season": "2025-26",
+          "value": 90.4494382022472,
+          "brand": "adidas"
+        },
+        {
+          "relative": 2,
+          "season": "2026-27",
+          "value": null,
+          "brand": null
+        }
+      ],
+      "note": "Texas Tech remains in the Big 12; changes in Big 12 membership during the window may still alter competition. Grant McCasland was named men's basketball head coach in March 2023 and began in 2023-24, within the pre-switch window.",
+      "coachingSource": "https://texastech.com/news/2023/3/31/mens-basketball-grant-mccasland-named-texas-tech-head-coach",
+      "realignmentSource": "",
+      "covid": false
+    },
+    {
+      "school": "UCLA",
+      "shortNote": "COVID gap · coaching change identified",
+      "from": "Under Armour",
+      "to": "Nike",
+      "switchSeason": "2021-22",
+      "transitionDate": "2021-07-01",
+      "points": [
+        {
+          "relative": -2,
+          "season": "2019-20",
+          "value": null,
+          "brand": null
+        },
+        {
+          "relative": -1,
+          "season": "2020-21",
+          "value": 96.61016949152544,
+          "brand": "Under Armour"
+        },
+        {
+          "relative": 0,
+          "season": "2021-22",
+          "value": 96.05633802816902,
+          "brand": "Nike"
+        },
+        {
+          "relative": 1,
+          "season": "2022-23",
+          "value": 96.36871508379888,
+          "brand": "Nike"
+        },
+        {
+          "relative": 2,
+          "season": "2023-24",
+          "value": 97.47191011235957,
+          "brand": "Nike"
+        }
+      ],
+      "note": "2019-20 was cancelled and has no annual final; preserve the calendar gap. 2020-21 pandemic disruptions also fall in this window. Pac-12 throughout the observed case window, which ends in 2023-24. The subsequent 2024-25 Big Ten move is outside the window. Mick Cronin was hired as men's basketball head coach in April 2019; his first season was the excluded 2019-20 season at the start of this case window.",
+      "coachingSource": "https://uclabruins.com/sports/mens-basketball/roster/season/2020-21/staff/mick-cronin",
+      "realignmentSource": "",
+      "covid": true
+    },
+    {
+      "school": "Washington",
+      "shortNote": "COVID gap · coaching change identified",
+      "from": "Nike",
+      "to": "adidas",
+      "switchSeason": "2019-20",
+      "transitionDate": "2019-07-01",
+      "points": [
+        {
+          "relative": -2,
+          "season": "2017-18",
+          "value": 91.95402298850574,
+          "brand": "Nike"
+        },
+        {
+          "relative": -1,
+          "season": "2018-19",
+          "value": 93.42857142857144,
+          "brand": "Nike"
+        },
+        {
+          "relative": 0,
+          "season": "2019-20",
+          "value": null,
+          "brand": null
+        },
+        {
+          "relative": 1,
+          "season": "2020-21",
+          "value": 90.96045197740112,
+          "brand": "adidas"
+        },
+        {
+          "relative": 2,
+          "season": "2021-22",
+          "value": 91.83098591549296,
+          "brand": "adidas"
+        }
+      ],
+      "note": "2019-20 was cancelled and has no annual final; preserve the calendar gap. 2020-21 pandemic disruptions also fall in this window. No main-conference change in the observed 2017-18 through 2021-22 case seasons. Later Big Ten move is outside this window. Chris Petersen stepped down and Jimmy Lake was named football head coach in December 2019, within the case window.",
+      "coachingSource": "https://gohuskies.com/news/2019/12/2/football-petersen-to-step-down-lake-named-new-huskies-head-coach",
+      "realignmentSource": "",
+      "covid": true
+    }
+  ],
+  "excluded": [
+    "Denver"
+  ],
+  "coverage": {
+    "canonical_schools": 358,
+    "mapped_source_names": 367,
+    "observed_school_seasons": 2395,
+    "panel_rows": 2833,
+    "zero_rows_reviewed": 469,
+    "zero_rows_kept": 438,
+    "zero_rows_dropped": 31,
+    "priority_schools": 74,
+    "priority_school_seasons": 592,
+    "evidence_tier_counts": {
+      "A": 445,
+      "C": 70,
+      "unknown": 55,
+      "B": 22
+    },
+    "covered_priority_school_seasons": 537,
+    "coverage_percent": 90.71,
+    "direct_priority_school_seasons": 467,
+    "fully_covered_priority_schools": 63,
+    "unknown_priority_school_seasons": 55,
+    "verified_brand_switches": 8,
+    "status": "90% evidence threshold reached; evidence audit complete; run.sh rebuilds the analysis outputs",
+    "reviewed_priority_schools": 74,
+    "documented_switch_events": 10
+  },
+  "copy": {
+    "hero": "I ONLY WANTED TO ROW FOR A NIKE SCHOOL.",
+    "subhead": "So I tested whether Nike schools actually win more. The Swoosh Effect: 8 seasons of NCAA Directors' Cup data.",
+    "brand": "- The best programs wear Nike (A+B = seasons with direct sponsor evidence): Top-10 finish rates are 21.1% for Nike (61/289 school-seasons), 3.5% for Under Armour (3/86) and 2.4% for adidas (2/85). These are within-brand rates.",
+    "pick": "- Pick or make (A+B): Nike schools' average percentile lead is 2.67 points over adidas and 3.72 over Under Armour. On the same model sample, accounting for last season's performance shrinks the adjusted lead by 56–62%: consistent with Nike signing already-strong programs, not proof that Nike makes them better.",
+    "ml": "- Predicting next season: Last season's performance is the #1 predictor (of 43 features). Across the broader study's 712 held-out school-seasons, no model, including LightGBM, clearly beat simply predicting last season's result on mean absolute error (MAE 11.08 baseline vs 11.12 OLS vs 11.18 LightGBM).",
+    "why": "As a former D1 rower, I only wanted to row for a Nike school, so I tested whether Nike schools actually win more."
+  },
+  "links": {
+    "github": "https://github.com/alexandrajcowan275/swoosh-effect",
+    "tableau": "https://public.tableau.com/views/TheSwooshEffect/TheSwooshEffect",
+    "linkedin": "https://www.linkedin.com/in/alexandra-cowan-24705331b/",
+    "methodology": "https://github.com/alexandrajcowan275/swoosh-effect/blob/main/docs/methodology.md",
+    "sources": "https://github.com/alexandrajcowan275/swoosh-effect/blob/main/docs/data_sources.md",
+    "quote": "https://about.nike.com/en/mission",
+    "attribution": "https://media.corporate-ir.net/media_files/irol/10/100529/Areports/ar_07/pdfs/Nike_AR_MParker_2007.pdf"
+  },
+  "registry": {
+    "brand.0.rate": {
+      "raw": 21.10726643598616,
+      "text": "21.1%",
+      "source": "reports/brand_summary.csv",
+      "sample": "A+B"
+    },
+    "brand.0.n": {
+      "raw": 289,
+      "text": "289",
+      "source": "reports/brand_summary.csv",
+      "sample": "A+B"
+    },
+    "brand.0.finishes": {
+      "raw": 61,
+      "text": "61",
+      "source": "reports/brand_summary.csv",
+      "sample": "A+B"
+    },
+    "brand.1.rate": {
+      "raw": 3.488372093023256,
+      "text": "3.5%",
+      "source": "reports/brand_summary.csv",
+      "sample": "A+B"
+    },
+    "brand.1.n": {
+      "raw": 86,
+      "text": "86",
+      "source": "reports/brand_summary.csv",
+      "sample": "A+B"
+    },
+    "brand.1.finishes": {
+      "raw": 3,
+      "text": "3",
+      "source": "reports/brand_summary.csv",
+      "sample": "A+B"
+    },
+    "brand.2.rate": {
+      "raw": 2.3529411764705883,
+      "text": "2.4%",
+      "source": "reports/brand_summary.csv",
+      "sample": "A+B"
+    },
+    "brand.2.n": {
+      "raw": 85,
+      "text": "85",
+      "source": "reports/brand_summary.csv",
+      "sample": "A+B"
+    },
+    "brand.2.finishes": {
+      "raw": 2,
+      "text": "2",
+      "source": "reports/brand_summary.csv",
+      "sample": "A+B"
+    },
+    "comparison.0.0.estimate": {
+      "raw": 3.28985496283192,
+      "text": "3.29",
+      "source": "reports/model_coefficients.csv",
+      "sample": "A+B; same matched regression rows"
+    },
+    "comparison.0.0.low": {
+      "raw": -0.24973948602432916,
+      "text": "-0.25",
+      "source": "reports/model_coefficients.csv",
+      "sample": "A+B; 95% confidence interval"
+    },
+    "comparison.0.0.high": {
+      "raw": 6.829449411688169,
+      "text": "6.83",
+      "source": "reports/model_coefficients.csv",
+      "sample": "A+B; 95% confidence interval"
+    },
+    "comparison.0.1.estimate": {
+      "raw": 1.2615000989897474,
+      "text": "1.26",
+      "source": "reports/model_coefficients.csv",
+      "sample": "A+B; same matched regression rows"
+    },
+    "comparison.0.1.low": {
+      "raw": -0.6612803649272774,
+      "text": "-0.66",
+      "source": "reports/model_coefficients.csv",
+      "sample": "A+B; 95% confidence interval"
+    },
+    "comparison.0.1.high": {
+      "raw": 3.184280562906772,
+      "text": "3.18",
+      "source": "reports/model_coefficients.csv",
+      "sample": "A+B; 95% confidence interval"
+    },
+    "comparison.0.raw": {
+      "raw": 2.6664357630428412,
+      "text": "2.67",
+      "source": "reports/brand_summary.csv",
+      "sample": "A+B; unadjusted mean gap"
+    },
+    "comparison.0.shrinkage": {
+      "raw": 61.654841528216096,
+      "text": "62%",
+      "source": "reports/lag_attenuation.csv",
+      "sample": "A+B; matched model sample"
+    },
+    "comparison.1.0.estimate": {
+      "raw": 2.2577877534433437,
+      "text": "2.26",
+      "source": "reports/model_coefficients.csv",
+      "sample": "A+B; same matched regression rows"
+    },
+    "comparison.1.0.low": {
+      "raw": -0.8590988802760293,
+      "text": "-0.86",
+      "source": "reports/model_coefficients.csv",
+      "sample": "A+B; 95% confidence interval"
+    },
+    "comparison.1.0.high": {
+      "raw": 5.374674387162717,
+      "text": "5.37",
+      "source": "reports/model_coefficients.csv",
+      "sample": "A+B; 95% confidence interval"
+    },
+    "comparison.1.1.estimate": {
+      "raw": 0.9899901318958162,
+      "text": "0.99",
+      "source": "reports/model_coefficients.csv",
+      "sample": "A+B; same matched regression rows"
+    },
+    "comparison.1.1.low": {
+      "raw": -0.9230858287759576,
+      "text": "-0.92",
+      "source": "reports/model_coefficients.csv",
+      "sample": "A+B; 95% confidence interval"
+    },
+    "comparison.1.1.high": {
+      "raw": 2.90306609256759,
+      "text": "2.90",
+      "source": "reports/model_coefficients.csv",
+      "sample": "A+B; 95% confidence interval"
+    },
+    "comparison.1.raw": {
+      "raw": 3.722431961557348,
+      "text": "3.72",
+      "source": "reports/brand_summary.csv",
+      "sample": "A+B; unadjusted mean gap"
+    },
+    "comparison.1.shrinkage": {
+      "raw": 56.15220560985035,
+      "text": "56%",
+      "source": "reports/lag_attenuation.csv",
+      "sample": "A+B; matched model sample"
+    },
+    "comparison.shrinkRange": {
+      "raw": [
+        61.654841528216096,
+        56.15220560985035
+      ],
+      "text": "56–62%",
+      "source": "reports/lag_attenuation.csv",
+      "sample": "A+B; matched rows"
+    },
+    "comparison.n": {
+      "raw": 341,
+      "text": "341",
+      "source": "reports/model_coefficients.csv",
+      "sample": "A+B; matched rows"
+    },
+    "comparison.perBrand": {
+      "raw": {
+        "Nike": 213,
+        "Under Armour": 60,
+        "adidas": 63,
+        "other": 5
+      },
+      "text": "Nike 213; Under Armour 60; adidas 63; other 5",
+      "source": "reports/model_coefficients.csv",
+      "sample": "A+B; matched rows"
+    },
+    "confidence": {
+      "raw": 95,
+      "text": "95%",
+      "source": "docs/methodology.md",
+      "sample": "confidence interval definition"
+    },
+    "feature.0.rank": {
+      "raw": 1,
+      "text": "1",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.0.importance": {
+      "raw": 16.9697009939,
+      "text": "16.970",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.1.rank": {
+      "raw": 2,
+      "text": "2",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.1.importance": {
+      "raw": 0.8356178875,
+      "text": "0.836",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.2.rank": {
+      "raw": 3,
+      "text": "3",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.2.importance": {
+      "raw": 0.0435821089,
+      "text": "0.044",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.3.rank": {
+      "raw": 4,
+      "text": "4",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.3.importance": {
+      "raw": 0.0303600427,
+      "text": "0.030",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.4.rank": {
+      "raw": 5,
+      "text": "5",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.4.importance": {
+      "raw": 0.0230316042,
+      "text": "0.023",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.5.rank": {
+      "raw": 6,
+      "text": "6",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.5.importance": {
+      "raw": 0.0225932738,
+      "text": "0.023",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.6.rank": {
+      "raw": 7,
+      "text": "7",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.6.importance": {
+      "raw": 0.0153321617,
+      "text": "0.015",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.7.rank": {
+      "raw": 8,
+      "text": "8",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.7.importance": {
+      "raw": 0.0141243817,
+      "text": "0.014",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.8.rank": {
+      "raw": 9,
+      "text": "9",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.8.importance": {
+      "raw": 0.0126190053,
+      "text": "0.013",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.9.rank": {
+      "raw": 10,
+      "text": "10",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "feature.9.importance": {
+      "raw": 0.0094241462,
+      "text": "0.009",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; all-school holdout"
+    },
+    "ml.featureCount": {
+      "raw": 43,
+      "text": "43",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual"
+    },
+    "ml.brandImportance": {
+      "raw": 0,
+      "text": "zero",
+      "source": "reports/ml/permutation_importance.csv",
+      "sample": "individual; heavily masked brand input"
+    },
+    "ml.0.mae": {
+      "raw": 11.0777521778,
+      "text": "11.08",
+      "source": "reports/ml/metrics.csv",
+      "sample": "pooled; all-school holdout; pre-season A/B brand only"
+    },
+    "ml.0.low": {
+      "raw": 10.1741217965,
+      "text": "10.17",
+      "source": "reports/ml/metrics.csv",
+      "sample": "pooled; all-school holdout; pre-season A/B brand only"
+    },
+    "ml.0.high": {
+      "raw": 12.0050390181,
+      "text": "12.01",
+      "source": "reports/ml/metrics.csv",
+      "sample": "pooled; all-school holdout; pre-season A/B brand only"
+    },
+    "ml.0.rmse": {
+      "raw": 15.658748284,
+      "text": "15.66",
+      "source": "reports/ml/metrics.csv",
+      "sample": "pooled; all-school holdout; pre-season A/B brand only"
+    },
+    "ml.1.mae": {
+      "raw": 11.1170183724,
+      "text": "11.12",
+      "source": "reports/ml/metrics.csv",
+      "sample": "pooled; all-school holdout; pre-season A/B brand only"
+    },
+    "ml.1.low": {
+      "raw": 10.3844575121,
+      "text": "10.38",
+      "source": "reports/ml/metrics.csv",
+      "sample": "pooled; all-school holdout; pre-season A/B brand only"
+    },
+    "ml.1.high": {
+      "raw": 11.8622275086,
+      "text": "11.86",
+      "source": "reports/ml/metrics.csv",
+      "sample": "pooled; all-school holdout; pre-season A/B brand only"
+    },
+    "ml.1.rmse": {
+      "raw": 14.4004696934,
+      "text": "14.40",
+      "source": "reports/ml/metrics.csv",
+      "sample": "pooled; all-school holdout; pre-season A/B brand only"
+    },
+    "ml.2.mae": {
+      "raw": 11.1825694754,
+      "text": "11.18",
+      "source": "reports/ml/metrics.csv",
+      "sample": "pooled; all-school holdout; pre-season A/B brand only"
+    },
+    "ml.2.low": {
+      "raw": 10.4193018088,
+      "text": "10.42",
+      "source": "reports/ml/metrics.csv",
+      "sample": "pooled; all-school holdout; pre-season A/B brand only"
+    },
+    "ml.2.high": {
+      "raw": 11.9464457773,
+      "text": "11.95",
+      "source": "reports/ml/metrics.csv",
+      "sample": "pooled; all-school holdout; pre-season A/B brand only"
+    },
+    "ml.2.rmse": {
+      "raw": 14.5807007155,
+      "text": "14.58",
+      "source": "reports/ml/metrics.csv",
+      "sample": "pooled; all-school holdout; pre-season A/B brand only"
+    },
+    "ml.n": {
+      "raw": 712,
+      "text": "712",
+      "source": "reports/ml/metadata.json",
+      "sample": "all-school holdout"
+    },
+    "ml.masked": {
+      "raw": 661,
+      "text": "661",
+      "source": "reports/ml/sample_counts.csv",
+      "sample": "all-school holdout"
+    },
+    "ml.known": {
+      "raw": 51,
+      "text": "51",
+      "source": "reports/ml/sample_counts.csv",
+      "sample": "all-school holdout"
+    },
+    "ml.testSeasons": {
+      "raw": [
+        "2024-25",
+        "2025-26"
+      ],
+      "text": "2024-25 and 2025-26",
+      "source": "reports/ml/metadata.json",
+      "sample": "held-out seasons"
+    },
+    "case.0.0.relative": {
+      "raw": -2,
+      "text": "-2",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.0.0.season": {
+      "raw": "2023-24",
+      "text": "2023-24",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.0.0.value": {
+      "raw": 91.01123595505618,
+      "text": "91.01",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.0.1.relative": {
+      "raw": -1,
+      "text": "-1",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.0.1.season": {
+      "raw": "2024-25",
+      "text": "2024-25",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.0.1.value": {
+      "raw": 94.9438202247191,
+      "text": "94.94",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.0.2.relative": {
+      "raw": 0,
+      "text": "0",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.0.2.season": {
+      "raw": "2025-26",
+      "text": "2025-26",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.0.2.value": {
+      "raw": 92.97752808988764,
+      "text": "92.98",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.0.3.relative": {
+      "raw": 1,
+      "text": "+1",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.0.3.season": {
+      "raw": "2026-27",
+      "text": "2026-27",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.0.3.value": {
+      "raw": null,
+      "text": "No annual final / not available",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.0.4.relative": {
+      "raw": 2,
+      "text": "+2",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.0.4.season": {
+      "raw": "2027-28",
+      "text": "2027-28",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.0.4.value": {
+      "raw": null,
+      "text": "No annual final / not available",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.0.note": {
+      "raw": "No main-conference change in the available case seasons. Steven Pearl was named men's basketball head coach in September 2025 during the first Nike season.",
+      "text": "No main-conference change in the available case seasons. Steven Pearl was named men's basketball head coach in September 2025 during the first Nike season.",
+      "source": "reports/switch_case_confounders.csv",
+      "sample": "descriptive context; targeted screen"
+    },
+    "case.0.season": {
+      "raw": "2025-26",
+      "text": "2025-26",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "switch season"
+    },
+    "case.0.shortNote": {
+      "raw": "coaching change identified",
+      "text": "coaching change identified",
+      "source": "reports/switch_case_confounders.csv",
+      "sample": "targeted confounder screen"
+    },
+    "case.1.0.relative": {
+      "raw": -2,
+      "text": "-2",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.1.0.season": {
+      "raw": "2019-20",
+      "text": "2019-20",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.1.0.value": {
+      "raw": null,
+      "text": "No annual final / not available",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.1.1.relative": {
+      "raw": -1,
+      "text": "-1",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.1.1.season": {
+      "raw": "2020-21",
+      "text": "2020-21",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.1.1.value": {
+      "raw": 79.37853107344633,
+      "text": "79.38",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.1.2.relative": {
+      "raw": 0,
+      "text": "0",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.1.2.season": {
+      "raw": "2021-22",
+      "text": "2021-22",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.1.2.value": {
+      "raw": 69.57746478873239,
+      "text": "69.58",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.1.3.relative": {
+      "raw": 1,
+      "text": "+1",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.1.3.season": {
+      "raw": "2022-23",
+      "text": "2022-23",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.1.3.value": {
+      "raw": 70.94972067039106,
+      "text": "70.95",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.1.4.relative": {
+      "raw": 2,
+      "text": "+2",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.1.4.season": {
+      "raw": "2023-24",
+      "text": "2023-24",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.1.4.value": {
+      "raw": 81.17977528089888,
+      "text": "81.18",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.1.note": {
+      "raw": "2019-20 was cancelled and has no annual final; preserve the calendar gap. 2020-21 pandemic disruptions also fall in this window. No main-conference change in the available case seasons. Earl Grant was named men's basketball head coach in March 2021, shortly before the provider transition.",
+      "text": "2019-20 was cancelled and has no annual final; preserve the calendar gap. 2020-21 pandemic disruptions also fall in this window. No main-conference change in the available case seasons. Earl Grant was named men's basketball head coach in March 2021, shortly before the provider transition.",
+      "source": "reports/switch_case_confounders.csv",
+      "sample": "descriptive context; targeted screen"
+    },
+    "case.1.season": {
+      "raw": "2021-22",
+      "text": "2021-22",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "switch season"
+    },
+    "case.1.shortNote": {
+      "raw": "COVID gap · coaching change identified",
+      "text": "COVID gap · coaching change identified",
+      "source": "reports/switch_case_confounders.csv",
+      "sample": "targeted confounder screen"
+    },
+    "case.2.0.relative": {
+      "raw": -2,
+      "text": "-2",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.2.0.season": {
+      "raw": "2021-22",
+      "text": "2021-22",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.2.0.value": {
+      "raw": 92.67605633802816,
+      "text": "92.68",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.2.1.relative": {
+      "raw": -1,
+      "text": "-1",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.2.1.season": {
+      "raw": "2022-23",
+      "text": "2022-23",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.2.1.value": {
+      "raw": 94.1340782122905,
+      "text": "94.13",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.2.2.relative": {
+      "raw": 0,
+      "text": "0",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.2.2.season": {
+      "raw": "2023-24",
+      "text": "2023-24",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.2.2.value": {
+      "raw": 94.6629213483146,
+      "text": "94.66",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.2.3.relative": {
+      "raw": 1,
+      "text": "+1",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.2.3.season": {
+      "raw": "2024-25",
+      "text": "2024-25",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.2.3.value": {
+      "raw": 93.53932584269664,
+      "text": "93.54",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.2.4.relative": {
+      "raw": 2,
+      "text": "+2",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.2.4.season": {
+      "raw": "2025-26",
+      "text": "2025-26",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.2.4.value": {
+      "raw": 89.32584269662921,
+      "text": "89.33",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.2.note": {
+      "raw": "Pac-12 to ACC in 2024-25; official ACC membership began August 2, 2024, within the post-switch window. Mark Madsen was named men's basketball head coach in March 2023, before the 2023-24 Nike season.",
+      "text": "Pac-12 to ACC in 2024-25; official ACC membership began August 2, 2024, within the post-switch window. Mark Madsen was named men's basketball head coach in March 2023, before the 2023-24 Nike season.",
+      "source": "reports/switch_case_confounders.csv",
+      "sample": "descriptive context; targeted screen"
+    },
+    "case.2.season": {
+      "raw": "2023-24",
+      "text": "2023-24",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "switch season"
+    },
+    "case.2.shortNote": {
+      "raw": "Pac-12 → ACC realignment · coaching change identified",
+      "text": "Pac-12 → ACC realignment · coaching change identified",
+      "source": "reports/switch_case_confounders.csv",
+      "sample": "targeted confounder screen"
+    },
+    "case.3.0.relative": {
+      "raw": -2,
+      "text": "-2",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.3.0.season": {
+      "raw": "2021-22",
+      "text": "2021-22",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.3.0.value": {
+      "raw": 60.985915492957744,
+      "text": "60.99",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.3.1.relative": {
+      "raw": -1,
+      "text": "-1",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.3.1.season": {
+      "raw": "2022-23",
+      "text": "2022-23",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.3.1.value": {
+      "raw": 59.49720670391061,
+      "text": "59.50",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.3.2.relative": {
+      "raw": 0,
+      "text": "0",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.3.2.season": {
+      "raw": "2023-24",
+      "text": "2023-24",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.3.2.value": {
+      "raw": 27.52808988764045,
+      "text": "27.53",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.3.3.relative": {
+      "raw": 1,
+      "text": "+1",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.3.3.season": {
+      "raw": "2024-25",
+      "text": "2024-25",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.3.3.value": {
+      "raw": 64.8876404494382,
+      "text": "64.89",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.3.4.relative": {
+      "raw": 2,
+      "text": "+2",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.3.4.season": {
+      "raw": "2025-26",
+      "text": "2025-26",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.3.4.value": {
+      "raw": 74.71910112359551,
+      "text": "74.72",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.3.note": {
+      "raw": "American Athletic Conference to Big 12 on July 1, 2023, coincident with the Nike transition. Scott Satterfield was named football head coach in December 2022 and began the 2023 season during the provider and conference changes.",
+      "text": "American Athletic Conference to Big 12 on July 1, 2023, coincident with the Nike transition. Scott Satterfield was named football head coach in December 2022 and began the 2023 season during the provider and conference changes.",
+      "source": "reports/switch_case_confounders.csv",
+      "sample": "descriptive context; targeted screen"
+    },
+    "case.3.season": {
+      "raw": "2023-24",
+      "text": "2023-24",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "switch season"
+    },
+    "case.3.shortNote": {
+      "raw": "American → Big 12 realignment · coaching change identified",
+      "text": "American → Big 12 realignment · coaching change identified",
+      "source": "reports/switch_case_confounders.csv",
+      "sample": "targeted confounder screen"
+    },
+    "case.4.0.relative": {
+      "raw": -2,
+      "text": "-2",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.4.0.season": {
+      "raw": "2016-17",
+      "text": "2016-17",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.4.0.value": {
+      "raw": null,
+      "text": "No annual final / not available",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.4.1.relative": {
+      "raw": -1,
+      "text": "-1",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.4.1.season": {
+      "raw": "2017-18",
+      "text": "2017-18",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.4.1.value": {
+      "raw": 65.51724137931035,
+      "text": "65.52",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.4.2.relative": {
+      "raw": 0,
+      "text": "0",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.4.2.season": {
+      "raw": "2018-19",
+      "text": "2018-19",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.4.2.value": {
+      "raw": 81.42857142857143,
+      "text": "81.43",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.4.3.relative": {
+      "raw": 1,
+      "text": "+1",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.4.3.season": {
+      "raw": "2019-20",
+      "text": "2019-20",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.4.3.value": {
+      "raw": null,
+      "text": "No annual final / not available",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.4.4.relative": {
+      "raw": 2,
+      "text": "+2",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.4.4.season": {
+      "raw": "2020-21",
+      "text": "2020-21",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.4.4.value": {
+      "raw": 87.85310734463276,
+      "text": "87.85",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.4.note": {
+      "raw": "2019-20 was cancelled and has no annual final; preserve the calendar gap. 2020-21 pandemic disruptions also fall in this window. No main-conference change in the available case seasons. Paul Johnson announced he would step down as football head coach in November 2018, during the first adidas season.",
+      "text": "2019-20 was cancelled and has no annual final; preserve the calendar gap. 2020-21 pandemic disruptions also fall in this window. No main-conference change in the available case seasons. Paul Johnson announced he would step down as football head coach in November 2018, during the first adidas season.",
+      "source": "reports/switch_case_confounders.csv",
+      "sample": "descriptive context; targeted screen"
+    },
+    "case.4.season": {
+      "raw": "2018-19",
+      "text": "2018-19",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "switch season"
+    },
+    "case.4.shortNote": {
+      "raw": "COVID gap · coaching change identified",
+      "text": "COVID gap · coaching change identified",
+      "source": "reports/switch_case_confounders.csv",
+      "sample": "targeted confounder screen"
+    },
+    "case.5.0.relative": {
+      "raw": -2,
+      "text": "-2",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.5.0.season": {
+      "raw": "2023-24",
+      "text": "2023-24",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.5.0.value": {
+      "raw": 81.74157303370787,
+      "text": "81.74",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.5.1.relative": {
+      "raw": -1,
+      "text": "-1",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.5.1.season": {
+      "raw": "2024-25",
+      "text": "2024-25",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.5.1.value": {
+      "raw": 77.80898876404494,
+      "text": "77.81",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.5.2.relative": {
+      "raw": 0,
+      "text": "0",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.5.2.season": {
+      "raw": "2025-26",
+      "text": "2025-26",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.5.2.value": {
+      "raw": 74.01685393258427,
+      "text": "74.02",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.5.3.relative": {
+      "raw": 1,
+      "text": "+1",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.5.3.season": {
+      "raw": "2026-27",
+      "text": "2026-27",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.5.3.value": {
+      "raw": null,
+      "text": "No annual final / not available",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.5.4.relative": {
+      "raw": 2,
+      "text": "+2",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.5.4.season": {
+      "raw": "2027-28",
+      "text": "2027-28",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.5.4.value": {
+      "raw": null,
+      "text": "No annual final / not available",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.5.note": {
+      "raw": "No main-conference change in the available case seasons. The targeted source documents Coquese Washington's women's basketball appointment in May 2022, outside this 2023-24 through 2027-28 window. No claim that all coaching staffs were unchanged.",
+      "text": "No main-conference change in the available case seasons. The targeted source documents Coquese Washington's women's basketball appointment in May 2022, outside this 2023-24 through 2027-28 window. No claim that all coaching staffs were unchanged.",
+      "source": "reports/switch_case_confounders.csv",
+      "sample": "descriptive context; targeted screen"
+    },
+    "case.5.season": {
+      "raw": "2025-26",
+      "text": "2025-26",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "switch season"
+    },
+    "case.5.shortNote": {
+      "raw": "coaching stability not established",
+      "text": "coaching stability not established",
+      "source": "reports/switch_case_confounders.csv",
+      "sample": "targeted confounder screen"
+    },
+    "case.6.0.relative": {
+      "raw": -2,
+      "text": "-2",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.6.0.season": {
+      "raw": "2022-23",
+      "text": "2022-23",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.6.0.value": {
+      "raw": 87.15083798882681,
+      "text": "87.15",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.6.1.relative": {
+      "raw": -1,
+      "text": "-1",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.6.1.season": {
+      "raw": "2023-24",
+      "text": "2023-24",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.6.1.value": {
+      "raw": 87.64044943820225,
+      "text": "87.64",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.6.2.relative": {
+      "raw": 0,
+      "text": "0",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.6.2.season": {
+      "raw": "2024-25",
+      "text": "2024-25",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.6.2.value": {
+      "raw": 89.04494382022472,
+      "text": "89.04",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.6.3.relative": {
+      "raw": 1,
+      "text": "+1",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.6.3.season": {
+      "raw": "2025-26",
+      "text": "2025-26",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.6.3.value": {
+      "raw": 90.4494382022472,
+      "text": "90.45",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.6.4.relative": {
+      "raw": 2,
+      "text": "+2",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.6.4.season": {
+      "raw": "2026-27",
+      "text": "2026-27",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.6.4.value": {
+      "raw": null,
+      "text": "No annual final / not available",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.6.note": {
+      "raw": "Texas Tech remains in the Big 12; changes in Big 12 membership during the window may still alter competition. Grant McCasland was named men's basketball head coach in March 2023 and began in 2023-24, within the pre-switch window.",
+      "text": "Texas Tech remains in the Big 12; changes in Big 12 membership during the window may still alter competition. Grant McCasland was named men's basketball head coach in March 2023 and began in 2023-24, within the pre-switch window.",
+      "source": "reports/switch_case_confounders.csv",
+      "sample": "descriptive context; targeted screen"
+    },
+    "case.6.season": {
+      "raw": "2024-25",
+      "text": "2024-25",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "switch season"
+    },
+    "case.6.shortNote": {
+      "raw": "coaching change identified",
+      "text": "coaching change identified",
+      "source": "reports/switch_case_confounders.csv",
+      "sample": "targeted confounder screen"
+    },
+    "case.7.0.relative": {
+      "raw": -2,
+      "text": "-2",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.7.0.season": {
+      "raw": "2019-20",
+      "text": "2019-20",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.7.0.value": {
+      "raw": null,
+      "text": "No annual final / not available",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.7.1.relative": {
+      "raw": -1,
+      "text": "-1",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.7.1.season": {
+      "raw": "2020-21",
+      "text": "2020-21",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.7.1.value": {
+      "raw": 96.61016949152544,
+      "text": "96.61",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.7.2.relative": {
+      "raw": 0,
+      "text": "0",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.7.2.season": {
+      "raw": "2021-22",
+      "text": "2021-22",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.7.2.value": {
+      "raw": 96.05633802816902,
+      "text": "96.06",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.7.3.relative": {
+      "raw": 1,
+      "text": "+1",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.7.3.season": {
+      "raw": "2022-23",
+      "text": "2022-23",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.7.3.value": {
+      "raw": 96.36871508379888,
+      "text": "96.37",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.7.4.relative": {
+      "raw": 2,
+      "text": "+2",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.7.4.season": {
+      "raw": "2023-24",
+      "text": "2023-24",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.7.4.value": {
+      "raw": 97.47191011235957,
+      "text": "97.47",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.7.note": {
+      "raw": "2019-20 was cancelled and has no annual final; preserve the calendar gap. 2020-21 pandemic disruptions also fall in this window. Pac-12 throughout the observed case window, which ends in 2023-24. The subsequent 2024-25 Big Ten move is outside the window. Mick Cronin was hired as men's basketball head coach in April 2019; his first season was the excluded 2019-20 season at the start of this case window.",
+      "text": "2019-20 was cancelled and has no annual final; preserve the calendar gap. 2020-21 pandemic disruptions also fall in this window. Pac-12 throughout the observed case window, which ends in 2023-24. The subsequent 2024-25 Big Ten move is outside the window. Mick Cronin was hired as men's basketball head coach in April 2019; his first season was the excluded 2019-20 season at the start of this case window.",
+      "source": "reports/switch_case_confounders.csv",
+      "sample": "descriptive context; targeted screen"
+    },
+    "case.7.season": {
+      "raw": "2021-22",
+      "text": "2021-22",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "switch season"
+    },
+    "case.7.shortNote": {
+      "raw": "COVID gap · coaching change identified",
+      "text": "COVID gap · coaching change identified",
+      "source": "reports/switch_case_confounders.csv",
+      "sample": "targeted confounder screen"
+    },
+    "case.8.0.relative": {
+      "raw": -2,
+      "text": "-2",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.8.0.season": {
+      "raw": "2017-18",
+      "text": "2017-18",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.8.0.value": {
+      "raw": 91.95402298850574,
+      "text": "91.95",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.8.1.relative": {
+      "raw": -1,
+      "text": "-1",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.8.1.season": {
+      "raw": "2018-19",
+      "text": "2018-19",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.8.1.value": {
+      "raw": 93.42857142857144,
+      "text": "93.43",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.8.2.relative": {
+      "raw": 0,
+      "text": "0",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.8.2.season": {
+      "raw": "2019-20",
+      "text": "2019-20",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.8.2.value": {
+      "raw": null,
+      "text": "No annual final / not available",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.8.3.relative": {
+      "raw": 1,
+      "text": "+1",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.8.3.season": {
+      "raw": "2020-21",
+      "text": "2020-21",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.8.3.value": {
+      "raw": 90.96045197740112,
+      "text": "90.96",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.8.4.relative": {
+      "raw": 2,
+      "text": "+2",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True; gaps retained"
+    },
+    "case.8.4.season": {
+      "raw": "2021-22",
+      "text": "2021-22",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "case calendar season"
+    },
+    "case.8.4.value": {
+      "raw": 91.83098591549296,
+      "text": "91.83",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "A+B observed outcomes; missing slots retained"
+    },
+    "case.8.note": {
+      "raw": "2019-20 was cancelled and has no annual final; preserve the calendar gap. 2020-21 pandemic disruptions also fall in this window. No main-conference change in the observed 2017-18 through 2021-22 case seasons. Later Big Ten move is outside this window. Chris Petersen stepped down and Jimmy Lake was named football head coach in December 2019, within the case window.",
+      "text": "2019-20 was cancelled and has no annual final; preserve the calendar gap. 2020-21 pandemic disruptions also fall in this window. No main-conference change in the observed 2017-18 through 2021-22 case seasons. Later Big Ten move is outside this window. Chris Petersen stepped down and Jimmy Lake was named football head coach in December 2019, within the case window.",
+      "source": "reports/switch_case_confounders.csv",
+      "sample": "descriptive context; targeted screen"
+    },
+    "case.8.season": {
+      "raw": "2019-20",
+      "text": "2019-20",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "switch season"
+    },
+    "case.8.shortNote": {
+      "raw": "COVID gap · coaching change identified",
+      "text": "COVID gap · coaching change identified",
+      "source": "reports/switch_case_confounders.csv",
+      "sample": "targeted confounder screen"
+    },
+    "cases.n": {
+      "raw": 9,
+      "text": "9",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "usable_sensitivity=True"
+    },
+    "cases.documented": {
+      "raw": 10,
+      "text": "10",
+      "source": "reports/database_validation.json",
+      "sample": "documented transitions"
+    },
+    "cases.cancelledSeason": {
+      "raw": "2019-20",
+      "text": "2019–20",
+      "source": "docs/methodology.md",
+      "sample": "COVID cancelled annual final"
+    },
+    "cases.reference": {
+      "raw": 0,
+      "text": "0",
+      "source": "exports/tableau/switch_events.csv",
+      "sample": "relative season zero = switch season"
+    },
+    "coverage.rate": {
+      "raw": 90.70945945945945,
+      "text": "90.7%",
+      "source": "reports/database_validation.json",
+      "sample": "selected 74-school research scope; A+B+C"
+    },
+    "coverage.schools": {
+      "raw": 74,
+      "text": "74",
+      "source": "reports/database_validation.json",
+      "sample": "selected research scope"
+    },
+    "coverage.covered": {
+      "raw": 537,
+      "text": "537",
+      "source": "reports/database_validation.json",
+      "sample": "selected research scope"
+    },
+    "coverage.total": {
+      "raw": 592,
+      "text": "592",
+      "source": "reports/database_validation.json",
+      "sample": "selected research scope"
+    },
+    "coverage.unknown": {
+      "raw": 55,
+      "text": "55",
+      "source": "reports/database_validation.json",
+      "sample": "selected research scope"
+    },
+    "coverage.A": {
+      "raw": 445,
+      "text": "445",
+      "source": "reports/database_validation.json",
+      "sample": "selected research scope"
+    },
+    "coverage.B": {
+      "raw": 22,
+      "text": "22",
+      "source": "reports/database_validation.json",
+      "sample": "selected research scope"
+    },
+    "coverage.C": {
+      "raw": 70,
+      "text": "70",
+      "source": "reports/database_validation.json",
+      "sample": "selected research scope"
+    },
+    "seasons": {
+      "raw": 8,
+      "text": "8",
+      "source": "exports/tableau/school_season.csv",
+      "sample": "distinct competition seasons"
+    },
+    "copy.hero": {
+      "raw": "I ONLY WANTED TO ROW FOR A NIKE SCHOOL.",
+      "text": "I ONLY WANTED TO ROW FOR A NIKE SCHOOL.",
+      "source": "README.md",
+      "sample": "README wording; generated numbers"
+    },
+    "copy.subhead": {
+      "raw": "So I tested whether Nike schools actually win more. The Swoosh Effect: 8 seasons of NCAA Directors' Cup data.",
+      "text": "So I tested whether Nike schools actually win more. The Swoosh Effect: 8 seasons of NCAA Directors' Cup data.",
+      "source": "README.md",
+      "sample": "README wording; generated numbers"
+    },
+    "copy.brand": {
+      "raw": "- The best programs wear Nike (A+B = seasons with direct sponsor evidence): Top-10 finish rates are 21.1% for Nike (61/289 school-seasons), 3.5% for Under Armour (3/86) and 2.4% for adidas (2/85). These are within-brand rates.",
+      "text": "- The best programs wear Nike (A+B = seasons with direct sponsor evidence): Top-10 finish rates are 21.1% for Nike (61/289 school-seasons), 3.5% for Under Armour (3/86) and 2.4% for adidas (2/85). These are within-brand rates.",
+      "source": "README.md",
+      "sample": "README wording; generated numbers"
+    },
+    "copy.pick": {
+      "raw": "- Pick or make (A+B): Nike schools' average percentile lead is 2.67 points over adidas and 3.72 over Under Armour. On the same model sample, accounting for last season's performance shrinks the adjusted lead by 56–62%: consistent with Nike signing already-strong programs, not proof that Nike makes them better.",
+      "text": "- Pick or make (A+B): Nike schools' average percentile lead is 2.67 points over adidas and 3.72 over Under Armour. On the same model sample, accounting for last season's performance shrinks the adjusted lead by 56–62%: consistent with Nike signing already-strong programs, not proof that Nike makes them better.",
+      "source": "README.md",
+      "sample": "README wording; generated numbers"
+    },
+    "copy.ml": {
+      "raw": "- Predicting next season: Last season's performance is the #1 predictor (of 43 features). Across the broader study's 712 held-out school-seasons, no model, including LightGBM, clearly beat simply predicting last season's result on mean absolute error (MAE 11.08 baseline vs 11.12 OLS vs 11.18 LightGBM).",
+      "text": "- Predicting next season: Last season's performance is the #1 predictor (of 43 features). Across the broader study's 712 held-out school-seasons, no model, including LightGBM, clearly beat simply predicting last season's result on mean absolute error (MAE 11.08 baseline vs 11.12 OLS vs 11.18 LightGBM).",
+      "source": "README.md",
+      "sample": "README wording; generated numbers"
+    },
+    "copy.why": {
+      "raw": "As a former D1 rower, I only wanted to row for a Nike school, so I tested whether Nike schools actually win more.",
+      "text": "As a former D1 rower, I only wanted to row for a Nike school, so I tested whether Nike schools actually win more.",
+      "source": "README.md",
+      "sample": "README wording; generated numbers"
+    }
+  }
+}

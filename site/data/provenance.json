@@ -1,0 +1,20 @@
+{
+  "tolerance": 1e-9,
+  "rounding": "Rates one decimal; estimates/CI two decimals; importance three decimals; attenuation range whole percent. Counts exact.",
+  "sources": {
+    "docs/readme_number_ledger.csv": "3e978c1dd2b05f55f8b9acc7612254cd9a2bde60cbf6b36f3b1cdecdf98a9b5a",
+    "exports/tableau/school_season.csv": "4e881d34ae0e7da0090bd609bebddd7ab97cc04ef672202a1ad150fbab558dad",
+    "exports/tableau/switch_events.csv": "3b9b2a04ed0d6ea500e3963c06b2b96da93aefefa39a406f087c7d8087ae348b",
+    "README.md": "05d01f527350865be7566f7651ab5532deddb1001b5730a2d49bdac3d522ef85",
+    "reports/brand_summary.csv": "3972314aa41bae411d73a420d87e6cd05bcaae1a3702d39e519af3600f295374",
+    "reports/database_validation.json": "2322578de0fe5cc07956887bb6d35d05001a4979ef1dcac9edfe3e0de6a69237",
+    "reports/lag_attenuation.csv": "f420a28e8bf44c3b164cb2b055a1daed711758383d7f27a8cde83df041e268c2",
+    "reports/ml/metadata.json": "b6f631a73b5e637b52f10ecb6958e4ff6e157036acdd912e2787ae9e8c751696",
+    "reports/ml/metrics.csv": "418fcd1e16259d1847e50f9512a2e20998db721b8f1e908722052b95a08d18b2",
+    "reports/ml/paired_comparisons.csv": "28373a6b77181e87562f14557ba3df75fb202b9bae51e7e3af37e2dfd8636d96",
+    "reports/ml/permutation_importance.csv": "2af3d7a50b8f30d443f85bb30578e1d06554c0fcd055c9fdc96bf85a5e61bb34",
+    "reports/ml/sample_counts.csv": "7beb383522669043329847d60a6e126972a35c45e8b2c7b1d2f11dab7ba3bf33",
+    "reports/model_coefficients.csv": "6d98c8709a10605753c336161dad8919329ac5636528dec7dcbdf072269e5f9d",
+    "reports/switch_case_confounders.csv": "720069faf4bc300bff94359c73ef9172ae0e5a29834a4c1c1e74843a76382861"
+  }
+}

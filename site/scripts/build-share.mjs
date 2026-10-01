@@ -1,0 +1,10 @@
+import { readFile, writeFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
+import { Resvg } from '@resvg/resvg-js';
+const story = JSON.parse(await readFile(new URL('../data/story.json', import.meta.url), 'utf8'));
+const lines = ['I ONLY WANTED', 'TO ROW FOR A', 'NIKE SCHOOL.'];
+if (lines.join(' ') !== story.copy.hero) throw new Error('Share image headline drift');
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"><rect width="1200" height="630" fill="#000"/><g fill="#E9533A" font-family="Barlow Condensed" font-weight="800" font-size="136">${lines.map((line, i) => `<text x="64" y="${195 + i * 124}">${line}</text>`).join('')}</g><g fill="#fff" font-family="Barlow Condensed" font-weight="800" font-size="24" letter-spacing="3"><text x="66" y="58">THE SWOOSH EFFECT</text><text x="66" y="574">BY ALEXANDRA COWAN · INDEPENDENT STUDENT PROJECT</text></g></svg>`;
+const image = new Resvg(svg, { font: { loadSystemFonts: false, fontFiles: [resolve('public/fonts/BarlowCondensed-ExtraBold.ttf')] } });
+await writeFile(new URL('../public/share.png', import.meta.url), image.render().asPng());
+console.log('Generated share.png from the verified story headline.');
