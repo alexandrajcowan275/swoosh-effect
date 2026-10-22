@@ -79,3 +79,14 @@
   .hero h1 { margin: auto 0 16px; }
   .hero-bottom { padding-top: 0; }
 }
+
+/* Keep the hero proof stat lifted above the footer row on shorter desktops. */
+@media (min-width: 741px) {
+  .hero-bottom { grid-template-columns: minmax(120px, 1fr) auto; }
+  .hero-proof {
+    position: absolute;
+    right: clamp(28px, 7vw, 100px);
+    bottom: clamp(130px, 18vh, 176px);
+    width: min(330px, 32vw);
+  }
+}
