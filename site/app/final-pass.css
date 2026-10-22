@@ -68,3 +68,14 @@
   .hero-proof strong { font-size: 3.3rem; }
   .hero-proof > span:nth-child(3) { max-width: 250px; }
 }
+
+/* Fit the complete hero story card inside a standard laptop viewport. */
+.hero-top { margin-bottom: clamp(28px, 5vh, 48px); }
+.hero h1 { margin: 0 0 16px; }
+.hero-subhead { margin-top: 8px; }
+.hero-bottom { padding-top: clamp(22px, 3.5vh, 36px); }
+@media (max-width: 740px) {
+  .hero-top { margin-bottom: 34px; }
+  .hero h1 { margin: auto 0 16px; }
+  .hero-bottom { padding-top: 0; }
+}
