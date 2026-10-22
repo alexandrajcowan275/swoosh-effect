@@ -50,9 +50,9 @@ export default function Home() {
         <a href="#build-title">Methods</a>
       </nav>
       <section className="story-snapshot" aria-label="The story in three findings">
-        <a className="snapshot-item" href="#findings"><strong><Stat name="brand.0.rate" /></strong><span>Nike top-10 rate · <Stat name="brand.0.finishes" /> of <Stat name="brand.0.n" /> seasons</span></a>
+        <a className="snapshot-item" href="#findings"><strong><Stat name="brand.0.rate" /></strong><span>Nike top ten finish rate · <Stat name="brand.0.finishes" /> of <Stat name="brand.0.n" /> seasons</span></a>
         <a className="snapshot-item" href="#pick-title"><strong><Stat name="comparison.shrinkRange" /></strong><span>adjusted lead shrinks after prior performance</span></a>
-        <a className="snapshot-item" href="#pick-title"><strong>4 / 4</strong><span>matched estimates have intervals that include zero</span></a>
+        <a className="snapshot-item" href="#pick-title"><strong>ALL</strong><span>matched estimates have intervals that include zero</span></a>
       </section>
 
       <section className="section light" id="findings" aria-labelledby="rates-title">
