@@ -41,6 +41,20 @@ export default function Home() {
         </div>
       </section>
 
+      <nav className="chapter-nav" aria-label="Story chapters">
+        <a href="#findings">Findings</a>
+        <a href="#pick-title">Pick or make</a>
+        <a href="#ml-title">Forecast</a>
+        <a href="#switch-title">School switches</a>
+        <a href="#why-title">Why Nike</a>
+        <a href="#build-title">Methods</a>
+      </nav>
+      <section className="story-snapshot" aria-label="The story in three findings">
+        <a className="snapshot-item" href="#findings"><strong><Stat name="brand.0.rate" /></strong><span>Nike top-10 rate · <Stat name="brand.0.finishes" /> of <Stat name="brand.0.n" /> seasons</span></a>
+        <a className="snapshot-item" href="#pick-title"><strong><Stat name="comparison.shrinkRange" /></strong><span>adjusted lead shrinks after prior performance</span></a>
+        <a className="snapshot-item" href="#pick-title"><strong>4 / 4</strong><span>matched estimates have intervals that include zero</span></a>
+      </section>
+
       <section className="section light" id="findings" aria-labelledby="rates-title">
         <div className="container"><SectionHead index="02" eyebrow="The pattern" title="The best programs wear Nike" id="rates-title" />
           <div className="rates-grid" data-reveal>
