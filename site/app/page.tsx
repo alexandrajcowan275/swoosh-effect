@@ -49,11 +49,11 @@ export default function Home() {
         <a href="#why-title">Why Nike</a>
         <a href="#build-title">Methods</a>
       </nav>
-      <section className="story-snapshot" aria-label="The story in three findings">
+      <div className="story-snapshot" aria-label="The story in three findings">
         <a className="snapshot-item" href="#findings"><strong><Stat name="brand.0.rate" /></strong><span>Nike top ten finish rate · <Stat name="brand.0.finishes" /> of <Stat name="brand.0.n" /> seasons</span></a>
         <a className="snapshot-item" href="#pick-title"><strong><Stat name="comparison.shrinkRange" /></strong><span>adjusted lead shrinks after prior performance</span></a>
         <a className="snapshot-item" href="#pick-title"><strong>ALL</strong><span>matched estimates have intervals that include zero</span></a>
-      </section>
+      </div>
 
       <section className="section light" id="findings" aria-labelledby="rates-title">
         <div className="container"><SectionHead index="02" eyebrow="The pattern" title="The best programs wear Nike" id="rates-title" />
