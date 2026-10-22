@@ -1,0 +1,70 @@
+/* High-impact editorial hero: the key result is visible before the reader scrolls. */
+.hero { overflow: hidden; background: #050505; }
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: min(38vw, 540px);
+  height: 100%;
+  background: linear-gradient(150deg, transparent 10%, rgb(233 83 58 / 9%) 10% 11%, transparent 11% 23%, rgb(233 83 58 / 14%) 23% 24%, transparent 24% 42%, rgb(233 83 58 / 10%) 42% 43%, transparent 43%), linear-gradient(115deg, transparent 15%, rgb(233 83 58 / 16%));
+  clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%);
+}
+.hero-content { position: relative; }
+.hero h1 { max-width: 1100px; text-wrap: balance; }
+.hero-bottom {
+  display: grid;
+  grid-template-columns: minmax(130px, 1fr) minmax(220px, 330px) auto;
+  align-items: end;
+  gap: clamp(18px, 3vw, 42px);
+}
+.hero-proof {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 14px;
+  border-left: 3px solid var(--orange);
+  padding: 6px 0 6px 18px;
+}
+.hero-proof-label {
+  grid-column: 1 / -1;
+  color: var(--gray-light);
+  font-size: .57rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+.hero-proof strong {
+  grid-row: span 2;
+  color: var(--orange);
+  font-family: var(--font-display), Impact, sans-serif;
+  font-size: clamp(2.8rem, 5vw, 4.6rem);
+  font-weight: 800;
+  letter-spacing: -.045em;
+  line-height: .9;
+}
+.hero-proof > span:nth-child(3) {
+  max-width: 210px;
+  color: #e2e2e2;
+  font-size: .69rem;
+  line-height: 1.45;
+}
+.hero-proof a {
+  grid-column: 2;
+  margin-top: 7px;
+  color: #fff;
+  font-size: .55rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-decoration: none;
+}
+.hero-proof a:hover { color: var(--orange); }
+@media (max-width: 740px) {
+  .hero::before { width: 76vw; opacity: .7; }
+  .hero-bottom { grid-template-columns: 1fr auto; gap: 20px 14px; align-items: center; }
+  .hero-proof { grid-column: 1 / -1; grid-row: 1; max-width: 420px; padding-block: 5px; }
+  .byline { grid-column: 1; grid-row: 2; }
+  .scroll-cue { grid-column: 2; grid-row: 2; }
+  .hero-proof strong { font-size: 3.3rem; }
+  .hero-proof > span:nth-child(3) { max-width: 250px; }
+}

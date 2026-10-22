@@ -38,6 +38,12 @@ export default function Home() {
           <h1 id="hero-title"><span>I ONLY WANTED</span><span>TO ROW FOR A</span><span className="orange">NIKE SCHOOL.</span></h1>
           <p className="hero-subhead"><Stat name="copy.subhead" /></p>
           <div className="hero-bottom"><p className="byline">By <a href={story.links.linkedin}>Alexandra Cowan</a></p><a className="scroll-cue" href="#findings">FOLLOW THE DATA <span aria-hidden="true">↓</span></a></div>
+          <aside className="hero-proof" aria-label="The headline finding">
+            <span className="hero-proof-label">THE HEADLINE FINDING</span>
+            <strong><Stat name="brand.0.rate" /></strong>
+            <span><Stat name="brand.0.finishes" /> of <Stat name="brand.0.n" /> evidenced Nike school-seasons finished in the top ten.</span>
+            <a href="#findings">SEE THE EVIDENCE ↓</a>
+          </aside>
         </div>
       </section>
 

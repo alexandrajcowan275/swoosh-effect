@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
+import './final-pass.css';
 import story from '@/data/story.json';
 
 const display = localFont({ src: '../node_modules/@fontsource/barlow-condensed/files/barlow-condensed-latin-800-normal.woff2', weight: '800', display: 'swap', variable: '--font-display' });
