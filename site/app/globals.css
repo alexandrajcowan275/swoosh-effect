@@ -156,3 +156,95 @@ blockquote footer a { display: inline-block; margin-top: 14px; }
 @media (max-width: 740px) { .chart-desktop { display: none; }.chart-mobile { display: block; } }
 
 @media (min-width: 640px) and (max-width: 740px) { .switch-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 28px 20px; }.case-heading { flex-wrap: wrap; gap: 4px; }.case-heading h3 { font-size: 1.1rem; } }
+
+
+/* Story navigation and evidence snapshot */
+html { scroll-padding-top: 74px; }
+.chapter-nav {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  gap: clamp(16px, 3vw, 42px);
+  overflow-x: auto;
+  padding: 0 24px;
+  min-height: 58px;
+  background: rgb(0 0 0 / 94%);
+  border-block: 1px solid #292929;
+  backdrop-filter: blur(12px);
+  scrollbar-width: none;
+}
+.chapter-nav::-webkit-scrollbar { display: none; }
+.chapter-nav a {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  color: #d0d0d0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .62rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  transition: color .18s ease;
+}
+.chapter-nav a:hover,
+.chapter-nav a:focus-visible { color: var(--orange); }
+.story-snapshot {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 64px;
+  background: #fff;
+  color: #000;
+}
+.snapshot-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 4px 26px;
+  border-left: 1px solid #d7d7d7;
+  text-decoration: none;
+}
+.snapshot-item:first-child { border-left: 3px solid var(--orange); }
+.snapshot-item strong {
+  font-family: var(--font-display), Impact, sans-serif;
+  color: var(--orange);
+  font-size: clamp(2.5rem, 4.2vw, 4.2rem);
+  font-weight: 800;
+  line-height: .95;
+  letter-spacing: -.03em;
+}
+.snapshot-item > span {
+  max-width: 260px;
+  color: #555;
+  font-size: .72rem;
+  line-height: 1.5;
+}
+@media (max-width: 740px) {
+  html { scroll-padding-top: 60px; }
+  .chapter-nav {
+    justify-content: flex-start;
+    gap: 24px;
+    min-height: 52px;
+    padding-inline: 22px;
+  }
+  .chapter-nav a { font-size: .58rem; }
+  .story-snapshot {
+    grid-template-columns: 1fr;
+    padding: 18px 24px 24px;
+  }
+  .snapshot-item {
+    display: grid;
+    grid-template-columns: minmax(96px, .42fr) 1fr;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 0;
+    border-left: 0;
+    border-bottom: 1px solid #ddd;
+  }
+  .snapshot-item:first-child { border-left: 0; padding-left: 12px; }
+  .snapshot-item:last-child { border-bottom: 0; }
+  .snapshot-item strong { font-size: 2.7rem; }
+}
